@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Spotify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Sites para pegar músicas
+            Estou pegando
+                https://www.churchofjesuschrist.org/youth/music?lang=eng
+            Pegar musicas daqui também
+                https://www.churchofjesuschrist.org/media/collection/youth-music?lang=eng&collectionId=c97d80a6f8756f956c07639057a7e014784079f8
+    -->
+</head>
+<body>
+    <div class="sidebar" id="sidebar" >
+        <div class="sidebar-wraper">
+            <div class="sidebar__logo">
+                <img src="img/logo.png">
+            </div><!--sidebar__logo-->
+            <div class="sidebar__menu">
+                <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i>Início</a>
+                <a href="#"><i class="fas fa-search"></i>Buscar</a>
+                <a href="#"><i class="fas fa-database"></i>Biblioteca</a>
+            </div><!--sidebar__menu-->
+            <div class="sidebar__menu">
+                <p class="sidebar__menu__title">Playlists</p>
+                <div class="sidebar__menu__item">
+                    <div class="sidebar__menu__item__componente">
+                        <span>+</span>
+                    </div>
+                    <span>Criar Playlist</span>
+                </div><!--sidebar__menu__item-->
+                <div class="sidebar__menu__item">
+                    <img src="img/musicas_curtidas.png">
+                    <span>Músicas Curtidas</span>
+                </div><!--sidebar__menu__item-->
+            </div><!--sidebar__menu-->
+        </div><!--sidebar-wraper-->
+    </div><!--sidebar-->
+
+    <div class="main" id="main">
+        <div class="main-wraper">
+            <div class="main__row" id="teste">
+                <div class="main__row__title"><h2>2019 mutual theme</h2></div>
+            </div><!--main__row-->
+            <div class="main__row">
+                <div class="main__row__title"><h2>2020 mutual theme</h2></div>
+                <div class="main__col" data-image="img/top50.png" data-artist="Talin Everett" data-song="Light of the World" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1020-light-of-the-world-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Light of the World</h3>
+                    <p>Talin Everett</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Je Eun Jun" data-song="Listening" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1100-listening-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Listening</h3>
+                    <p>Je Eun Jun</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Mikee Misalucha and Filipino..." data-song="I Will Go and Do (f..." data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1120-i-will-go-and-do-female-version-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>I Will Go and Do (female-version)</h3>
+                    <p>Mikee Misalucha and Filipino Youth Choir</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Aaliyah Rose" data-song="Like Him" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1030-like-him-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Like Him</h3>
+                    <p>Aaliyah Rose</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Ammon Olayan and Liahona..." data-song="What Does He Think" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1040-what-does-he-think-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>What Does He Think</h3>
+                    <p>Ammon Olayan and Liahona Olayan</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Liahona Olayan" data-song="Live Forever" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1090-live-forever-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Live Forever</h3>
+                    <p>Liahona Olayan</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="David Archuleta" data-song="I Will Go and Do" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1010-i-will-go-and-do-2020-youth-theme-song-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>I Will Go and Do</h3>
+                    <p>David Archuleta</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Claire Quigley" data-song="He Will Never Cha..." data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1070-he-wil-never-change-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>He Will Never Change</h3>
+                    <p>Claire Quigley</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Jefferson Murdock" data-song="Always" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1080-always-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Always</h3>
+                    <p>Jefferson Murdock</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Isabella Hixson" data-song="Reaching Out" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1050-reaching-out-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Reaching Out</h3>
+                    <p>Isabella Hixson</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Case Rutter" data-song="Lonely" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1110-lonely-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Lonely</h3>
+                    <p>Case Rutter</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Grant Lemon" data-song="Pillar of Light" data-file="http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1060-pillar-of-light-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>Pillar of Light</h3>
+                    <p>Grant Lemon</p>
+                </div><!--main__col-->
+            </div><!--main__row-->
+            <div class="main__row">
+                <div class="main__row__title"><h2>2019 mutual theme</h2></div>
+                <div class="main__col" data-image="img/top50global.png" data-artist="Patch Crowe" data-song="If We Love Him (M..." data-file="http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0110-if-we-love-him-male-version-256k-eng.mp3">
+                    <img src="img/top50global.png">
+                    <h3>If We Love Him (Male Version)</h3>
+                    <p>Patch Crowe</p>
+                </div><!--main__col-->
+                <div class="main__col" data-image="img/top50.png" data-artist="Lauryn Judd" data-song="If We Love Him (F..." data-file="http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0010-if-we-love-him-female-version-256k-eng.mp3">
+                    <img src="img/top50.png">
+                    <h3>If We Love Him (Female Version)</h3>
+                    <p>Lauryn Judd</p>
+                </div><!--main__col-->
+            </div><!--main__row-->
+        </div><!--main-wraper-->
+    </div>
+
+    <div class="player">
+        <div class="player__artist">
+        </div>
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <a id="beginBtn" href=""><i style="font-size: 20px;" class="far fa-stop-circle"></i></a>
+                <a id="undoBtn" href=""><i class="fas fa-undo"></i></a>
+                <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="fas fa-play"></i></a>
+                <a id="redoBtn" href=""><i class="fas fa-redo"></i></a>
+                <a id="loopBtn" href=""><i class="fas fa-sync"></i></a>
+            </div>
+            <div class="player__control__buttons_2">
+                <a id="hideVolBtn" href=""><i class="fas fa-volume-up"></i></a>
+                <div id="volume" style="display: none; position: relative;">
+                    <input id="volume-control" type="range"></input>
+                    <a id="muteBtn" href="" style="position: absolute; bottom: 15px; left:-13px; color: white;"><i class="fas fa-volume-mute"></i></a>
+                    <a id="unMuteBtn" href="" style="position: absolute; bottom: 15px; left:-13px; color: white; display: none;"><i class="fas fa-volume-up"></i></a>
+                </div>
+            </div>
+            <div class="player__control__progress">
+                <div id="player__control__progress_2"></div>
+            </div>
+            <div class="player__timer">
+                <p id="current">00:00 / </p>
+                <p id="duration">00:00</p>
+            </div>
+        </div>
+    </div><!--player-->
+
+    <audio id="audioplayer" style="position: absolute; left: 0; top: 0; z-index: -999; opacity: 0;" controls="">
+    </audio>
+    <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
+    <script src="js/player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>

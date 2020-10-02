@@ -1,0 +1,26 @@
+@media screen and (max-width: 1700px){
+    .sidebar-wraper{
+        padding-bottom: 100px;
+    }
+    .main-wraper{
+        padding-bottom: 100px;
+    }
+    .main__col{
+        width: 19%;
+    }
+    .player{
+        height: 100px;
+    }
+}
+@media screen and (max-width: 768px){
+    .main{
+        width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main__col{
+        width: 48%;
+        margin-right: 2%;
+    }
+}
