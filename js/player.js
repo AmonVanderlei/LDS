@@ -112,10 +112,10 @@ unMuteBtn.addEventListener('click', (e) => {
 document.querySelectorAll('.main__col').forEach(item => {
 
   item.addEventListener('click', () => {
-    let image = item.getAttribute('data-image');
-    let artist = item.getAttribute('data-artist');
-    let song = item.getAttribute('data-song');
-    let file = item.getAttribute('data-file');
+    let image = item.getAttribute('dataImage');
+    let artist = item.getAttribute('dataArtist');
+    let song = item.getAttribute('dataSong');
+    let file = item.getAttribute('dataFile');
 
     let playerArtistComponent = document.getElementsByClassName('player__artist');
 
