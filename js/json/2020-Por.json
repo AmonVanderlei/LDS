@@ -1,21 +1,101 @@
 {
-    "albumName": "Tema da mutual de 2020",
-    "songs": [
-      {
-        "dataImage": "img/top50global.png",
-        "dataArtist": "Patch Crowe",
-        "dataSong": "If We Love Him (M...",
-        "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0110-if-we-love-him-male-version-256k-eng.mp3",
-        "songName": "If We Love Him (Male Version)",
-        "artistName": "Patch Crowe"
-      },
-      {
-        "dataImage": "img/top50.png",
-        "dataArtist": "Lauryn Judd",
-        "dataSong": "If We Love Him (F...",
-        "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0010-if-we-love-him-female-version-256k-eng.mp3",
-        "songName": "If We Love Him (Female Version)",
-        "artistName": "Lauryn Judd"
-      }
-    ]
-  }
+  "albumName": "Tema dos Jovens 2020",
+  "songs": [
+    {
+      "dataImage": "img/top50global.png",
+      "dataArtist": "Vitor Conatti e Laura Martins",
+      "dataSong": "Eu sei quem eu sou",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1110-lonely-256k-por.mp3",
+      "songName": "Eu sei quem eu sou",
+      "artistName": "Vitor Conatti e Laura Martins"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "João Daniel",
+      "dataSong": "Porque ele orou",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1060-pillar-of-light-256k-por.mp3",
+      "songName": "Porque ele orou",
+      "artistName": "João Daniel"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Natália Oliveira",
+      "dataSong": "Ele escuta",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1100-listening-256k-por.mp3",
+      "songName": "Ele escuta",
+      "artistName": "Natália Oliveira"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Nicole Luz",
+      "dataSong": "Quero ser assim",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1030-like-him-256k-por.mp3",
+      "songName": "Quero ser assim",
+      "artistName": "Nicole Luz"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Alan Rocha e Rhanna Rozados",
+      "dataSong": "O que Deus esper...",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1040-what-does-he-think-256k-por.mp3",
+      "songName": "O que Deus espera de mim",
+      "artistName": "Alan Rocha e Rhanna Rozados"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Liahona Olayan",
+      "dataSong": "Felicidade eterna",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1090-live-forever-256k-por.mp3",
+      "songName": "Felicidade eterna",
+      "artistName": "Liahona Olayan"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Mikee Misalucha e um coro d...",
+      "dataSong": "I Will Go and Do (E...",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1120-i-will-go-and-do-female-version-256k-eng.mp3",
+      "songName": "I Will Go and Do (Eu irei e cumprirei) (versão vozes femininas)",
+      "artistName": "Mikee Misalucha e um coro de jovens filipinos"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Gabrielly Lourenço",
+      "dataSong": "Eu irei e cumprirei",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1010-i-will-go-and-do-2020-youth-theme-song-256k-por.mp3",
+      "songName": "Eu irei e cumprirei",
+      "artistName": "Gabrielly Lourenço"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Nicholas Shigekiyo",
+      "dataSong": "Luz do Mundo",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1020-light-of-the-world-256k-por.mp3",
+      "songName": "Luz do Mundo",
+      "artistName": "Nicholas Shigekiyo"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Alyne Lemos",
+      "dataSong": "Nunca está só",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1050-reaching-out-256k-por.mp3",
+      "songName": "Nunca está só",
+      "artistName": "Alyne Lemos"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Laura Fraga",
+      "dataSong": "Ele sempre vem",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1070-he-will-never-change-256k-por.mp3",
+      "songName": "Ele sempre vem",
+      "artistName": "Laura Fraga"
+    },
+    {
+      "dataImage": "img/top50.png",
+      "dataArtist": "Alan Rocha",
+      "dataSong": "Sem fim",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1080-always-256k-eng.mp3",
+      "songName": "Sem fim",
+      "artistName": "Alan Rocha"
+    }
+  ]
+}
