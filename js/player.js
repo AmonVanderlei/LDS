@@ -1,10 +1,3 @@
-var sidebar = document.getElementById('sidebar');//pega a sidebar
-var main = document.getElementById('main');//pega o main
-
-if(sidebar.style.display == "none"){
-  main.style.width = "100%";
-};
-
 var audioPlayer = document.getElementById('audioplayer'); //pega o tocador de audio
 var loaded = false;
 var hide = true;

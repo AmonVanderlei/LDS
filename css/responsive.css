@@ -1,15 +1,37 @@
-@media screen and (max-width: 1700px){
-    .sidebar-wraper{
-        padding-bottom: 100px;
+/*O player está bom de 477px até 1600px de largura
+E de 0px até 0px de altura
+
+Ajustar player quando a largura estiver menor de 477px e quando estiver maior que 1600px
+Quando o player estiver menor que 477px colocar 3 pontinhos com os botão de loop e o de volume
+
+Ajustar cards quando a largura estiver menor que 768px
+*/
+
+
+
+@media screen and (max-width: 1715px){
+    .main__col{
+        width: 15%;
     }
-    .main-wraper{
-        padding-bottom: 100px;
+}
+@media screen and (max-width: 1500px){
+    .main__col{
+        width: 17%;
     }
+}
+@media screen and (max-width: 1300px){
     .main__col{
         width: 19%;
     }
-    .player{
-        height: 100px;
+}
+@media screen and (max-width: 1000px){
+    .main__col{
+        width: 24%;
+    }
+}
+@media screen and (max-width: 950px){
+    .main__col{
+        width: 32%;
     }
 }
 @media screen and (max-width: 768px){
@@ -23,4 +45,20 @@
         width: 48%;
         margin-right: 2%;
     }
+    .player__artist img{
+        max-width: 50px;
+    }
+}
+@media screen and (max-width: 593px){
+    .player__control__buttons a{
+        margin: 8px 10px;
+    }
+}
+@media screen and (max-width: 524px){
+    .player__artist img{
+        max-width: 40px;
+    }
+    .player__control__buttons_2 {
+        margin-left: 0;
+    }    
 }
