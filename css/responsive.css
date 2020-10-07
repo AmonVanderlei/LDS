@@ -7,8 +7,6 @@ Quando o player estiver menor que 477px colocar 3 pontinhos com os botão de loo
 Ajustar cards quando a largura estiver menor que 768px
 */
 
-
-
 @media screen and (max-width: 1715px){
     .main__col{
         width: 15%;

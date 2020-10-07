@@ -185,8 +185,22 @@ html,body{height: 100%;}
 }
 .player__control__buttons a{
     color: white;
-    margin: 8px 15px;
+    margin: 15px;
     font-size: 18px;
+}
+.loader{
+    display: none;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #51cf66;
+    border-radius: 50%;
+    margin: 0 15px 0 15px;
+    width: 18px;
+    height: 18px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 .player__control__buttons_2{
     display: inline-block;

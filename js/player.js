@@ -12,6 +12,7 @@ var hideVolBtn = document.getElementById('hideVolBtn'); //pega o botão que esco
 var volume = document.getElementById('volume'); //pega a div que fica o controle de volume
 var muteBtn = document.getElementById('muteBtn'); //pega o botão de silenciar a música
 var unMuteBtn = document.getElementById('unMuteBtn'); //pega o botão que deixa a música tocando novamente
+var loader = document.getElementById('loader'); //pega o loader
 
 undoBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -59,24 +60,24 @@ beginBtn.addEventListener('click', (e) => {
 loopBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  if(audioPlayer.loop == false){
-    audioPlayer.loop=true;
+  if (audioPlayer.loop == false) {
+    audioPlayer.loop = true;
     loopBtn.innerHTML = `<i class="fas fa-sync" style="color: #51cf66;"></i>`;
-  }else{
-    audioPlayer.loop=false;
+  } else {
+    audioPlayer.loop = false;
     loopBtn.innerHTML = `<i class="fas fa-sync"></i>`;
-  } 
+  }
 
   return false;
 });//botão de loop
 hideVolBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  if(hide == true){
+  if (hide == true) {
     volume.style.display = "inline-block";
     hideVolBtn.innerHTML = `<i class="fas fa-volume-up" style="color: #51cf66;"></i>`;
     hide = false;
-  }else{
+  } else {
     volume.style.display = "none";
     hideVolBtn.innerHTML = `<i class="fas fa-volume-up"></i>`;
     hide = true;
@@ -120,6 +121,15 @@ document.querySelectorAll('.main__col').forEach(item => {
   });
 
 });//pega os atributos e mostra eles
+audioPlayer.onloadstart = () => {
+  loader.style.display = "inline-block";
+  playBtn.style.display = "none";
+  pauseBtn.style.display = "none";
+};
+audioPlayer.oncanplay = () => {
+  loader.style.display = "none";
+  pauseBtn.style.display = "inline";
+};
 const playSong = (file) => {
 
   if (loaded == true) {
@@ -136,7 +146,6 @@ const playSong = (file) => {
 
   playBtn.style.display = "none";
   pauseBtn.style.display = "inline";
-
 }//toca a música
 var timer;
 var percent = 0;
@@ -183,7 +192,7 @@ var advance = function (duration, element) {
   var totalTime = document.getElementById("duration");
   totalSeconds = Math.trunc(duration)
   totalMinutes = 0
-  while(totalSeconds >= 60){
+  while (totalSeconds >= 60) {
     totalMinutes = totalMinutes + 1
     totalSeconds = totalSeconds - 60
   }
@@ -197,7 +206,7 @@ var advance = function (duration, element) {
   } else {
     totalSeconds = totalSeconds
   }
-  totalTime.innerHTML = totalMinutes +`:`+ totalSeconds
+  totalTime.innerHTML = totalMinutes + `:` + totalSeconds
 }
 var startTimer = function (duration, element) {
   if (percent < 100) {
@@ -206,41 +215,41 @@ var startTimer = function (duration, element) {
 }//atualiza a barra de progresso
 var volumeControl = document.getElementById('volume-control');
 
-var setVolume = function(){
-    audioPlayer.volume = this.value / 100;
+var setVolume = function () {
+  audioPlayer.volume = this.value / 100;
 };
 
-volumeControl.addEventListener('change',setVolume);
-volumeControl.addEventListener('input',setVolume);//ajusta o volume
+volumeControl.addEventListener('change', setVolume);
+volumeControl.addEventListener('input', setVolume);//ajusta o volume
 //Não escrevi até a linha comentada
-var s = document.createElement('style'), 
-    r = document.querySelector('input[type=range]'), 
-    track_prefs = ['webkit-slider-runnable', 'moz-range'];
+var s = document.createElement('style'),
+  r = document.querySelector('input[type=range]'),
+  track_prefs = ['webkit-slider-runnable', 'moz-range'];
 
 document.body.appendChild(s);
 
-var getTrackStyleStr = function(el, val, prefs) {
+var getTrackStyleStr = function (el, val, prefs) {
   var str = '', len = prefs.length;
-  
-  for(var i = 0; i < len; i++) {
+
+  for (var i = 0; i < len; i++) {
     str += '.js input[type=range]::-' + prefs[i] + '-track{background-size:' + val + '}'
   }
-    
+
   return str;
 };
 
-var getValStr = function(el, p, i) {
-  var min = el.min || 0, 
-      perc = (el.max) ? ~~(100*(p - min)/(el.max - min)) : p, 
-      val = perc + '% 100%, 100% 100%';
-  
+var getValStr = function (el, p, i) {
+  var min = el.min || 0,
+    perc = (el.max) ? ~~(100 * (p - min) / (el.max - min)) : p,
+    val = perc + '% 100%, 100% 100%';
+
   return val;
 };
 
-r.addEventListener('input', function() {
+r.addEventListener('input', function () {
   s.textContent = getTrackStyleStr(
-    this, 
-    getValStr(this, this.value), 
+    this,
+    getValStr(this, this.value),
     track_prefs
   );
 }, false);
