@@ -124,7 +124,7 @@ html,body{height: 100%;}
     text-align: center;
 }
 .main__col img{
-    max-width: 100%;
+    width: 100%;
 }
 .main__col h3{
     color: white;
@@ -150,6 +150,7 @@ html,body{height: 100%;}
     left: 0;
     bottom: 0;
     display: flex;
+    justify-content: space-between;
     background-color: rgb(60, 60, 60);
 }
 .player__artist{
@@ -180,6 +181,13 @@ html,body{height: 100%;}
     width: 60%;
     text-align: center;
 }
+.player__control_2{
+    width: 10%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-25%);
+}
 .player__control__buttons{
     display: inline-block;
 }
@@ -188,23 +196,26 @@ html,body{height: 100%;}
     margin: 15px;
     font-size: 18px;
 }
-.loader{
+.loader {
     display: none;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #51cf66;
-    border-radius: 50%;
-    margin: 0 15px 0 15px;
+    pointer-events: none;
     width: 18px;
     height: 18px;
-    animation: spin 2s linear infinite;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    border-color: #f2f2f2;
+    border-top-color: #51cf66;
+    border-radius: 50%;
+    animation: spin 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0%   { transform: rotateZ(0); }
+    100% { transform: rotateZ(360deg); }
 }
 .player__control__buttons_2{
     display: inline-block;
-    margin-left: 20px;
 }
 .player__control__buttons_2 a{
     color: white;
