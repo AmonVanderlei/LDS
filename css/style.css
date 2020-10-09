@@ -109,6 +109,16 @@ html,body{height: 100%;}
 }
 .main__row__title h2{
     color: white;
+    margin-top: 20px
+}
+.main__row__title h2:first{
+    margin-top: 0;
+}
+.main__row__songs{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .main__col{
     cursor: pointer;
@@ -122,6 +132,7 @@ html,body{height: 100%;}
     padding: 10px;
 
     text-align: center;
+    flex: 0 0 auto;
 }
 .main__col img{
     width: 100%;
