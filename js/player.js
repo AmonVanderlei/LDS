@@ -9,9 +9,13 @@ var redoBtn = document.getElementById('redoBtn'); //pega o botão de avançar al
 var beginBtn = document.getElementById('beginBtn'); //pega o botão de reiniciar a música
 var loopBtn = document.getElementById('loopBtn'); //deixa a música em loop
 var hideVolBtn = document.getElementById('hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
+var hideVolBtn2 = document.getElementById('hideVolBtn2'); //pega o segundo botão que esconde/mostra o controle de volume
 var volume = document.getElementById('volume'); //pega a div que fica o controle de volume
+var volume2 = document.getElementById('volume2'); //pega a segunda div que fica o controle de volume
 var muteBtn = document.getElementById('muteBtn'); //pega o botão de silenciar a música
 var unMuteBtn = document.getElementById('unMuteBtn'); //pega o botão que deixa a música tocando novamente
+var muteBtn2 = document.getElementById('muteBtn2'); //pega o segundo botão de silenciar a música
+var unMuteBtn2 = document.getElementById('unMuteBtn2'); //pega o segundo botão que deixa a música tocando novamente
 var loader = document.getElementById('loader'); //pega o loader
 
 undoBtn.addEventListener('click', (e) => {
@@ -85,6 +89,21 @@ hideVolBtn.addEventListener('click', (e) => {
 
   return false;
 });//botão que esconde/mostra o controle de volume
+hideVolBtn2.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (hide == true) {
+    volume2.style.display = "inline-block";
+    hideVolBtn2.innerHTML = `<i class="fas fa-volume-up" style="color: #51cf66;"></i>`;
+    hide = false;
+  } else {
+    volume2.style.display = "none";
+    hideVolBtn2.innerHTML = `<i class="fas fa-volume-up"></i>`;
+    hide = true;
+  };
+
+  return false;
+});//segundo botão que esconde/mostra o controle de volume
 muteBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -103,6 +122,24 @@ unMuteBtn.addEventListener('click', (e) => {
 
   return false;
 });//botão que deixa a música tocando novamente
+muteBtn2.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  audioPlayer.volume = 0;
+  muteBtn2.style.display = "none";
+  unMuteBtn2.style.display = "inline";
+
+  return false;
+});//seguno botão que silencia a música
+unMuteBtn2.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  audioPlayer.volume = 1;
+  muteBtn2.style.display = "inline";
+  unMuteBtn2.style.display = "none";
+
+  return false;
+});//segundo botão que deixa a música tocando novamente
 document.querySelectorAll('.main__col').forEach(item => {
 
   item.addEventListener('click', () => {
@@ -221,36 +258,12 @@ var setVolume = function () {
 
 volumeControl.addEventListener('change', setVolume);
 volumeControl.addEventListener('input', setVolume);//ajusta o volume
-//Não escrevi até a linha comentada
-var s = document.createElement('style'),
-  r = document.querySelector('input[type=range]'),
-  track_prefs = ['webkit-slider-runnable', 'moz-range'];
 
-document.body.appendChild(s);
+var volumeControl2 = document.getElementById('volume-control2');
 
-var getTrackStyleStr = function (el, val, prefs) {
-  var str = '', len = prefs.length;
-
-  for (var i = 0; i < len; i++) {
-    str += '.js input[type=range]::-' + prefs[i] + '-track{background-size:' + val + '}'
-  }
-
-  return str;
+var setVolume2 = function () {
+  audioPlayer.volume = this.value / 100;
 };
 
-var getValStr = function (el, p, i) {
-  var min = el.min || 0,
-    perc = (el.max) ? ~~(100 * (p - min) / (el.max - min)) : p,
-    val = perc + '% 100%, 100% 100%';
-
-  return val;
-};
-
-r.addEventListener('input', function () {
-  s.textContent = getTrackStyleStr(
-    this,
-    getValStr(this, this.value),
-    track_prefs
-  );
-}, false);
-//---------------------------------------
+volumeControl2.addEventListener('change', setVolume);
+volumeControl2.addEventListener('input', setVolume);//ajusta o volume

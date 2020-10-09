@@ -6,6 +6,17 @@
 }
 html,body{height: 100%;}
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border: 1px solid #266733;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: #269c2f;
+    border-radius: 3px;
+}
 .sidebar{
     float: left;
     width: 250px;
@@ -14,6 +25,17 @@ html,body{height: 100%;}
     overflow-y: auto;
     background-color: black;
     overflow-x: hidden;
+}
+.sidebar::-webkit-scrollbar{
+    width: 10px;
+}
+.sidebar::-webkit-scrollbar-track{
+    border: 1px solid #266733;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: #269c2f;
+    border-radius: 3px;
 }
 .sidebar-wraper{
     padding-bottom: 100px;
@@ -108,7 +130,7 @@ html,body{height: 100%;}
     width: 100%;
 }
 .main__row__title h2{
-    color: white;
+    color: #449930;
     margin-top: 20px
 }
 .main__row__title h2:first{
@@ -118,7 +140,22 @@ html,body{height: 100%;}
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+}
+.main__row__songs::-webkit-scrollbar{
+    height: 10px;
+}
+.main__row__songs::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid #266733;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.main__row__songs::-webkit-scrollbar-track:hover{
+    background-color: #333333;
+}
+.main__row__songs::-webkit-scrollbar-thumb{
+    background-color: #5bbe47;
+    border-radius: 20px;
 }
 .main__col{
     cursor: pointer;
@@ -154,11 +191,11 @@ html,body{height: 100%;}
     text-align: right;
 }
 .player{
-    width: 100%;
+    width: calc(100% - 250px - 15px);
     padding: 20px;
     height: 100px;
     position: absolute;
-    left: 0;
+    right: 15px;
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -174,7 +211,7 @@ html,body{height: 100%;}
 }
 .player__artist h3{
     display: inline-block;
-    color: white;
+    color: #51cf66;
     font-weight: normal;
     font-size: 20px;
     vertical-align: middle;
@@ -185,7 +222,7 @@ html,body{height: 100%;}
     white-space: nowrap;
 }
 .player__artist h3 > span{
-    color: rgb(200, 200, 200);
+    color: #449944;
     font-size: 13px;
 }
 .player__control{
@@ -225,6 +262,14 @@ html,body{height: 100%;}
     0%   { transform: rotateZ(0); }
     100% { transform: rotateZ(360deg); }
 }
+.secondDivVol{
+    display: none;
+}
+.secondDivVol a{
+    color: white;
+    margin: 8px 15px;
+    font-size: 18px;
+}
 .player__control__buttons_2{
     display: inline-block;
 }
@@ -234,7 +279,7 @@ html,body{height: 100%;}
     font-size: 18px;
 }
 /*Não escrevi até a linha comentada*/
-  input[type='range'] {
+input[type='range'] {
     -webkit-appearance: none;
     position: absolute;
     top: -115px;
@@ -246,42 +291,42 @@ html,body{height: 100%;}
     transform: translate(-50%, -50%) rotate(-90deg);
     cursor: pointer;
     /* slider components */
-  }
-  input[type='range']::-webkit-slider-runnable-track {
+}
+input[type='range']::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     box-sizing: border-box;
-    border: solid 1px #dfdfdf;
+    border: solid 1px rgb(1, 100, 1);
     padding: 0.25em 0.5em;
     height: 0.875em;
     border-radius: 0.4375em;
-    box-shadow: inset 1px 1px 0.125em #ddd;
-    background: #ebebeb;
-  }
-  .js input[type='range']::-webkit-slider-runnable-track {
-    background: linear-gradient(#51cf66, #51cf66) no-repeat content-box, linear-gradient(#ebebeb, #ebebeb) border-box;
+    box-shadow: inset 1px 1px 0.125em #333;
+    background: #51cf66;
+}
+.js input[type='range']::-webkit-slider-runnable-track {
+    background: #51cf66 no-repeat content-box, #ebebeb border-box;
     background-size: 50% 100%, 100% 100%;
-  }
-  input[type='range']::-moz-range-track {
+}
+input[type='range']::-moz-range-track {
     box-sizing: border-box;
-    border: solid 1px #dfdfdf;
+    border: solid 1px rgb(1, 100, 1);
     padding: 0.25em 0.5em;
     height: 0.875em;
     border-radius: 0.4375em;
-    box-shadow: inset 1px 1px 0.125em #ddd;
-    background: #ebebeb;
-  }
-  .js input[type='range']::-moz-range-track {
-    background: linear-gradient(#51cf66, #51cf66) no-repeat content-box, linear-gradient(#ebebeb, #ebebeb) border-box;
+    box-shadow: inset 1px 1px 0.125em #333;
+    background:#51cf66;
+}
+.js input[type='range']::-moz-range-track {
+    background: #51cf66 no-repeat content-box, #ebebeb border-box;
     background-size: 50% 100%, 100% 100%;
-  }
+}
   input[type='range']::-ms-track {
     box-sizing: border-box;
-    border: solid 1px #dfdfdf;
+    border: solid 1px rgb(1, 100, 1);
     padding: 0.25em 0.5em;
     height: 0.875em;
     border-radius: 0.4375em;
-    box-shadow: inset 1px 1px 0.125em #ddd;
-    background: #ebebeb;
+    box-shadow: inset 1px 1px 0.125em #333;
+    background: #51cf66;
     /* get rid of ticks on track */
     color: transparent;
   }
@@ -348,7 +393,7 @@ html,body{height: 100%;}
     width: 0%;
     height: 7px;
     border-radius: 8px;
-    background-color: white;
+    background-color: #51cf66;
     transition: width .1s linear;
 }
 .player__timer p{

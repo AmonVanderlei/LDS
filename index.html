@@ -86,6 +86,17 @@
                 <a id="playBtn" href="#"><i class="fas fa-play"></i></a>
                 <a id="redoBtn" href=""><i class="fas fa-redo"></i></a>
                 <a id="loopBtn" href=""><i class="fas fa-sync"></i></a>
+                <div class="secondDivVol">
+                    <a id="hideVolBtn2" href=""><i class="fas fa-volume-up"></i></a>
+                    <div id="volume2" style="display: none; position: relative;">
+                        <input id="volume-control2" type="range"></input>
+                        <a id="muteBtn2" href="" style="position: absolute; bottom: 15px; left:-13px; color: white;"><i
+                                class="fas fa-volume-mute"></i></a>
+                        <a id="unMuteBtn2" href=""
+                            style="position: absolute; bottom: 15px; left:-13px; color: white; display: none;"><i
+                                class="fas fa-volume-up"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="player__control__progress">
                 <div id="player__control__progress_2"></div>
@@ -116,8 +127,6 @@
     <script src="js/music-index.js"></script>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
     <script src="js/player.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-        type="text/javascript"></script>
 </body>
 
 </html>

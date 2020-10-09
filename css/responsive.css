@@ -1,13 +1,48 @@
-/*O player está bom de 456px até 1620px de largura
-E de 0px até 0px de altura
+/*Altura{Perfeita};
 
-Ajustar player quando a largura estiver menor de 456px e quando estiver maior que 1620px
-Quando o player estiver menor que 456px colocar 3 pontinhos com os botão de loop e o de volume
+Largura{
+    Sidebar{
+        Colocar menu de hamburguer quando a largura estiver menor que 1001px
+    };
+    Main{
+        Ajustar cards quando a largura estiver menor que 1001px
+    };
+    Player{
+        O player está bom a partir de 328px
 
-Ajustar cards quando a largura estiver menor que 768px
+        Ajustar player quando a largura estiver menor que 328px
+
+        Quando o player estiver menor que 328px colocar 3 pontinhos com os botão de loop e o de volume
+    };    
+};
 */
-
+@media screen and (min-width: 2768px){
+    .player__artist{
+        width: 45%;
+    }
+    .player__control{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 2767px){
+    .player__control{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 2514px){
+    .player__control{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 2220px){
+    .player__control{
+        width: 45%;
+    }
+}
 @media screen and (max-width: 1715px){
+    .player__control{
+        width: 60%;
+    }
     .main__col{
         width: 15%;
     }
@@ -23,8 +58,18 @@ Ajustar cards quando a largura estiver menor que 768px
     }
 }
 @media screen and (max-width: 1000px){
+    .sidebar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        padding: 0 0 50px 0;
+    }
     .main__col{
         width: 24%;
+    }
+    .player{
+        width: calc(100% - 15px);
     }
 }
 @media screen and (max-width: 950px){
@@ -33,12 +78,6 @@ Ajustar cards quando a largura estiver menor que 768px
     }
 }
 @media screen and (max-width: 768px){
-    .main{
-        width: 100%;
-    }
-    .sidebar{
-        display: none;
-    }
     .main__col{
         width: 48%;
         margin-right: 2%;
@@ -47,16 +86,45 @@ Ajustar cards quando a largura estiver menor que 768px
         max-width: 50px;
     }
 }
-@media screen and (max-width: 593px){
-    .player__control__buttons a{
-        margin: 8px 10px;
+@media screen and (max-width: 687px){
+    .player{
+        height: 150px;
+        flex-direction: column;
+    }
+    .player__artist {
+        width: 80%;
+        height: 50%;
+        position: relative;
+        bottom: 10px;
+    }
+    .player__control{
+        width: 100%;
+    }
+    .player__control_2 {
+        top: -55%;
+        left: 500px;
+        transform: translateY(-50%);
     }
 }
-@media screen and (max-width: 524px){
-    .player__artist img{
-        max-width: 40px;
+@media screen and (max-width: 610px){
+    .player__control_2 {
+        left: 420px;
+        width: 15%;
     }
-    .player__control__buttons_2 {
-        margin-left: 0;
-    }    
+}
+@media screen and (max-width: 550px){
+    .player__control_2 {
+        display: none;
+    }
+    .secondDivVol{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 367px){
+    .player__control__buttons a{
+        margin: 10px
+    }
+    .player__control__buttons div{
+        margin: 0 10px;
+    }
 }
