@@ -262,8 +262,26 @@ html,body{height: 100%;}
     0%   { transform: rotateZ(0); }
     100% { transform: rotateZ(360deg); }
 }
-.secondDivVol{
+.threeDots{
     display: none;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.threeDotsBtns{
+    position: absolute;
+    background-color: #303030;
+    border: 1px solid #51cf66;
+    border-radius: 5px;
+    display: none;
+    justify-content: space-between;
+    right: 12%;
+    bottom: 60%;
+}
+.secondDivVol{
+    display: inline-block;
+    margin: auto;
 }
 .secondDivVol a{
     color: white;

@@ -51,7 +51,7 @@ fetch("./js/json/2020-Por.json")
 var main__row__title_2 = document.getElementById("main__row__title_2");
 var main__row__songs_2 = document.getElementById("main__row__songs_2");
 
-fetch("./js/json/2020-Por.json")
+fetch("./js/json/2019-Eng.json")
     .then(response => response.json())
     .then((jsonObj) => {
 
@@ -76,7 +76,7 @@ fetch("./js/json/2020-Por.json")
 var main__row__title_3 = document.getElementById("main__row__title_3");
 var main__row__songs_3 = document.getElementById("main__row__songs_3");
 
-fetch("./js/json/2020-Por.json")
+fetch("./js/json/2019-Por.json")
     .then(response => response.json())
     .then((jsonObj) => {
 

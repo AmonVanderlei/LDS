@@ -1,3 +1,4 @@
+
 var audioPlayer = document.getElementById('audioplayer'); //pega o tocador de audio
 var loaded = false;
 var hide = true;
@@ -8,6 +9,7 @@ var pauseBtn = document.getElementById('pauseBtn'); //pega botão de pause
 var redoBtn = document.getElementById('redoBtn'); //pega o botão de avançar alguns segundos
 var beginBtn = document.getElementById('beginBtn'); //pega o botão de reiniciar a música
 var loopBtn = document.getElementById('loopBtn'); //deixa a música em loop
+var loopBtn2 = document.getElementById('loopBtn2'); //segundo botão que deixa a música em loop
 var hideVolBtn = document.getElementById('hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
 var hideVolBtn2 = document.getElementById('hideVolBtn2'); //pega o segundo botão que esconde/mostra o controle de volume
 var volume = document.getElementById('volume'); //pega a div que fica o controle de volume
@@ -17,6 +19,8 @@ var unMuteBtn = document.getElementById('unMuteBtn'); //pega o botão que deixa 
 var muteBtn2 = document.getElementById('muteBtn2'); //pega o segundo botão de silenciar a música
 var unMuteBtn2 = document.getElementById('unMuteBtn2'); //pega o segundo botão que deixa a música tocando novamente
 var loader = document.getElementById('loader'); //pega o loader
+var threeDots = document.querySelector('.threeDots') //pega o botão dos 3 pontinhos
+var threeDotsBtns = document.querySelector('.threeDotsBtns') //pega a div com os botões dentro do "threeDots"
 
 undoBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -74,6 +78,19 @@ loopBtn.addEventListener('click', (e) => {
 
   return false;
 });//botão de loop
+loopBtn2.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (audioPlayer.loop == false) {
+    audioPlayer.loop = true;
+    loopBtn2.innerHTML = `<i class="fas fa-sync" style="color: #51cf66;"></i>`;
+  } else {
+    audioPlayer.loop = false;
+    loopBtn2.innerHTML = `<i class="fas fa-sync"></i>`;
+  }
+
+  return false;
+});//segundo botão de loop
 hideVolBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -140,6 +157,19 @@ unMuteBtn2.addEventListener('click', (e) => {
 
   return false;
 });//segundo botão que deixa a música tocando novamente
+threeDots.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (threeDotsBtns.style.display == "flex") {
+    threeDotsBtns.style.display = "none";
+    threeDots.innerHTML = `<i class="fas fa-ellipsis-v" style="color: #ffffff;"></i>`
+  } else{
+    threeDotsBtns.style.display = "flex";
+    threeDots.innerHTML = `<i class="fas fa-ellipsis-v" style="color: #51cf66;"></i>`
+  }
+
+  return false;
+});//botão dos três pontos
 document.querySelectorAll('.main__col').forEach(item => {
 
   item.addEventListener('click', () => {

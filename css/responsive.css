@@ -7,13 +7,7 @@ Largura{
     Main{
         Ajustar cards quando a largura estiver menor que 1001px
     };
-    Player{
-        O player está bom a partir de 328px
-
-        Ajustar player quando a largura estiver menor que 328px
-
-        Quando o player estiver menor que 328px colocar 3 pontinhos com os botão de loop e o de volume
-    };    
+    Player{Perfeito};
 };
 */
 @media screen and (min-width: 2768px){
@@ -116,15 +110,33 @@ Largura{
     .player__control_2 {
         display: none;
     }
-    .secondDivVol{
+    .threeDots{
         display: inline-block;
+    }
+    .firstLoopBtn{
+        display: none;
     }
 }
 @media screen and (max-width: 367px){
+    .player__artist img{
+        max-width: 30px;
+    }
+    .player__artist h3{
+        font-size: 15px;
+    }
+    .player__artist h3 > span{
+        font-size: 12px;
+    }
     .player__control__buttons a{
         margin: 10px
     }
-    .player__control__buttons div{
+    .player__control__buttons .loader{
         margin: 0 10px;
+    }
+    .threeDotsBtns{
+        bottom: 65%;
+    }
+    .muteBtn2, .unMuteBtn2{
+        left: -9px;
     }
 }
