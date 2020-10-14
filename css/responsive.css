@@ -4,10 +4,7 @@ Largura{
     Sidebar{
         Colocar menu de hamburguer quando a largura estiver menor que 1001px
     };
-    Main{
-        Ajustar cards quando a largura estiver menor que 1001px
-    };
-    Player{Perfeito};
+    Main, Player{Perfeito};
 };
 */
 @media screen and (min-width: 2768px){
@@ -60,27 +57,24 @@ Largura{
         padding: 0 0 50px 0;
     }
     .main__col{
-        width: 24%;
+        width: 20%;
     }
     .player{
         width: calc(100% - 15px);
     }
 }
-@media screen and (max-width: 950px){
-    .main__col{
-        width: 32%;
-    }
-}
 @media screen and (max-width: 768px){
     .main__col{
-        width: 48%;
-        margin-right: 2%;
+        width: 25%;
     }
     .player__artist img{
         max-width: 50px;
     }
 }
 @media screen and (max-width: 687px){
+    .main__col{
+        width: 30%;
+    }
     .player{
         height: 150px;
         flex-direction: column;
@@ -101,12 +95,18 @@ Largura{
     }
 }
 @media screen and (max-width: 610px){
+    .main__col{
+        width: 30%;
+    }
     .player__control_2 {
         left: 420px;
         width: 15%;
     }
 }
 @media screen and (max-width: 550px){
+    .main__col{
+        width: 35%;
+    }
     .player__control_2 {
         display: none;
     }
@@ -117,7 +117,15 @@ Largura{
         display: none;
     }
 }
+@media screen and (max-width: 450px){
+    .main__col{
+        width: 45%;
+    }
+}
 @media screen and (max-width: 367px){
+    .main__col{
+        width: 49%;
+    }
     .player__artist img{
         max-width: 30px;
     }
@@ -138,5 +146,10 @@ Largura{
     }
     .muteBtn2, .unMuteBtn2{
         left: -9px;
+    }
+}
+@media screen and (max-width: 300px){
+    .main__col{
+        width: 65%;
     }
 }
