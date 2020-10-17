@@ -1,12 +1,3 @@
-/*Altura{Perfeita};
-
-Largura{
-    Sidebar{
-        Colocar menu de hamburguer quando a largura estiver menor que 1001px
-    };
-    Main, Player{Perfeito};
-};
-*/
 @media screen and (min-width: 2768px){
     .player__artist{
         width: 45%;
