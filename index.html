@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!--Sites para pegar músicas (troca a "lang=" para trocar o idioma)
             Estou pegando
@@ -78,26 +81,22 @@
         </div>
         <div class="player__control">
             <div class="player__control__buttons">
-                <a id="beginBtn" href=""><i style="font-size: 20px;" class="far fa-stop-circle"></i></a>
+                <a id="beginBtn" href=""><i class="far fa-stop-circle beginBtnIcon"></i></a>
                 <a id="undoBtn" href=""><i class="fas fa-undo"></i></a>
-                <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <a class="pauseBtn" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
                 <div class="loader" id="loader"></div>
                 <a id="playBtn" href="#"><i class="fas fa-play"></i></a>
                 <a id="redoBtn" href=""><i class="fas fa-redo"></i></a>
                 <a id="loopBtn" class="firstLoopBtn" href=""><i class="fas fa-sync"></i></a>
-                <div class="threeDots"><i class="fas fa-ellipsis-v" style="color: #ffffff;"></i></div>
+                <div class="threeDots"><i class="fas fa-ellipsis-v threeDotsIcon"></i></div>
                 <div class="threeDotsBtns">
-                    <a id="loopBtn2" href="" style="display: inline-block;"><i class="fas fa-sync"></i></a>
-                    <div class="secondDivVol" style="margin: auto;">
+                    <a class="loopBtn2" id="loopBtn2" href=""><i class="fas fa-sync"></i></a>
+                    <div class="secondDivVol">
                         <a id="hideVolBtn2" href=""><i class="fas fa-volume-up"></i></a>
-                        <div id="volume2" style="display: none; position: relative;">
+                        <div class="volume2" id="volume2">
                             <input id="volume-control2" type="range" value="100"></input>
-                            <a id="muteBtn2" href=""
-                                style="position: absolute; bottom: 15px; left:-13px; color: white;"><i
-                                    class="fas fa-volume-mute"></i></a>
-                            <a id="unMuteBtn2" href=""
-                                style="position: absolute; bottom: 15px; left:-13px; color: white; display: none;"><i
-                                    class="fas fa-volume-up"></i></a>
+                            <a class="muteBtn2" id="muteBtn2" href=""><i class="fas fa-volume-mute"></i></a>
+                            <a id="unMuteBtn2" href=""><i class="fas fa-volume-up"></i></a>
                         </div>
                     </div>
                 </div>
@@ -113,20 +112,16 @@
         <div class="player__control_2">
             <div class="player__control__buttons_2">
                 <a id="hideVolBtn" href=""><i class="fas fa-volume-up"></i></a>
-                <div id="volume" style="display: none; position: relative;">
+                <div class="volume" id="volume">
                     <input id="volume-control" type="range" value="100"></input>
-                    <a id="muteBtn" href="" style="position: absolute; bottom: 15px; left:-13px; color: white;"><i
-                            class="fas fa-volume-mute"></i></a>
-                    <a id="unMuteBtn" href=""
-                        style="position: absolute; bottom: 15px; left:-13px; color: white; display: none;"><i
-                            class="fas fa-volume-up"></i></a>
+                    <a class="muteBtn" id="muteBtn" href=""><i class="fas fa-volume-mute"></i></a>
+                    <a class="unMuteBtn" id="unMuteBtn" href=""><i class="fas fa-volume-up"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <audio id="audioplayer" style="position: absolute; left: 0; top: 0; z-index: -999; opacity: 0;" controls="">
-    </audio>
+    <audio class="audioPlayer" id="audioplayer" controls=""></audio>
     <script src="js/music-index.js"></script>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
     <script src="js/player.js"></script>
