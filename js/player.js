@@ -1,24 +1,23 @@
-
-var audioPlayer = document.getElementById('audioplayer'); //pega o tocador de audio
+var audioPlayer = document.querySelector('#audioplayer'); //pega o tocador de audio
 var loaded = false;
 var hide = true;
 
-var undoBtn = document.getElementById('undoBtn'); //pega o botão de voltar alguns segundos
-var playBtn = document.getElementById('playBtn'); //pega botão de play
-var pauseBtn = document.getElementById('pauseBtn'); //pega botão de pause
-var redoBtn = document.getElementById('redoBtn'); //pega o botão de avançar alguns segundos
-var beginBtn = document.getElementById('beginBtn'); //pega o botão de reiniciar a música
-var loopBtn = document.getElementById('loopBtn'); //deixa a música em loop
-var loopBtn2 = document.getElementById('loopBtn2'); //segundo botão que deixa a música em loop
-var hideVolBtn = document.getElementById('hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
-var hideVolBtn2 = document.getElementById('hideVolBtn2'); //pega o segundo botão que esconde/mostra o controle de volume
-var volume = document.getElementById('volume'); //pega a div que fica o controle de volume
-var volume2 = document.getElementById('volume2'); //pega a segunda div que fica o controle de volume
-var muteBtn = document.getElementById('muteBtn'); //pega o botão de silenciar a música
-var unMuteBtn = document.getElementById('unMuteBtn'); //pega o botão que deixa a música tocando novamente
-var muteBtn2 = document.getElementById('muteBtn2'); //pega o segundo botão de silenciar a música
-var unMuteBtn2 = document.getElementById('unMuteBtn2'); //pega o segundo botão que deixa a música tocando novamente
-var loader = document.getElementById('loader'); //pega o loader
+var undoBtn = document.querySelector('#undoBtn'); //pega o botão de voltar alguns segundos
+var playBtn = document.querySelector('#playBtn'); //pega botão de play
+var pauseBtn = document.querySelector('#pauseBtn'); //pega botão de pause
+var redoBtn = document.querySelector('#redoBtn'); //pega o botão de avançar alguns segundos
+var beginBtn = document.querySelector('#beginBtn'); //pega o botão de reiniciar a música
+var loopBtn = document.querySelector('#loopBtn'); //deixa a música em loop
+var loopBtn2 = document.querySelector('#loopBtn2'); //segundo botão que deixa a música em loop
+var hideVolBtn = document.querySelector('#hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
+var hideVolBtn2 = document.querySelector('#hideVolBtn2'); //pega o segundo botão que esconde/mostra o controle de volume
+var volume = document.querySelector('#volume'); //pega a div que fica o controle de volume
+var volume2 = document.querySelector('#volume2'); //pega a segunda div que fica o controle de volume
+var muteBtn = document.querySelector('#muteBtn'); //pega o botão de silenciar a música
+var unMuteBtn = document.querySelector('#unMuteBtn'); //pega o botão que deixa a música tocando novamente
+var muteBtn2 = document.querySelector('#muteBtn2'); //pega o segundo botão de silenciar a música
+var unMuteBtn2 = document.querySelector('#unMuteBtn2'); //pega o segundo botão que deixa a música tocando novamente
+var loader = document.querySelector('#loader'); //pega o loader
 var threeDots = document.querySelector('.threeDots') //pega o botão dos 3 pontinhos
 var threeDotsBtns = document.querySelector('.threeDotsBtns') //pega a div com os botões dentro do "threeDots"
 
@@ -32,8 +31,8 @@ undoBtn.addEventListener('click', (e) => {
 pauseBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  playBtn.style.display = "inline";
-  pauseBtn.style.display = "none";
+  playBtn.classList.remove('hideBtns');
+  pauseBtn.classList.remove('showBtns');
   audioPlayer.pause();
 
   return false;
@@ -41,8 +40,8 @@ pauseBtn.addEventListener('click', (e) => {
 playBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  playBtn.style.display = "none";
-  pauseBtn.style.display = "inline";
+  playBtn.classList.add('hideBtns');
+  pauseBtn.classList.add('showBtns');
   audioPlayer.play();
 
   return false;
@@ -57,8 +56,8 @@ redoBtn.addEventListener('click', (e) => {
 beginBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  playBtn.style.display = "inline";
-  pauseBtn.style.display = "none";
+  playBtn.classList.remove('hideBtns');
+  pauseBtn.classList.remove('showBtns');
 
   audioPlayer.pause();
   audioPlayer.currentTime = 0;
@@ -70,7 +69,7 @@ loopBtn.addEventListener('click', (e) => {
 
   if (audioPlayer.loop == false) {
     audioPlayer.loop = true;
-    loopBtn.innerHTML = `<i class="fas fa-sync" style="color: #51cf66;"></i>`;
+    loopBtn.innerHTML = `<i class="fas fa-sync green"></i>`;
   } else {
     audioPlayer.loop = false;
     loopBtn.innerHTML = `<i class="fas fa-sync"></i>`;
@@ -83,7 +82,7 @@ loopBtn2.addEventListener('click', (e) => {
 
   if (audioPlayer.loop == false) {
     audioPlayer.loop = true;
-    loopBtn2.innerHTML = `<i class="fas fa-sync" style="color: #51cf66;"></i>`;
+    loopBtn2.innerHTML = `<i class="fas fa-sync green"></i>`;
   } else {
     audioPlayer.loop = false;
     loopBtn2.innerHTML = `<i class="fas fa-sync"></i>`;
@@ -95,11 +94,11 @@ hideVolBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
   if (hide == true) {
-    volume.style.display = "inline-block";
-    hideVolBtn.innerHTML = `<i class="fas fa-volume-up" style="color: #51cf66;"></i>`;
+    volume.classList.add("showInlineBlock");
+    hideVolBtn.innerHTML = `<i class="fas fa-volume-up green"></i>`;
     hide = false;
   } else {
-    volume.style.display = "none";
+    volume.classList.remove("showInlineBlock");
     hideVolBtn.innerHTML = `<i class="fas fa-volume-up"></i>`;
     hide = true;
   };
@@ -110,11 +109,11 @@ hideVolBtn2.addEventListener('click', (e) => {
   e.preventDefault();
 
   if (hide == true) {
-    volume2.style.display = "inline-block";
-    hideVolBtn2.innerHTML = `<i class="fas fa-volume-up" style="color: #51cf66;"></i>`;
+    volume2.classList.add("showInlineBlock");
+    hideVolBtn2.innerHTML = `<i class="fas fa-volume-up green"></i>`;
     hide = false;
   } else {
-    volume2.style.display = "none";
+    volume2.classList.remove("showInlineBlock");
     hideVolBtn2.innerHTML = `<i class="fas fa-volume-up"></i>`;
     hide = true;
   };
@@ -125,8 +124,8 @@ muteBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
   audioPlayer.volume = 0;
-  muteBtn.style.display = "none";
-  unMuteBtn.style.display = "inline";
+  muteBtn.classList.add('hideBtns');
+  unMuteBtn.classList.add('showBtns');
 
   return false;
 });//botão que silencia a música
@@ -134,8 +133,8 @@ unMuteBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
   audioPlayer.volume = 1;
-  muteBtn.style.display = "inline";
-  unMuteBtn.style.display = "none";
+  muteBtn.classList.remove('hideBtns');
+  unMuteBtn.classList.remove('showBtns');
 
   return false;
 });//botão que deixa a música tocando novamente
@@ -143,8 +142,8 @@ muteBtn2.addEventListener('click', (e) => {
   e.preventDefault();
 
   audioPlayer.volume = 0;
-  muteBtn2.style.display = "none";
-  unMuteBtn2.style.display = "inline";
+  muteBtn2.classList.add('hideBtns');
+  unMuteBtn2.classList.add('showBtns');
 
   return false;
 });//seguno botão que silencia a música
@@ -152,20 +151,23 @@ unMuteBtn2.addEventListener('click', (e) => {
   e.preventDefault();
 
   audioPlayer.volume = 1;
-  muteBtn2.style.display = "inline";
-  unMuteBtn2.style.display = "none";
+  muteBtn2.classList.remove('hideBtns');
+  unMuteBtn2.classList.remove('showBtns');
 
   return false;
 });//segundo botão que deixa a música tocando novamente
+var display = "none";
 threeDots.addEventListener('click', (e) => {
   e.preventDefault();
 
-  if (threeDotsBtns.style.display == "flex") {
-    threeDotsBtns.style.display = "none";
-    threeDots.innerHTML = `<i class="fas fa-ellipsis-v" style="color: #ffffff;"></i>`
+  if (display == "flex") {
+    threeDotsBtns.classList.remove('showThreeDotsBtns');
+    threeDots.innerHTML = `<i class="fas fa-ellipsis-v threeDotsIcon"></i>`;
+    display = "none";
   } else{
-    threeDotsBtns.style.display = "flex";
-    threeDots.innerHTML = `<i class="fas fa-ellipsis-v" style="color: #51cf66;"></i>`
+    threeDotsBtns.classList.add('showThreeDotsBtns');
+    threeDots.innerHTML = `<i class="fas fa-ellipsis-v green"></i>`;
+    display = "flex";
   }
 
   return false;
@@ -178,7 +180,7 @@ document.querySelectorAll('.main__col').forEach(item => {
     let song = item.getAttribute('dataSong');
     let file = item.getAttribute('dataFile');
 
-    let playerArtistComponent = document.getElementsByClassName('player__artist');
+    let playerArtistComponent = document.querySelectorAll('.player__artist');
 
     playerArtistComponent[0].innerHTML =
       `<img src="` + image + `"/>
@@ -189,13 +191,13 @@ document.querySelectorAll('.main__col').forEach(item => {
 
 });//pega os atributos e mostra eles
 audioPlayer.onloadstart = () => {
-  loader.style.display = "inline-block";
-  playBtn.style.display = "none";
-  pauseBtn.style.display = "none";
+  loader.classList.add('showInlineBlock');
+  playBtn.classList.add('hideBtns');
+  pauseBtn.classList.remove('showBtns');
 };
-audioPlayer.oncanplay = () => {
-  loader.style.display = "none";
-  pauseBtn.style.display = "inline";
+audioPlayer.onplaying = () => {
+  loader.classList.remove('showInlineBlock');
+  pauseBtn.classList.add('showBtns');
 };
 const playSong = (file) => {
 
@@ -211,12 +213,12 @@ const playSong = (file) => {
 
   audioPlayer.play();
 
-  playBtn.style.display = "none";
-  pauseBtn.style.display = "inline";
+  playBtn.classList.add('hideBtns');
+  pauseBtn.classList.add('showBtns');
 }//toca a música
 var timer;
 var percent = 0;
-var audio = document.getElementById("audioplayer");
+var audio = document.querySelector("#audioplayer");
 
 audio.addEventListener("playing", function (_event) {
   var duration = _event.target.duration;
@@ -226,14 +228,14 @@ audio.addEventListener("pause", function (_event) {
   clearTimeout(timer);
 });
 var advance = function (duration, element) {
-  var progress = document.getElementById("player__control__progress_2");
+  var progress = document.querySelector("#player__control__progress_2");
   increment = 10 / duration
   percent = (element.currentTime / element.duration) * 100;
   progress.style.width = percent + '%'
   startTimer(duration, element);
 
   //pega o tempo da música formata e coloca no timer
-  var div = document.getElementById("current");
+  var div = document.querySelector("#current");
   var atualTime = element.currentTime
   var seconds = Math.trunc(atualTime)
   var negativeSeconds = 0
@@ -256,7 +258,7 @@ var advance = function (duration, element) {
   div.innerHTML = minutes + `:` + seconds + ` /`
 
   //pega o tempo total da música formata e coloca no timer
-  var totalTime = document.getElementById("duration");
+  var totalTime = document.querySelector("#duration");
   totalSeconds = Math.trunc(duration)
   totalMinutes = 0
   while (totalSeconds >= 60) {
@@ -280,7 +282,7 @@ var startTimer = function (duration, element) {
     timer = setTimeout(function () { advance(duration, element) }, 100);
   }
 }//atualiza a barra de progresso
-var volumeControl = document.getElementById('volume-control');
+var volumeControl = document.querySelector('#volume-control');
 
 var setVolume = function () {
   audioPlayer.volume = this.value / 100;
@@ -289,7 +291,7 @@ var setVolume = function () {
 volumeControl.addEventListener('change', setVolume);
 volumeControl.addEventListener('input', setVolume);//ajusta o volume
 
-var volumeControl2 = document.getElementById('volume-control2');
+var volumeControl2 = document.querySelector('#volume-control2');
 
 var setVolume2 = function () {
   audioPlayer.volume = this.value / 100;

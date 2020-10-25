@@ -6,6 +6,10 @@
 }
 html,body{height: 100%;}
 
+::selection{
+    background-color: #51cf66;
+    color: #eee;
+}
 ::-webkit-scrollbar{
     width: 15px;
 }

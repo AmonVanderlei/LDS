@@ -1,5 +1,5 @@
-var main__row__title = document.getElementById("main__row__title");
-var main__row__songs = document.getElementById("main__row__songs");
+var main__row__title = document.querySelector("#main__row__title");
+var main__row__songs = document.querySelector("#main__row__songs");
 
 fetch("./js/json/2020-Eng.json")
     .then(response => response.json())
@@ -23,8 +23,8 @@ fetch("./js/json/2020-Eng.json")
         }
     })
 
-var main__row__title_1 = document.getElementById("main__row__title_1");
-var main__row__songs_1 = document.getElementById("main__row__songs_1");
+var main__row__title_1 = document.querySelector("#main__row__title_1");
+var main__row__songs_1 = document.querySelector("#main__row__songs_1");
 
 fetch("./js/json/2020-Por.json")
     .then(response => response.json())
@@ -48,8 +48,8 @@ fetch("./js/json/2020-Por.json")
         }
     })
 
-var main__row__title_2 = document.getElementById("main__row__title_2");
-var main__row__songs_2 = document.getElementById("main__row__songs_2");
+var main__row__title_2 = document.querySelector("#main__row__title_2");
+var main__row__songs_2 = document.querySelector("#main__row__songs_2");
 
 fetch("./js/json/2019-Eng.json")
     .then(response => response.json())
@@ -73,8 +73,8 @@ fetch("./js/json/2019-Eng.json")
         }
     })
 
-var main__row__title_3 = document.getElementById("main__row__title_3");
-var main__row__songs_3 = document.getElementById("main__row__songs_3");
+var main__row__title_3 = document.querySelector("#main__row__title_3");
+var main__row__songs_3 = document.querySelector("#main__row__songs_3");
 
 fetch("./js/json/2019-Por.json")
     .then(response => response.json())
