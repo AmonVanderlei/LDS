@@ -1,0 +1,83 @@
+.main{
+    width: calc(100% - 250px);
+    background-color: rgb(30, 30, 30);
+    height: 100%;
+
+    float: left;
+    padding: 15px 50px;
+    overflow-y: auto;
+}
+.main-wraper{
+    padding-bottom: 100px;
+}
+.main__row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.main__row__title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.main__row__title img{
+    height: 75%;
+}
+.main__row__title div{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+.main__row__title div p{
+    color: #449930;
+    font-weight: bold;
+}
+.main__row__title h2{
+    color: #449930;
+    margin-top: 15px;
+}
+.main__row__songs{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+table{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+tbody{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #51cf6699;
+}
+th,
+td{
+    border-bottom: 1px solid #51cf66;
+    padding-bottom: 10px;
+    width: 46%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+th:first-child,
+td:first-child{
+    width: 7%;
+    padding-right: 5px;
+}
+td img{
+    width: 40px;
+}

@@ -50,6 +50,9 @@ input[type="checkbox"]:checked ~ .sidebar{
     display: block;
     padding: 10px 0;
 }
+.sidebar__menu a i{
+    margin: 0 10px;
+}
 .sidebar__menu svg{
     margin: 0 20px;
 }

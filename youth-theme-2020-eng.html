@@ -2,15 +2,14 @@
 <html lang="pt-br">
 
 <head>
-    <title>Spotify</title>
+    <title>Playlist - Spotify</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/player.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main-playlist.css">
+    <link rel="stylesheet" href="css/player-playlist.css">
     <!--Sites para pegar músicas (troca a "lang=" para trocar o idioma)
             Estou pegando
                 https://www.churchofjesuschrist.org/youth/music?lang=eng
@@ -35,9 +34,10 @@
                 <img src="img/logo.png">
             </div>
             <div class="sidebar__menu">
-                <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i>Início</a>
+                <a href="./index.html"><i class="fas fa-home"></i>Início</a>
                 <a href="#"><i class="fas fa-search"></i>Buscar</a>
-                <a href="./biblioteca.html"><i class="fas fa-database"></i>Biblioteca</a>
+                <a class="sidebar__menu__selecionado" href="./biblioteca.html"><i
+                        class="fas fa-database"></i>Biblioteca</a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
@@ -54,28 +54,52 @@
             </div>
         </div>
     </nav>
-
     <main class="main" id="main">
         <div class="main-wraper">
             <section class="main__row" id="main__row">
-                <div class="main__row__title" id="main__row__title"></div>
-                <div class="main__row__songs" id="main__row__songs"></div>
-            </section>
-            <section class="main__row" id="main__row">
-                <div class="main__row__title" id="main__row__title_1"></div>
-                <div class="main__row__songs" id="main__row__songs_1"></div>
-            </section>
-            <section class="main__row" id="main__row">
-                <div class="main__row__title" id="main__row__title_2"></div>
-                <div class="main__row__songs" id="main__row__songs_2"></div>
-            </section>
-            <section class="main__row" id="main__row">
-                <div class="main__row__title" id="main__row__title_3"></div>
-                <div class="main__row__songs" id="main__row__songs_3"></div>
+                <div class="main__row__title" id="main__row__title">
+                    <img src="./img/top50.png">
+                    <div>
+                        <h2>Título do Albúm</h2>
+                        <p>Nome do Artista</p>
+                    </div>
+                </div>
+                <div class="main__row__songs" id="main__row__songs">
+                    <table>
+                        <tbody class="table__body">
+                            <tr>
+                                <th>Imagem</th>
+                                <th>Nome da música</th>
+                                <th>Nome do artista</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./img/top50global.png">
+                                </td>
+                                <td>
+                                    <p>Nome da música</p>
+                                </td>
+                                <td>
+                                    <p>Nome do artista</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./img/top50global.png">
+                                </td>
+                                <td>
+                                    <p>Nome da música</p>
+                                </td>
+                                <td>
+                                    <p>Nome do artista</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
     </main>
-
     <div class="player">
         <div class="player__artist">
         </div>
@@ -122,9 +146,9 @@
     </div>
 
     <audio class="audioPlayer" id="audioplayer" controls=""></audio>
-    <script src="js/music-index.js"></script>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
-    <script src="js/player.js"></script>
+    <script src="js/music-playlist.js"></script>
+    <script src="js/player-playlist.js"></script>
 </body>
 
 </html>
