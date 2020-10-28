@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/main-playlist.css">
     <link rel="stylesheet" href="css/player-playlist.css">
+    <link rel="stylesheet" href="css/responsive-playlist.css">
     <!--Sites para pegar músicas (troca a "lang=" para trocar o idioma)
             Estou pegando
                 https://www.churchofjesuschrist.org/youth/music?lang=eng
@@ -57,11 +58,49 @@
     <main class="main" id="main">
         <div class="main-wraper">
             <section class="main__row" id="main__row">
-                <div class="main__row__title" id="main__row__title">
-                    <img src="./img/top50.png">
-                    <div>
-                        <h2>Título do Albúm</h2>
-                        <p>Nome do Artista</p>
+                <div class="player">
+                    <div class="player__artist">
+                        <img src="img/top50.png" />
+                        <h3>Nome da música<br>
+                            <span>Nome do artista</span>
+                        </h3>
+                    </div>
+                    <div class="player__control">
+                        <div class="player__control__buttons">
+                            <a class="btns" id="beginBtn" href=""><i class="far fa-stop-circle beginBtnIcon"></i></a>
+                            <a class="btns" id="undoBtn" href=""><i class="fas fa-undo"></i></a>
+                            <a class="pauseBtn btns" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                            <div class="loader btns" id="loader"></div>
+                            <a class="playBtn btns" id="playBtn" href="#"><i class="fas fa-play"></i></a>
+                            <a id="redoBtn" class="btns" href=""><i class="fas fa-redo"></i></a>
+                            <a id="loopBtn" class="firstLoopBtn btns" href=""><i class="fas fa-sync"></i></a>
+                            <a id="hideVolBtn" class="firstHideVolBtn btns" href=""><i class="fas fa-volume-up"></i></a>
+                            <div class="volume" id="volume">
+                                <input id="volume-control" type="range" value="100"></input>
+                                <a class="muteBtn" id="muteBtn" href=""><i class="fas fa-volume-mute"></i></a>
+                                <a class="unMuteBtn" id="unMuteBtn" href=""><i class="fas fa-volume-up"></i></a>
+                            </div>
+                            <div class="threeDots"><i class="fas fa-ellipsis-v threeDotsIcon"></i></div>
+                            <div class="threeDotsBtns">
+                                <a class="loopBtn2" id="loopBtn2" href=""><i class="fas fa-sync"></i></a>
+                                <div class="secondDivVol">
+                                    <a id="hideVolBtn2" href=""><i class="fas fa-volume-up"></i></a>
+                                    <div class="volume2" id="volume2">
+                                        <input id="volume-control2" type="range" value="100"></input>
+                                        <a class="muteBtn2" id="muteBtn2" href=""><i class="fas fa-volume-mute"></i></a>
+                                        <a class="unMuteBtn2" id="unMuteBtn2" href=""><i
+                                                class="fas fa-volume-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player__control__progress">
+                            <div id="player__control__progress_2"></div>
+                        </div>
+                        <div class="player__timer">
+                            <p id="current">00:00 / </p>
+                            <p id="duration">00:00</p>
+                        </div>
                     </div>
                 </div>
                 <div class="main__row__songs" id="main__row__songs">
@@ -72,80 +111,14 @@
                                 <th>Nome da música</th>
                                 <th>Nome do artista</th>
                             </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/top50global.png">
-                                </td>
-                                <td>
-                                    <p>Nome da música</p>
-                                </td>
-                                <td>
-                                    <p>Nome do artista</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./img/top50global.png">
-                                </td>
-                                <td>
-                                    <p>Nome da música</p>
-                                </td>
-                                <td>
-                                    <p>Nome do artista</p>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
         </div>
     </main>
-    <div class="player">
-        <div class="player__artist">
-        </div>
-        <div class="player__control">
-            <div class="player__control__buttons">
-                <a id="beginBtn" href=""><i class="far fa-stop-circle beginBtnIcon"></i></a>
-                <a id="undoBtn" href=""><i class="fas fa-undo"></i></a>
-                <a class="pauseBtn" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
-                <div class="loader" id="loader"></div>
-                <a class="playBtn" id="playBtn" href="#"><i class="fas fa-play"></i></a>
-                <a id="redoBtn" href=""><i class="fas fa-redo"></i></a>
-                <a id="loopBtn" class="firstLoopBtn" href=""><i class="fas fa-sync"></i></a>
-                <div class="threeDots"><i class="fas fa-ellipsis-v threeDotsIcon"></i></div>
-                <div class="threeDotsBtns">
-                    <a class="loopBtn2" id="loopBtn2" href=""><i class="fas fa-sync"></i></a>
-                    <div class="secondDivVol">
-                        <a id="hideVolBtn2" href=""><i class="fas fa-volume-up"></i></a>
-                        <div class="volume2" id="volume2">
-                            <input id="volume-control2" type="range" value="100"></input>
-                            <a class="muteBtn2" id="muteBtn2" href=""><i class="fas fa-volume-mute"></i></a>
-                            <a class="unMuteBtn2" id="unMuteBtn2" href=""><i class="fas fa-volume-up"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="player__control__progress">
-                <div id="player__control__progress_2"></div>
-            </div>
-            <div class="player__timer">
-                <p id="current">00:00 / </p>
-                <p id="duration">00:00</p>
-            </div>
-        </div>
-        <div class="player__control_2">
-            <div class="player__control__buttons_2">
-                <a id="hideVolBtn" href=""><i class="fas fa-volume-up"></i></a>
-                <div class="volume" id="volume">
-                    <input id="volume-control" type="range" value="100"></input>
-                    <a class="muteBtn" id="muteBtn" href=""><i class="fas fa-volume-mute"></i></a>
-                    <a class="unMuteBtn" id="unMuteBtn" href=""><i class="fas fa-volume-up"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <audio class="audioPlayer" id="audioplayer" controls=""></audio>
+    <audio class="audioPlayer" id="audioplayer" controls="" src="http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0080-just-a-feeling-256k-eng.mp3"></audio>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
     <script src="js/music-playlist.js"></script>
     <script src="js/player-playlist.js"></script>

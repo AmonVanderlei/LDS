@@ -1,16 +1,17 @@
 .player{
-    width: calc(100% - 250px);
+    width: 100%;
+    height: 250px;
     padding: 20px;
-    height: 100px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(60, 60, 60);
+    margin-bottom: 50px;
 }
 .player__artist{
-    width: 40%;
+    width: 100%;
 }
 .player__artist img{
     max-width: 70px;
@@ -34,8 +35,11 @@
     font-size: 13px;
 }
 .player__control{
-    width: 60%;
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .player__control_2{
     width: 10%;
@@ -47,7 +51,7 @@
 .player__control__buttons{
     display: inline-block;
 }
-.player__control__buttons a{
+.btns{
     color: white;
     margin: 15px;
     font-size: 18px;
@@ -91,26 +95,27 @@
 }
 .threeDotsBtns{
     position: absolute;
+    height: 50px;
     background-color: #303030;
     border: 1px solid #51cf66;
     border-radius: 5px;
     display: none;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     right: 12%;
-    bottom: 60%;
+    bottom: 50%;
 }
 .showThreeDotsBtns{
     display: flex;
 }
 .loopBtn2{
     display: inline-block;
-}
-.secondDivVol{
-    margin: auto;
+    color: #fff;
 }
 .secondDivVol{
     display: inline-block;
-    margin: auto;
+    margin: auto 0;
+    width: 50%;
 }
 .secondDivVol a{
     color: white;
@@ -122,25 +127,19 @@
     position: relative;
 }
 .muteBtn2{
-    position: absolute;
-    bottom: 15px;
-    left:-13px;
+    position: relative;
+    top: 170px;
+    left: 50px;
     color: white;
+    z-index: 3;
 }
 .unMuteBtn2{
-    position: absolute;
-    bottom: 15px;
-    left:-13px;
+    position: relative;
+    top: 170px;
+    left: 50px;
     color: white;
     display: none;
-}
-.player__control__buttons_2{
-    display: inline-block;
-}
-.player__control__buttons_2 a{
-    color: white;
-    margin: 8px 15px;
-    font-size: 18px;
+    z-index: 3;
 }
 .volume{
     display: none;
@@ -178,14 +177,15 @@
 input[type='range'] {
     -webkit-appearance: none;
     position: absolute;
-    top: -115px;
-    left: 10px;
+    bottom: -115px;
+    left: 75px;
     padding: 0 1em 0 4em;
     width: 17em;
     min-height: 3em;
     border-radius: 0.25em;
     transform: translate(-50%, -50%) rotate(-90deg);
     cursor: pointer;
+    z-index: 2;
     /* slider components */
 }
 input[type='range']::-webkit-slider-runnable-track {

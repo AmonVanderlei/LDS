@@ -16,7 +16,7 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
-}
+}/*
 .main__row__title{
     width: 100%;
     display: flex;
@@ -39,7 +39,7 @@
 .main__row__title h2{
     color: #449930;
     margin-top: 15px;
-}
+} */
 .main__row__songs{
     display: flex;
     flex-wrap: nowrap;
