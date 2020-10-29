@@ -16,30 +16,7 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
-}/*
-.main__row__title{
-    width: 100%;
-    display: flex;
-    align-items: center;
 }
-.main__row__title img{
-    height: 75%;
-}
-.main__row__title div{
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50%;
-}
-.main__row__title div p{
-    color: #449930;
-    font-weight: bold;
-}
-.main__row__title h2{
-    color: #449930;
-    margin-top: 15px;
-} */
 .main__row__songs{
     display: flex;
     flex-wrap: nowrap;
@@ -62,6 +39,13 @@ tr{
     display: flex;
     justify-content: space-between;
     color: #51cf6699;
+    padding-top: 10px;
+}
+tr:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+tr:hover:first-child{
+    background-color: transparent;
 }
 th,
 td{

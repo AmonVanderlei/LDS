@@ -46,18 +46,10 @@
     .main{
         width: 100%;
     }
-    .player{
-        width: calc(100% - 15px);
-    }
 }
 @media screen and (max-width: 768px){
     .player__artist img{
         max-width: 50px;
-    }
-}
-@media screen and (max-width: 687px){
-    .player{
-        height: 200px;
     }
 }
 @media screen and (max-width: 550px){
