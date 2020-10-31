@@ -20,6 +20,8 @@ var unMuteBtn2 = document.querySelector('#unMuteBtn2'); //pega o segundo botão 
 var loader = document.querySelector('#loader'); //pega o loader
 var threeDots = document.querySelector('.threeDots') //pega o botão dos 3 pontinhos
 var threeDotsBtns = document.querySelector('.threeDotsBtns') //pega a div com os botões dentro do "threeDots"
+var nextBtn = document.querySelector('#nextBtn'); //pega o botão de passar uma música
+var prevBtn = document.querySelector('#prevBtn'); //pega o botão de voltar uma música
 
 undoBtn.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -172,10 +174,77 @@ threeDots.addEventListener('click', (e) => {
 
 	return false;
 });//botão dos três pontos
+nextBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	
+	let i = 0;
+	let songNumber = parseInt(document.querySelector('.songNumber').innerHTML);
+	document.querySelectorAll('.musicLine').forEach(item => {	
+		if(i >= songNumber + 2){
+			return
+		}else{
+			if(i === songNumber + 1){
+				let image = item.getAttribute('dataImage');
+				let artist = item.getAttribute('dataArtist');
+				let song = item.getAttribute('dataSong');
+				let file = item.getAttribute('dataFile');
+				let number = item.getAttribute('dataNumber');
+
+				let playerArtistComponent = document.querySelectorAll('.player__artist');
+
+				playerArtistComponent[0].innerHTML =
+					`<img src="` + image + `" />
+			<h3>`+ song + `<br>
+				<span>`+ artist + `</span>
+			</h3>
+			<p class="songNumber" style="display: none">`+ number + `</p>`;
+
+				playSong(file);
+				i++
+			}else{
+				i++
+			}
+		}
+	});
+	return false;
+});
+prevBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+	let i = 0;
+	let songNumber = parseInt(document.querySelector('.songNumber').innerHTML);
+	document.querySelectorAll('.musicLine').forEach(item => {	
+		if(i < songNumber){
+			if(i === songNumber - 1){
+					let image = item.getAttribute('dataImage');
+					let artist = item.getAttribute('dataArtist');
+					let song = item.getAttribute('dataSong');
+					let file = item.getAttribute('dataFile');
+					let number = item.getAttribute('dataNumber');
+	
+					let playerArtistComponent = document.querySelectorAll('.player__artist');
+	
+					playerArtistComponent[0].innerHTML =
+						`<img src="` + image + `" />
+				<h3>`+ song + `<br>
+					<span>`+ artist + `</span>
+				</h3>
+				<p class="songNumber" style="display: none">`+ number + `</p>`;
+	
+					playSong(file);
+					i++
+				}else{
+					i++
+				}
+		}else{
+			i++
+		}
+	});
+	return false;
+});
 
 // ^^^^^^^^^^Botões^^^^^^^^^^
 window.setTimeout(playAndShowSong, 3000);
-function playAndShowSong(){
+function playAndShowSong() {
 	document.querySelectorAll('.musicLine').forEach(item => {
 
 		item.addEventListener('click', () => {
@@ -183,6 +252,7 @@ function playAndShowSong(){
 			let artist = item.getAttribute('dataArtist');
 			let song = item.getAttribute('dataSong');
 			let file = item.getAttribute('dataFile');
+			let number = item.getAttribute('dataNumber');
 
 			let playerArtistComponent = document.querySelectorAll('.player__artist');
 
@@ -190,7 +260,8 @@ function playAndShowSong(){
 				`<img src="` + image + `" />
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
-        </h3>`;
+		</h3>
+		<p class="songNumber" style="display: none">`+ number + `</p>`;
 
 			playSong(file);
 		});

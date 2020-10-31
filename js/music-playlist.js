@@ -14,13 +14,13 @@ fetch("./js/json/albuns.json")
             var yearAndLanguage = `${albuns[i].albumLanguage} - ${albuns[i].albumYear}`;
 
             playerArtistComponent[0].innerHTML =
-               `<img src="` + image + `" />
+                `<img src="` + image + `" />
                 <h3>`+ song + `<br>
                     <span>`+ yearAndLanguage + `</span>
                 </h3>`;
 
-            let albunsIndex = 0;
-            let songsIndex = 0;
+            var albunsIndex = 0;
+            var songsIndex = 0;
             document.querySelector('title').innerHTML = albuns[albunsIndex].albumName + ` - Spotify`;
             albuns[albunsIndex].songs.forEach(() => {
                 let myTr = document.createElement('tr');
@@ -42,6 +42,7 @@ fetch("./js/json/albuns.json")
                 myTr.setAttribute("dataArtist", `${albuns[albunsIndex].songs[songsIndex].dataArtist}`);
                 myTr.setAttribute("dataSong", `${albuns[albunsIndex].songs[songsIndex].dataSong}`);
                 myTr.setAttribute("dataFile", `${albuns[albunsIndex].songs[songsIndex].dataFile}`);
+                myTr.setAttribute("dataNumber", songsIndex);
                 myTr.appendChild(myFirstTd);
                 myTr.appendChild(mySecondTd);
                 myTr.appendChild(myThirdTd);
