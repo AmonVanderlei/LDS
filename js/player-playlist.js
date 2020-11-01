@@ -162,16 +162,40 @@ threeDots.addEventListener('click', (e) => {
 
 	return false;
 });//botão dos três pontos
+var albunsIndex = 1;
+var songsIndex = 0;
+function functionLastNumber() {
+	fetch("./js/json/albuns.json")
+		.then(response => response.json())
+		.then((jsonObj) => {
+
+			const albuns = jsonObj['albuns'];
+
+			for (let i = 0; i < 1; i++) {
+				albuns[albunsIndex].songs.forEach(() => {
+					songsIndex++;
+				});
+				return songsIndex
+			}
+		})
+}
+functionLastNumber()
 nextBtn.addEventListener('click', (e) => {
 	e.preventDefault();
-	
+
 	let i = 0;
 	let songNumber = parseInt(document.querySelector('.songNumber').innerHTML);
-	document.querySelectorAll('.musicLine').forEach(item => {	
-		if(i >= songNumber + 2){
+	let lastNumber = songsIndex - 1;
+
+	if (songNumber === lastNumber) {
+		songNumber = -1;
+	}
+
+	document.querySelectorAll('.musicLine').forEach(item => {
+		if (i >= songNumber + 2) {
 			return
-		}else{
-			if(i === songNumber + 1){
+		} else {
+			if (i === songNumber + 1) {
 				let image = item.getAttribute('dataImage');
 				let artist = item.getAttribute('dataArtist');
 				let song = item.getAttribute('dataSong');
@@ -189,7 +213,7 @@ nextBtn.addEventListener('click', (e) => {
 
 				playSong(file);
 				i++
-			}else{
+			} else {
 				i++
 			}
 		}
@@ -200,30 +224,36 @@ prevBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	let i = 0;
 	let songNumber = parseInt(document.querySelector('.songNumber').innerHTML);
-	document.querySelectorAll('.musicLine').forEach(item => {	
-		if(i < songNumber){
-			if(i === songNumber - 1){
-					let image = item.getAttribute('dataImage');
-					let artist = item.getAttribute('dataArtist');
-					let song = item.getAttribute('dataSong');
-					let file = item.getAttribute('dataFile');
-					let number = item.getAttribute('dataNumber');
-	
-					let playerArtistComponent = document.querySelectorAll('.player__artist');
-	
-					playerArtistComponent[0].innerHTML =
-						`<img src="` + image + `" />
+	let lastNumber = songsIndex;
+
+	if (songNumber === 0) {
+		songNumber = lastNumber;
+	}
+
+	document.querySelectorAll('.musicLine').forEach(item => {
+		if (i < songNumber) {
+			if (i === songNumber - 1) {
+				let image = item.getAttribute('dataImage');
+				let artist = item.getAttribute('dataArtist');
+				let song = item.getAttribute('dataSong');
+				let file = item.getAttribute('dataFile');
+				let number = item.getAttribute('dataNumber');
+
+				let playerArtistComponent = document.querySelectorAll('.player__artist');
+
+				playerArtistComponent[0].innerHTML =
+					`<img src="` + image + `" />
 				<h3>`+ song + `<br>
 					<span>`+ artist + `</span>
 				</h3>
 				<p class="songNumber" style="display: none">`+ number + `</p>`;
-	
-					playSong(file);
-					i++
-				}else{
-					i++
-				}
-		}else{
+
+				playSong(file);
+				i++
+			} else {
+				i++
+			}
+		} else {
 			i++
 		}
 	});
@@ -249,13 +279,14 @@ function playAndShowSong() {
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
 		</h3>
-		<p class="songNumber" style="display: none">`+ number + `</p>`;
+		<p class="songNumber" style="display: none;">`+ number + `</p>`;
 
 			playSong(file);
-			audioPlayer.addEventListener("ended", function(){
+
+			audioPlayer.addEventListener("ended", function () {
 				audioPlayer.currentTime = 0;
 				nextBtn.click();
-		   });
+			});
 		});
 
 	});

@@ -6,7 +6,7 @@ fetch("./js/json/albuns.json")
 
         const albuns = jsonObj['albuns'];
 
-        var albunsIndex = 1;
+        var albunsIndex = localStorage.getItem('albunsIndex');
         var songsIndex = 0;
 
         for (let i = 0; i < 1; i++) {

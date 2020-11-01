@@ -102,8 +102,7 @@
                     "songName": "Pillar of Light",
                     "artistName": "Grant Lemon"
                 }
-            ],
-            "albumPage":"youth-theme-2020-eng.html"
+            ]
         },
         {
             "albumName": "Tema dos Jovens 2020",
@@ -207,8 +206,7 @@
                 "songName": "Sem fim",
                 "artistName": "Alan Rocha"
               }
-            ],
-            "albumPage":"./youth-theme-2020-por.html"
+            ]
           },
         {
             "albumName": "2019 Youth Theme",
@@ -304,8 +302,7 @@
                     "songName": "Rest",
                     "artistName": "feat. Elica Moore"
                 }
-            ],
-            "albumPage":"./youth-theme-2019-eng.html"
+            ]
         },
         {
             "albumName": "Tema dos Jovens 2019",
@@ -321,8 +318,7 @@
                 "songName": "Amar de verdade",
                 "artistName": "Daniel Armada"
               }
-            ],
-            "albumPage":"./youth-theme-2019-por.html"
+            ]
           }        
     ]
 }
