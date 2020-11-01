@@ -6,12 +6,15 @@ fetch("./js/json/albuns.json")
 
         const albuns = jsonObj['albuns'];
 
+        var albunsIndex = 1;
+        var songsIndex = 0;
+
         for (let i = 0; i < 1; i++) {
             let playerArtistComponent = document.querySelectorAll('.player__artist');
 
-            var image = albuns[i].albumImage;
-            var song = albuns[i].albumName;
-            var yearAndLanguage = `${albuns[i].albumLanguage} - ${albuns[i].albumYear}`;
+            var image = albuns[albunsIndex].albumImage;
+            var song = albuns[albunsIndex].albumName;
+            var yearAndLanguage = `${albuns[albunsIndex].albumLanguage} - ${albuns[albunsIndex].albumYear}`;
 
             playerArtistComponent[0].innerHTML =
                 `<img src="` + image + `" />
@@ -19,8 +22,6 @@ fetch("./js/json/albuns.json")
                     <span>`+ yearAndLanguage + `</span>
                 </h3>`;
 
-            var albunsIndex = 0;
-            var songsIndex = 0;
             document.querySelector('title').innerHTML = albuns[albunsIndex].albumName + ` - Spotify`;
             albuns[albunsIndex].songs.forEach(() => {
                 let myTr = document.createElement('tr');

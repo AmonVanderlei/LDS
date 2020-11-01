@@ -6,7 +6,6 @@ var undoBtn = document.querySelector('#undoBtn'); //pega o botão de voltar algu
 var playBtn = document.querySelector('#playBtn'); //pega botão de play
 var pauseBtn = document.querySelector('#pauseBtn'); //pega botão de pause
 var redoBtn = document.querySelector('#redoBtn'); //pega o botão de avançar alguns segundos
-var beginBtn = document.querySelector('#beginBtn'); //pega o botão de reiniciar a música
 var loopBtn = document.querySelector('#loopBtn'); //deixa a música em loop
 var loopBtn2 = document.querySelector('#loopBtn2'); //segundo botão que deixa a música em loop
 var hideVolBtn = document.querySelector('#hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
@@ -55,17 +54,6 @@ redoBtn.addEventListener('click', (e) => {
 
 	return false;
 });//botão de avançar alguns segundos
-beginBtn.addEventListener('click', (e) => {
-	e.preventDefault();
-
-	playBtn.classList.remove('hideBtns');
-	pauseBtn.classList.remove('showBtns');
-
-	audioPlayer.pause();
-	audioPlayer.currentTime = 0;
-
-	return false;
-});//botão de reiniciar a música
 loopBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 
@@ -264,6 +252,10 @@ function playAndShowSong() {
 		<p class="songNumber" style="display: none">`+ number + `</p>`;
 
 			playSong(file);
+			audioPlayer.addEventListener("ended", function(){
+				audioPlayer.currentTime = 0;
+				nextBtn.click();
+		   });
 		});
 
 	});
@@ -294,6 +286,7 @@ const playSong = (file) => {
 	playBtn.classList.add('hideBtns');
 	pauseBtn.classList.add('showBtns');
 }//toca a música
+
 var timer;
 var percent = 0;
 var audio = document.querySelector("#audioplayer");
