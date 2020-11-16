@@ -52,15 +52,55 @@
         max-width: 50px;
     }
 }
-@media screen and (max-width: 550px){
-    .threeDots{
-        display: inline-block;
+@media screen and (max-width: 760px){
+    th:first-child,
+    td:first-child{
+        width: initial;
+        padding-right: initial;
     }
-    .firstLoopBtn{
-        display: none;
+    th, td{ margin-bottom: 0;}
+	table { 
+	  	width: 100%; 
+	}
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    tr { 
+        border: 1px solid #51cf66;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, .4);
     }
-    .firstHideVolBtn{
-        display: none;
+	td { 
+		position: relative;
+        padding-left: 50%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+	}
+	td:before { 
+		position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-left: 5px;
+        white-space: nowrap;
+        content: attr(dataColumn);
+        text-transform: uppercase;
+        max-width: 67%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    td > p{
+        max-width: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 @media screen and (max-width: 404px){
@@ -81,15 +121,49 @@
     .player__control__buttons .loader{
         margin: 0 5px;
     }
-    .threeDotsBtns{
-        bottom: 100px;
+    .volume{
+        position: initial;
     }
-    .muteBtn2, .unMuteBtn2{
-        left: -9px;
+    input[type='range'] {
+        bottom: -40px;
+        left: 235px;
     }
+    .muteBtn, .unMuteBtn{
+        top: 270px;
+        left: 225px;
+    }
+
 }
 @media screen and (max-width: 347px){
     .player__artist img{
         max-width: 30px;
+    }
+}
+@media screen and (max-width: 338px){
+    .btns{
+        margin: 2px;
+    }
+    input[type='range'] {
+        bottom: -40px;
+        left: 220px;
+    }
+    .muteBtn, .unMuteBtn{
+        top: 270px;
+        left: 210px;
+    }
+}
+@media screen and (max-width: 315px){
+    input[type='range'] {
+        bottom: -40px;
+        left: 205px;
+    }
+    .muteBtn, .unMuteBtn{
+        top: 270px;
+        left: 195px;
+    }
+}
+@media screen and (max-width: 302px){
+    .btns{
+        margin: 1px;
     }
 }

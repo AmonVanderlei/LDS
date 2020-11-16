@@ -36,8 +36,11 @@ fetch("./js/json/albuns.json")
                 myFirstP.innerHTML = albuns[albunsIndex].songs[songsIndex].songName;
                 mySecondP.innerHTML = albuns[albunsIndex].songs[songsIndex].artistName;
                 myFirstTd.appendChild(myImg);
+                myFirstTd.setAttribute("dataColumn", "Imagem")
                 mySecondTd.appendChild(myFirstP);
+                mySecondTd.setAttribute("dataColumn", "Nome da música")
                 myThirdTd.appendChild(mySecondP);
+                myThirdTd.setAttribute("dataColumn", "Nome do artista")
                 myTr.setAttribute("class", "musicLine")
                 myTr.setAttribute("dataImage", `${albuns[albunsIndex].songs[songsIndex].dataImage}`)
                 myTr.setAttribute("dataArtist", `${albuns[albunsIndex].songs[songsIndex].dataArtist}`);
