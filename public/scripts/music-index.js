@@ -1,7 +1,7 @@
 var main__row__title = document.querySelector("#main__row__title");
 var main__row__songs = document.querySelector("#main__row__songs");
 
-fetch("./public/scripts/json/2020-Eng.json")
+fetch("../public/scripts/json/2020-Eng.json")
     .then(response => response.json())
     .then((jsonObj) => {
 
