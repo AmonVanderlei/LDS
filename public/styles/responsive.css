@@ -25,18 +25,10 @@
     .player__control{
         width: 60%;
     }
-    .main__col{
-        width: 15%;
-    }
 }
-@media screen and (max-width: 1500px){
+@media screen and (min-width: 1400px){
     .main__col{
-        width: 17%;
-    }
-}
-@media screen and (max-width: 1300px){
-    .main__col{
-        width: 19%;
+        width: 10vw;
     }
 }
 @media screen and (max-width: 1000px){
@@ -87,16 +79,13 @@
     .main{
         width: 100%;
     }
-    .main__col{
-        width: 20%;
-    }
     .player{
-        width: calc(100% - 15px);
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px){
     .main__col{
-        width: 25%;
+        width: 20vw;
     }
     .player__artist img{
         max-width: 50px;
@@ -104,7 +93,7 @@
 }
 @media screen and (max-width: 687px){
     .main__col{
-        width: 30%;
+        width: 25vw;
     }
     .player{
         height: 150px;
@@ -126,9 +115,6 @@
     }
 }
 @media screen and (max-width: 610px){
-    .main__col{
-        width: 30%;
-    }
     .player__control_2 {
         left: 420px;
         width: 15%;
@@ -136,7 +122,7 @@
 }
 @media screen and (max-width: 550px){
     .main__col{
-        width: 35%;
+        width: 30vw;
     }
     .player__control_2 {
         display: none;
@@ -153,12 +139,12 @@
         padding: 15px 30px;
     }
     .main__col{
-        width: 45%;
+        width: 35vw;
     }
 }
 @media screen and (max-width: 367px){
     .main__col{
-        width: 49%;
+        width: 40vw;
     }
     .player__artist img{
         max-width: 30px;
@@ -184,6 +170,6 @@
 }
 @media screen and (max-width: 300px){
     .main__col{
-        width: 65%;
+        width: 50vw;
     }
 }
