@@ -1,0 +1,169 @@
+@media screen and (max-width: 1000px){
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .sidebar{
+        transform: translateX(250px);
+    }
+    .menuBtn{
+        display: inline-block;
+    }
+    .menu{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .lines{
+        width: 35px;
+        height: 5px;
+        background-color: #258744;
+        margin: 7px 8px;
+        transition: .7s;
+    }
+    .clicked #line1{
+        transform: rotate(-45deg) translate(-10px, 8px);
+    }
+    .clicked #line2{
+        opacity: 0;
+    }
+    .clicked #line3{
+        transform: rotate(45deg) translate(-9px, -7px);
+    }
+    .sidebar{
+        float: left;
+        position: absolute;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        padding: 10px 10px;
+        height: 100%;
+        overflow-y: auto;
+        background-color: black;
+        overflow-x: hidden;
+        z-index: 1;
+        transition: all .3s;
+    }
+    .main{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .player__artist img{
+        max-width: 50px;
+    }
+}
+@media screen and (max-width: 760px){
+    th:first-child,
+    td:first-child{
+        width: initial;
+        padding-right: initial;
+    }
+    th, td{ margin-bottom: 0;}
+	table { 
+	  	width: 100%; 
+	}
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    tr { 
+        border: 1px solid #51cf66;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+	td { 
+		position: relative;
+        padding-left: 50%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+	}
+	td:before { 
+		position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-left: 5px;
+        white-space: nowrap;
+        content: attr(dataColumn);
+        text-transform: uppercase;
+        max-width: 67%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    td > p{
+        max-width: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 404px){
+    .btns{
+        margin: 7px
+    }
+}
+@media screen and (max-width: 367px){
+    .player__artist h3{
+        font-size: 15px;
+    }
+    .player__artist h3 > span{
+        font-size: 12px;
+    }
+    .btns{
+        margin: 5px
+    }
+    .player__control__buttons .loader{
+        margin: 0 5px;
+    }
+    .volume{
+        position: initial;
+    }
+    input[type='range'] {
+        bottom: -40px;
+        left: 235px;
+    }
+    .muteBtn, .unMuteBtn{
+        top: 270px;
+        left: 225px;
+    }
+
+}
+@media screen and (max-width: 347px){
+    .player__artist img{
+        max-width: 30px;
+    }
+}
+@media screen and (max-width: 338px){
+    .btns{
+        margin: 2px;
+    }
+    input[type='range'] {
+        bottom: -40px;
+        left: 220px;
+    }
+    .muteBtn, .unMuteBtn{
+        top: 270px;
+        left: 210px;
+    }
+}
+@media screen and (max-width: 315px){
+    input[type='range'] {
+        bottom: -40px;
+        left: 205px;
+    }
+    .muteBtn, .unMuteBtn{
+        top: 270px;
+        left: 195px;
+    }
+}
+@media screen and (max-width: 302px){
+    .btns{
+        margin: 1px;
+    }
+}

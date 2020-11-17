@@ -1,0 +1,13 @@
+{
+  "albumName": "Tema dos Jovens 2019",
+  "songs": [
+    {
+      "dataImage": "../../public/assets/top50global.png",
+      "dataArtist": "Daniel Armada",
+      "dataSong": "Amar de verdade",
+      "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0001-if-we-love-him-256k-por.mp3",
+      "songName": "Amar de verdade",
+      "artistName": "Daniel Armada"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+.main{
+    width: calc(100% - 250px);
+    background-color: rgb(30, 30, 30);
+    height: 100%;
+
+    float: left;
+    padding: 15px 50px;
+    overflow-y: auto;
+}
+.main__row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.main-wraper{
+    padding-bottom: 100px;
+}
+.main__row__title{
+    width: 100%;
+}
+.main__row__title h2{
+    color: #449930;
+    margin-top: 20px
+}
+.main__row__title h2:first{
+    margin-top: 0;
+}
+.main__row__songs{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.main__row__songs::-webkit-scrollbar{
+    height: 10px;
+}
+.main__row__songs::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid #266733;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.main__row__songs::-webkit-scrollbar-track:hover{
+    background-color: #333333;
+}
+.main__row__songs::-webkit-scrollbar-thumb{
+    background-color: #5bbe47;
+    border-radius: 20px;
+}
+.main__col{
+    cursor: pointer;
+    width: 10%;
+    margin-right: 1%;
+    margin-top: 20px;
+
+    background-color: #282828;
+    border-radius: 8px;
+
+    padding: 10px;
+
+    text-align: center;
+    flex: 0 0 auto;
+}
+.main__col img{
+    width: 100%;
+}
+.main__col h3{
+    color: white;
+    margin: 8px 0;
+}
+.main__col p{
+    color: rgb(100, 100, 100);
+    margin: 8px 0;
+    font-size: 13px;
+    text-align: left;
+}
