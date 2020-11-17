@@ -1,7 +1,7 @@
 var main__row__title = document.querySelector("#main__row__title");
 var main__row__songs = document.querySelector("#main__row__songs");
 
-fetch("../public/scripts/json/albuns.json")
+fetch("public/scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {
 
@@ -28,7 +28,7 @@ fetch("../public/scripts/json/albuns.json")
 var main__row__title_1 = document.querySelector("#main__row__title_1");
 var main__row__songs_1 = document.querySelector("#main__row__songs_1");
 
-fetch("../public/scripts/json/albuns.json")
+fetch("public/scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {
 
@@ -55,7 +55,7 @@ fetch("../public/scripts/json/albuns.json")
 var main__row__title_2 = document.querySelector("#main__row__title_2");
 var main__row__songs_2 = document.querySelector("#main__row__songs_2");
 
-fetch("../public/scripts/json/albuns.json")
+fetch("public/scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {
 
@@ -82,7 +82,7 @@ fetch("../public/scripts/json/albuns.json")
 var main__row__title_3 = document.querySelector("#main__row__title_3");
 var main__row__songs_3 = document.querySelector("#main__row__songs_3");
 
-fetch("../public/scripts/json/albuns.json")
+fetch("public/scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {
 
