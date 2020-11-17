@@ -1,6 +1,6 @@
 var main__row__songs = document.querySelector("#main__row__songs");
 
-fetch("../../public/scripts/json/albuns.json")
+fetch("../public/scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {
 

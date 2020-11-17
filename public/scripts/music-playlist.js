@@ -1,6 +1,6 @@
 var table__body = document.querySelector(".table__body");
 
-fetch("../../public/scripts/json/albuns.json")
+fetch("../public/scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {
 

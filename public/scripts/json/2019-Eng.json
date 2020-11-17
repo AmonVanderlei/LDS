@@ -2,7 +2,7 @@
   "albumName": "2019 Youth Theme",
   "songs": [
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Layla Mackey",
       "dataSong": "Just a Feeling",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0080-just-a-feeling-256k-eng.mp3",
@@ -10,7 +10,7 @@
       "artistName": "feat. Layla Mackey"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Ari and Seli Miller",
       "dataSong": "Footsteps",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0100-footsteps-256k-eng.mp3",
@@ -18,7 +18,7 @@
       "artistName": "feat. Ari and Seli Miller"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Jordan James",
       "dataSong": "Merciful",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0060-merciful-256k-eng.mp3",
@@ -26,7 +26,7 @@
       "artistName": "feat. Jordan James"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Shalia Rokobuludrau",
       "dataSong": "Hide",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0020-hide-256k-eng.mp3",
@@ -34,7 +34,7 @@
       "artistName": "feat. Shalia Rokobuludra"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "Patch Crowe",
       "dataSong": "If We Love Him (Male Version)",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0110-if-we-love-him-male-version-256k-eng.mp3",
@@ -42,7 +42,7 @@
       "artistName": "Patch Crowe"
     },
     {
-      "dataImage": "../../public/assets/top50.png",
+      "dataImage": "../public/assets/top50.png",
       "dataArtist": "Lauryn Judd",
       "dataSong": "If We Love Him (Female Version)",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0010-if-we-love-him-female-version-256k-eng.mp3",
@@ -50,7 +50,7 @@
       "artistName": "Lauryn Judd"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Talin Everett",
       "dataSong": "Forget",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0090-forget-256k-eng.mp3",
@@ -58,7 +58,7 @@
       "artistName": "feat. Talin Everett"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Claire Westcott",
       "dataSong": "His Name",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0070-his-name-256k-eng.mp3",
@@ -66,7 +66,7 @@
       "artistName": "feat. Claire Westcott"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Kainoa Sorensen",
       "dataSong": "You’re Not Your Mistkes",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0040-mistakes-256k-eng.mp3",
@@ -74,7 +74,7 @@
       "artistName": "feat. Kainoa Sorensen"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Lauryn Judd",
       "dataSong": "Never Ends",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0050-never-ends-64k-eng.mp3",
@@ -82,7 +82,7 @@
       "artistName": "feat. Lauryn Judd"
     },
     {
-      "dataImage": "../../public/assets/top50global.png",
+      "dataImage": "../public/assets/top50global.png",
       "dataArtist": "feat. Elica Moore",
       "dataSong": "Rest",
       "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0030-rest-256k-eng.mp3",
