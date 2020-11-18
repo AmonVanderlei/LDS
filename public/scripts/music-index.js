@@ -15,12 +15,12 @@ fetch("public/scripts/json/albuns.json")
         for (let i = 0; i < songs.length; i++) {
             let myDiv = document.createElement('div');
             myDiv.setAttribute("class", "main__col");
-            myDiv.setAttribute("dataImage", `${songs[i].dataImage}`)
+            myDiv.setAttribute("dataImage", `${songs[i].dataImageIndex}`)
             myDiv.setAttribute("dataArtist", `${songs[i].dataArtist}`);
             myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
             myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
 
-            myDiv.innerHTML = `<img src="${songs[i].dataImage}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
+            myDiv.innerHTML = `<img src="${songs[i].dataImageIndex}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
             main__row__songs.appendChild(myDiv)
         }
     })
@@ -42,12 +42,12 @@ fetch("public/scripts/json/albuns.json")
         for (let i = 0; i < songs.length; i++) {
             let myDiv = document.createElement('div');
             myDiv.setAttribute("class", "main__col");
-            myDiv.setAttribute("dataImage", `${songs[i].dataImage}`)
+            myDiv.setAttribute("dataImage", `${songs[i].dataImageIndex}`)
             myDiv.setAttribute("dataArtist", `${songs[i].dataArtist}`);
             myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
             myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
 
-            myDiv.innerHTML = `<img src="${songs[i].dataImage}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
+            myDiv.innerHTML = `<img src="${songs[i].dataImageIndex}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
             main__row__songs_1.appendChild(myDiv)
         }
     })
@@ -69,12 +69,12 @@ fetch("public/scripts/json/albuns.json")
         for (let i = 0; i < songs.length; i++) {
             let myDiv = document.createElement('div');
             myDiv.setAttribute("class", "main__col");
-            myDiv.setAttribute("dataImage", `${songs[i].dataImage}`)
+            myDiv.setAttribute("dataImage", `${songs[i].dataImageIndex}`)
             myDiv.setAttribute("dataArtist", `${songs[i].dataArtist}`);
             myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
             myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
 
-            myDiv.innerHTML = `<img src="${songs[i].dataImage}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
+            myDiv.innerHTML = `<img src="${songs[i].dataImageIndex}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
             main__row__songs_2.appendChild(myDiv)
         }
     })
@@ -96,12 +96,12 @@ fetch("public/scripts/json/albuns.json")
         for (let i = 0; i < songs.length; i++) {
             let myDiv = document.createElement('div');
             myDiv.setAttribute("class", "main__col");
-            myDiv.setAttribute("dataImage", `${songs[i].dataImage}`)
+            myDiv.setAttribute("dataImage", `${songs[i].dataImageIndex}`)
             myDiv.setAttribute("dataArtist", `${songs[i].dataArtist}`);
             myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
             myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
 
-            myDiv.innerHTML = `<img src="${songs[i].dataImage}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
+            myDiv.innerHTML = `<img src="${songs[i].dataImageIndex}" /><h3>${songs[i].songName}</h3><p>${songs[i].artistName}</p>`;
             main__row__songs_3.appendChild(myDiv)
         }
     })
