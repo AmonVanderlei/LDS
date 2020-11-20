@@ -1,6 +1,6 @@
 .main{
     width: calc(100% - 250px);
-    background-color: rgb(30, 30, 30);
+    background-color: var(--dark-gray-rgb);
     height: 100%;
 
     float: left;
@@ -21,7 +21,7 @@
     width: 100%;
 }
 .main__row__title h2{
-    color: #449930;
+    color: var(--index-color);
     margin-top: 20px
 }
 .main__row__title h2:first{
@@ -38,14 +38,14 @@
 .main__row__songs::-webkit-scrollbar-track{
     background-color: transparent;
     border-radius: 20px;
-    border: 1px solid #266733;
+    border: 1px solid var(--dark-blue);
     box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 .main__row__songs::-webkit-scrollbar-track:hover{
-    background-color: #333333;
+    background-color: var(--medium-gray);
 }
 .main__row__songs::-webkit-scrollbar-thumb{
-    background-color: #5bbe47;
+    background-color: var(--index-color);
     border-radius: 20px;
 }
 .main__col{
@@ -54,7 +54,7 @@
     margin-right: 1%;
     margin-top: 20px;
 
-    background-color: #282828;
+    background-color: var(--dark-gray);
     border-radius: 8px;
 
     padding: 10px;
@@ -66,11 +66,11 @@
     width: 100%;
 }
 .main__col h3{
-    color: white;
+    color: var(--light-gray);
     margin: 8px 0;
 }
 .main__col p{
-    color: rgb(100, 100, 100);
+    color: var(--gray);
     margin: 8px 0;
     font-size: 13px;
     text-align: left;

@@ -1,3 +1,14 @@
+:root{
+    --orange: #FA8508;
+    --dark-blue: #0366D6;
+    --index-color: #03A6FF;
+    --light-blue: #10D9DC;
+    --light-gray: #eee;
+    --gray: rgb(130, 130, 130);
+    --medium-gray: rgb(60, 60, 60);
+    --dark-gray: #333;
+    --dark-gray-rgb: rgb(30, 30, 30);
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,20 +18,20 @@
 html,body{height: 100%;}
 
 ::selection{
-    background-color: #51cf66;
-    color: #eee;
+    background-color: var(--index-color);
+    color: var(--light-gray);
 }
 ::-webkit-scrollbar{
     width: 15px;
 }
 ::-webkit-scrollbar-track{
-    border: 1px solid #266733;
+    border: 1px solid var(--dark-blue);
     box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar-track:hover{
-    background-color: #333333;
+    background-color: var(--dark-gray);
 }
 ::-webkit-scrollbar-thumb{
-    background: #269c2f;
+    background: var(--index-color);
     border-radius: 3px;
 }

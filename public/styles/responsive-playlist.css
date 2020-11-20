@@ -70,7 +70,7 @@
 		top: -9999px;
 		left: -9999px;
 	}
-    tr { 
+    tr {
         border: 1px solid #51cf66;
         margin-bottom: 10px;
         border-radius: 5px;
@@ -89,7 +89,7 @@
         left: 6px;
         width: 45%;
         padding-left: 5px;
-        white-space: nowrap;
+        -space: nowrap;
         content: attr(dataColumn);
         text-transform: uppercase;
         max-width: 67%;
@@ -100,7 +100,7 @@
         max-width: 50%;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
+        -space: nowrap;
     }
 }
 @media screen and (max-width: 404px){
