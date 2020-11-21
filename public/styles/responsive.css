@@ -49,7 +49,7 @@
     .lines{
         width: 35px;
         height: 5px;
-        background-color: #258744;
+        background-color: var(--dark-blue);
         margin: 7px 8px;
         transition: .7s;
     }
@@ -63,16 +63,9 @@
         transform: rotate(45deg) translate(-9px, -7px);
     }
     .sidebar{
-        float: left;
         position: absolute;
         top: 0;
         left: -250px;
-        width: 250px;
-        padding: 10px 10px;
-        height: 100%;
-        overflow-y: auto;
-        background-color: black;
-        overflow-x: hidden;
         z-index: 1;
         transition: all .3s;
     }

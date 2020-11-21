@@ -19,7 +19,7 @@ input[type="checkbox"]:checked ~ .sidebar{
     padding: 10px 10px;
     height: 100%;
     overflow-y: auto;
-    background-color: black;
+    background-color: var(--black);
     overflow-x: hidden;
 }
 .sidebar::-webkit-scrollbar{
@@ -71,16 +71,6 @@ input[type="checkbox"]:checked ~ .sidebar{
     text-transform: uppercase;
     font-size: 14px;
 }
-.sidebar__menu__item__componente{
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    display: inline-block;
-    color: black;
-    font-weight: bold;
-    background-color: var(--light-gray);
-}
 .sidebar__menu__item span{
     font-weight: bold;
     font-size: 14px;
@@ -91,4 +81,10 @@ input[type="checkbox"]:checked ~ .sidebar{
     height: 30px;
     vertical-align: middle;
     display: inline-block;
+}
+.sidebar__menu a i{
+    color: var(--index-color);
+}
+.sidebar__menu a.sidebar__menu__selecionado i{
+    color: var(--light-blue);
 }

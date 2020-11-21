@@ -1,6 +1,6 @@
 .main{
     width: calc(100% - 250px);
-    background-color: rgb(30, 30, 30);
+    background-color: var(--dark-gray-rgb);
     height: 100%;
 
     float: left;
@@ -38,18 +38,16 @@ tr{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #51cf6699;
+    color: var(--index-color);
     padding-top: 10px;
 }
 tr:hover{
     background-color: rgba(0, 0, 0, .3);
-}
-tr:hover:first-child{
-    background-color: transparent;
+    border-radius: 5px;
 }
 th,
 td{
-    border-bottom: 1px solid #51cf66;
+    border-bottom: 1px solid var(--light-blue);
     padding-bottom: 10px;
     width: 46%;
     display: flex;

@@ -1,6 +1,6 @@
 .main{
     width: calc(100% - 250px);
-    background-color: rgb(30, 30, 30);
+    background-color: var(--dark-gray-rgb);
     height: 100%;
 
     float: left;
@@ -18,7 +18,7 @@
     width: 100%;
 }
 .main__row__title h2{
-    color: #449930;
+    color: var(--index-color);
 }
 .main__row__songs{
     display: flex;
@@ -37,7 +37,7 @@
     width: 100%;
     margin-right: 1%;
 
-    background-color: #282828;
+    background-color: var(--second-dark-gray);
     border-radius: 8px;
 
     padding: 10px;
@@ -49,11 +49,11 @@
     width: 100%;
 }
 .main__col h3{
-    color: white;
+    color: var(--light-gray);
     margin: 8px 0;
 }
 .main__col p{
-    color: rgb(100, 100, 100);
+    color: var(--gray);
     margin: 8px 0;
     font-size: 13px;
     text-align: center;
