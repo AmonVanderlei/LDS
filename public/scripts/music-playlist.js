@@ -22,7 +22,7 @@ fetch("../public/scripts/json/albuns.json")
                     <span>`+ yearAndLanguage + `</span>
                 </h3>`;
 
-            document.querySelector('title').innerHTML = albuns[albunsIndex].albumName + ` - Spotify`;
+            document.querySelector('title').innerHTML = albuns[albunsIndex].albumName + ` - LDS`;
             albuns[albunsIndex].songs.forEach(() => {
                 let myTr = document.createElement('tr');
                 let myFirstTd = document.createElement('td');

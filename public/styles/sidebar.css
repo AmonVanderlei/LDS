@@ -83,7 +83,7 @@ input[type="checkbox"]:checked ~ .sidebar{
     display: inline-block;
 }
 .sidebar__menu a i{
-    color: var(--index-color);
+    color: var(--dark-blue);
 }
 .sidebar__menu a.sidebar__menu__selecionado i{
     color: var(--light-blue);
