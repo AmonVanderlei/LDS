@@ -38,6 +38,7 @@
     text-decoration: none;
     color: var(--index-color);
     border-bottom: 1px solid var(--index-color);
+    margin: 0 10px;
 }
 .section__title{
     color: var(--index-color);

@@ -40,3 +40,19 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 772px){
+    .blockquote{
+        line-height: initial;
+    }
+    .main__row{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 399px){
+    .main{
+        font-size: 12px;
+    }
+    .links{
+        font-size: 9px;
+    }
+}
