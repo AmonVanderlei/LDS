@@ -61,3 +61,7 @@
     padding-left: 20px;
     line-height: 45px;
 }
+.main__row__footer{
+    display: flex;
+    justify-content: space-between;
+}
