@@ -1,4 +1,4 @@
-<h1>Listen to The Church of Jesus Christ of Latter-Day Saints - LDS</h1>
+<h1>Listen to The Church of Jesus Christ of Latter-Day Saints Songs - LDS</h1>
 <h4>Listen to your favorites songs of The Church of Jesus Christ of Latter-Day Saints</h4>
 
 <p align="center">
