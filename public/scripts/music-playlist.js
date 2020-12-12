@@ -33,8 +33,8 @@ fetch("../public/scripts/json/albuns.json")
                 let mySecondP = document.createElement('p');
 
                 myImg.setAttribute("src", albuns[albunsIndex].songs[songsIndex].dataImage);
-                myFirstP.innerHTML = albuns[albunsIndex].songs[songsIndex].songName;
-                mySecondP.innerHTML = albuns[albunsIndex].songs[songsIndex].artistName;
+                myFirstP.innerHTML = albuns[albunsIndex].songs[songsIndex].dataSong;
+                mySecondP.innerHTML = albuns[albunsIndex].songs[songsIndex].dataArtist;
                 myFirstTd.appendChild(myImg);
                 myFirstTd.setAttribute("dataColumn", "Imagem")
                 mySecondTd.appendChild(myFirstP);

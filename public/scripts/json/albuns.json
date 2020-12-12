@@ -1,341 +1,286 @@
 {
   "albuns": [
     {
-      "albumName": "2020 Youth Theme",
-      "albumYear": "2020",
+      "albumName": "Great Work",
+      "albumYear": "2021",
       "albumLanguage": "Inglês",
-      "albumImage": "../public/assets/top50global.png",
+      "albumImage": "",
       "songs": [
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://i.ytimg.com/vi/31vYLVtdGEk/hqdefault.jpg",
+          "dataArtist": "",
+          "dataSong": "A Great Work (Female Version)",
+          "dataFile": "https://r1---sn-5avvuxaxjvh-hj1l.googlevideo.com/videoplayback?expire=1607817865&ei=KAbVX9b0OszDWd7aosAC&ip=193.239.84.71&id=o-AG6xcTh1HlsAkx490QQOsF5zoduA77wvWnaGxejihXgG&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=VYbIBPS0n1BDzmSrOLB2DfUF&gir=yes&clen=6860216&ratebypass=yes&dur=263.848&lmt=1605132588926352&fvip=1&c=WEB&txp=6210222&n=Svq45zIPNtTN_dtlT&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgDqzHPAcmYPePL8S1ElK97CR2_fFC6QSrlu2iJ46Idy8CICHVxzQ93oc7RyyAco2h7iF5UpslAIxBGsAVaqONmO-a&redirect_counter=1&rm=sn-aigesr7e&req_id=f48f6008d995a3ee&cms_redirect=yes&ipbypass=yes&mh=ea&mip=192.140.118.208&mm=31&mn=sn-5avvuxaxjvh-hj1l&ms=au&mt=1607796025&mv=u&mvi=1&pcm2cms=yes&pl=22&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRQIhAOtItxex55jmgBsI5hOqRjbrQCVaBn9ILGfEG4OdZkUHAiBlH9Rc1pg8DFsuVA23g1LEhouzfh8z_dzeBrtXDZizLw%3D%3D"
+        }
+      ]
+    },
+    {
+      "albumName": "I Will Go and Do",
+      "albumYear": "2020",
+      "albumLanguage": "Inglês",
+      "albumImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Talin Everett",
           "dataSong": "Light of the World",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1020-light-of-the-world-256k-eng.mp3",
-          "songName": "Light of the World",
-          "artistName": "Talin Everett"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1020-light-of-the-world-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Je Eun Jun",
           "dataSong": "Listening",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1100-listening-256k-eng.mp3",
-          "songName": "Listening",
-          "artistName": "Je Eun Jun"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1100-listening-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Mikee Misalucha and Filipino Youth Choir",
           "dataSong": "I will Go and Do (Female Version)",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1120-i-will-go-and-do-female-version-256k-eng.mp3",
-          "songName": "I will Go and Do (Female Version)",
-          "artistName": "Mikee Misalucha and Filipino Youth Choir"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1120-i-will-go-and-do-female-version-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Aaliyah Rose",
           "dataSong": "Like Him",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1030-like-him-256k-eng.mp3",
-          "songName": "Like Him",
-          "artistName": "Aaliyah Rose"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1030-like-him-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Ammon Olayan and Liahona Olayan",
           "dataSong": "What Does He Think",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1040-what-does-he-think-256k-eng.mp3",
-          "songName": "What Does He Think",
-          "artistName": "Ammon Olayan and Liahona Olayan"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1040-what-does-he-think-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Liahona Olayan",
           "dataSong": "Live Forever",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1090-live-forever-256k-eng.mp3",
-          "songName": "Live Forever",
-          "artistName": "Liahona Olayan"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1090-live-forever-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "David Archuleta",
           "dataSong": "I Will Go and Do",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1010-i-will-go-and-do-2020-youth-theme-song-256k-eng.mp3",
-          "songName": "I Will Go and Do",
-          "artistName": "David Archuleta"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1010-i-will-go-and-do-2020-youth-theme-song-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Claire Quigley",
           "dataSong": "He Will Never Change",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1070-he-wil-never-change-256k-eng.mp3",
-          "songName": "He Will Never Change",
-          "artistName": "Claire Quigley"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1070-he-wil-never-change-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Jefferson Murdock",
           "dataSong": "Always",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1080-always-256k-eng.mp3",
-          "songName": "Always",
-          "artistName": "Jefferson Murdoc"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1080-always-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Isabella Hixson",
           "dataSong": "Reaching Out",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1050-reaching-out-256k-eng.mp3",
-          "songName": "Reaching Out",
-          "artistName": "Isabella Hixson"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1050-reaching-out-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Case Rutter",
           "dataSong": "Lonely",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1110-lonely-256k-eng.mp3",
-          "songName": "Lonely",
-          "artistName": "Case Rutter"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1110-lonely-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Grant Lemon",
           "dataSong": "Pillar of Light",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1060-pillar-of-light-256k-eng.mp3",
-          "songName": "Pillar of Light",
-          "artistName": "Grant Lemon"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1060-pillar-of-light-256k-eng.mp3"
         }
       ]
     },
     {
-      "albumName": "Tema dos Jovens 2020",
+      "albumName": "Eu Irei e Cumprirei",
       "albumYear": "2020",
       "albumLanguage": "Português",
-      "albumImage": "../public/assets/top50global.png",
+      "albumImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
       "songs": [
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Vitor Conatti e Laura Martins",
           "dataSong": "Eu sei quem eu sou",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1110-lonely-256k-por.mp3",
-          "songName": "Eu sei quem eu sou",
-          "artistName": "Vitor Conatti e Laura Martins"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1110-lonely-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "João Daniel",
           "dataSong": "Porque ele orou",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1060-pillar-of-light-256k-por.mp3",
-          "songName": "Porque ele orou",
-          "artistName": "João Daniel"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1060-pillar-of-light-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Natália Oliveira",
           "dataSong": "Ele escuta",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1100-listening-256k-por.mp3",
-          "songName": "Ele escuta",
-          "artistName": "Natália Oliveira"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1100-listening-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Nicole Luz",
           "dataSong": "Quero ser assim",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1030-like-him-256k-por.mp3",
-          "songName": "Quero ser assim",
-          "artistName": "Nicole Luz"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1030-like-him-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Alan Rocha e Rhanna Rozados",
           "dataSong": "O que Deus espera de mim",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1040-what-does-he-think-256k-por.mp3",
-          "songName": "O que Deus espera de mim",
-          "artistName": "Alan Rocha e Rhanna Rozados"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1040-what-does-he-think-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Liahona Olayan",
           "dataSong": "Felicidade eterna",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1090-live-forever-256k-por.mp3",
-          "songName": "Felicidade eterna",
-          "artistName": "Liahona Olayan"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1090-live-forever-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Mikee Misalucha e um coro de jovens filipinos",
           "dataSong": "I Will Go and Do (Eu irei e cumprirei) (versão vozes femininas)",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1120-i-will-go-and-do-female-version-256k-eng.mp3",
-          "songName": "I Will Go and Do (Eu irei e cumprirei) (versão vozes femininas)",
-          "artistName": "Mikee Misalucha e um coro de jovens filipinos"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1120-i-will-go-and-do-female-version-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Gabrielly Lourenço",
           "dataSong": "Eu irei e cumprirei",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1010-i-will-go-and-do-2020-youth-theme-song-256k-por.mp3",
-          "songName": "Eu irei e cumprirei",
-          "artistName": "Gabrielly Lourenço"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1010-i-will-go-and-do-2020-youth-theme-song-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Nicholas Shigekiyo",
           "dataSong": "Luz do Mundo",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1020-light-of-the-world-256k-por.mp3",
-          "songName": "Luz do Mundo",
-          "artistName": "Nicholas Shigekiyo"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1020-light-of-the-world-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Alyne Lemos",
           "dataSong": "Nunca está só",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1050-reaching-out-256k-por.mp3",
-          "songName": "Nunca está só",
-          "artistName": "Alyne Lemos"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1050-reaching-out-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Laura Fraga",
           "dataSong": "Ele sempre vem",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1070-he-will-never-change-256k-por.mp3",
-          "songName": "Ele sempre vem",
-          "artistName": "Laura Fraga"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1070-he-will-never-change-256k-por.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/07/db/07db38d7472bf3f1ad0ebaedf198016cde87d99a/blue_rectangles_inside_go_do.png",
           "dataArtist": "Alan Rocha",
           "dataSong": "Sem fim",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1080-always-256k-eng.mp3",
-          "songName": "Sem fim",
-          "artistName": "Alan Rocha"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2020-youth-theme-publishing/2020-01-1080-always-256k-eng.mp3"
         }
       ]
     },
     {
-      "albumName": "2019 Youth Theme",
+      "albumName": "If We Love Him",
       "albumYear": "2019",
       "albumLanguage": "Inglês",
-      "albumImage": "../public/assets/top50global.png",
+      "albumImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
       "songs": [
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Layla Mackey",
           "dataSong": "Just a Feeling",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0080-just-a-feeling-256k-eng.mp3",
-          "songName": "Just a Feeling",
-          "artistName": "feat. Layla Mackey"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0080-just-a-feeling-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Ari and Seli Miller",
           "dataSong": "Footsteps",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0100-footsteps-256k-eng.mp3",
-          "songName": "Footsteps",
-          "artistName": "feat. Ari and Seli Miller"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0100-footsteps-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Jordan James",
           "dataSong": "Merciful",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0060-merciful-256k-eng.mp3",
-          "songName": "Merciful",
-          "artistName": "feat. Jordan James"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0060-merciful-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Shalia Rokobuludrau",
           "dataSong": "Hide",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0020-hide-256k-eng.mp3",
-          "songName": "Hide",
-          "artistName": "feat. Shalia Rokobuludra"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0020-hide-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "Patch Crowe",
           "dataSong": "If We Love Him (Male Version)",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0110-if-we-love-him-male-version-256k-eng.mp3",
-          "songName": "If We Love Him (Male Version)",
-          "artistName": "Patch Crowe"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0110-if-we-love-him-male-version-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/50.png",
-          "dataImage": "../public/assets/50.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "Lauryn Judd",
           "dataSong": "If We Love Him (Female Version)",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0010-if-we-love-him-female-version-256k-eng.mp3",
-          "songName": "If We Love Him (Female Version)",
-          "artistName": "Lauryn Judd"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0010-if-we-love-him-female-version-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Talin Everett",
           "dataSong": "Forget",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0090-forget-256k-eng.mp3",
-          "songName": "Forget",
-          "artistName": "feat. Talin Everett"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0090-forget-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Claire Westcott",
           "dataSong": "His Name",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0070-his-name-256k-eng.mp3",
-          "songName": "His Name",
-          "artistName": "feat. Claire Westcott"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0070-his-name-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Kainoa Sorensen",
           "dataSong": "You’re Not Your Mistkes",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0040-mistakes-256k-eng.mp3",
-          "songName": "You’re Not Your Mistakes",
-          "artistName": "feat. Kainoa Sorensen"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0040-mistakes-256k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Lauryn Judd",
           "dataSong": "Never Ends",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0050-never-ends-64k-eng.mp3",
-          "songName": "Never Ends",
-          "artistName": "feat. Lauryn Judd"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0050-never-ends-64k-eng.mp3"
         },
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "feat. Elica Moore",
           "dataSong": "Rest",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0030-rest-256k-eng.mp3",
-          "songName": "Rest",
-          "artistName": "feat. Elica Moore"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0030-rest-256k-eng.mp3"
         }
       ]
     },
@@ -343,16 +288,715 @@
       "albumName": "Tema dos Jovens 2019",
       "albumYear": "2019",
       "albumLanguage": "Português",
-      "albumImage": "../public/assets/top50global.png",
+      "albumImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
       "songs": [
         {
-          "dataImageIndex": "public/assets/top50global.png",
-          "dataImage": "../public/assets/top50global.png",
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/f7/19/f7198b2f84ee496c6d3dbb32286f37a2b3ad035a1099518/cover_art_for_the_2019_mutual_theme_album.jpeg",
           "dataArtist": "Daniel Armada",
           "dataSong": "Amar de verdade",
-          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0001-if-we-love-him-256k-por.mp3",
-          "songName": "Amar de verdade",
-          "artistName": "Daniel Armada"
+          "dataFile": "http://media2.ldscdn.org/assets/youth/if-we-love-him-2019-mutual-album/2018-09-0001-if-we-love-him-256k-por.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Peace in Christ",
+      "albumYear": "2018",
+      "albumLanguage": "Inglês",
+      "albumImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Otavio Tobias",
+          "dataSong": "Empty",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0090-empty-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Jacob Hawkes",
+          "dataSong": "He Taught Us to Love",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0070-he-taught-us-to-love-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Evelyn Detzany",
+          "dataSong": "Like a Child",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0100-like-a-child-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Kalaya Arne",
+          "dataSong": "I Will Follow Him",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0080-i-will-follow-him-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Mitch Bandley",
+          "dataSong": "Hear It from You",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0060-hear-it-from-you-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Camry Pula",
+          "dataSong": "Change",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0030-change-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "McKenna Hixson",
+          "dataSong": "Peace in Christ (Female Version)",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0010-peace-in-christ-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Branson and Maisy Merchant",
+          "dataSong": "Big or Small",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0050-big-or-small-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Sabrina Haskett",
+          "dataSong": "The Unknown",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0020-the-unknown-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Cayson Renshaw",
+          "dataSong": "Peace in Christ (Male Version)",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0120-peace-in-christ-male-version-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Christian Affleck",
+          "dataSong": "The Body of Christ",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0040-the-body-of-christ-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "McKenna Hixson",
+          "dataSong": "Strong",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0110-strong-64k-eng.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Paz em Cristo",
+      "albumYear": "2018",
+      "albumLanguage": "Português",
+      "albumImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Felipe Conatti y Beatriz Marmelo",
+          "dataSong": "Pra me tornar maior",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0050-big-or-small-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Felipe Conatti",
+          "dataSong": "Príncipe da Paz",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0040-the-body-of-christ-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Nicole Luz",
+          "dataSong": "Não desistir",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0020-the-unknown-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "André Reis",
+          "dataSong": "Completo",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0090-empty-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Nicole Luz",
+          "dataSong": "Me ouvir pedir",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0060-hear-it-from-you-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Beatriz Marmelo",
+          "dataSong": "Vou seguir",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0080-i-will-follow-him-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Gabriela Andrade",
+          "dataSong": "Como aquela criança",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0100-like-a-child-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Dayana Patrícia",
+          "dataSong": "É bom mudar",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0030-change-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Nicole Luz",
+          "dataSong": "Eu chego lá",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0110-strong-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Beatriz Marmelo",
+          "dataSong": "Paz em Cristo (versão vozes femininas)",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0010-peace-in-christ-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/74/a4/74a44a786803d5c71b242b3191a3edfd09b38423/peace_in_christ_2018_mutual_theme_album_cover_art.jpeg",
+          "dataArtist": "Johnatan Raiony",
+          "dataSong": "Sempre amar",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/peace-in-christ-2018-mutual-album/2017-07-0070-he-taught-us-to-love-256k-por.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Ask of God",
+      "albumYear": "2017",
+      "albumLanguage": "Inglês",
+      "albumImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Helga Camín",
+          "dataSong": "Better Life",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0090-better-life-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Jake Garvin",
+          "dataSong": "One by One",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0020-one-by-one-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Justin Garvin and Lindsey Tait",
+          "dataSong": "Choose to Stay",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0060-choose-to-stay-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Feli Ika",
+          "dataSong": "Healing Water",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0110-healing-water-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "James Han",
+          "dataSong": "Ask of God",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0010-ask-of-god-2017-mutual-theme-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Nefi Hernández",
+          "dataSong": "I Hear His Voice",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0070-i-hear-his-voice-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Jaeden Vaifanua",
+          "dataSong": "What Family Means to Me",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0030-what-family-means-to-me-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Brandon Harms",
+          "dataSong": "Blessings",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0080-blessings-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Brennan Hunt and Dylan Manzanares",
+          "dataSong": "Priceless",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0100-priceless-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Kyle Vorkink",
+          "dataSong": "Thy Will Be Done",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0040-thy-will-be-done-256k-eng.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Tema dos Jovens 2017",
+      "albumYear": "2017",
+      "albumLanguage": "Português",
+      "albumImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Um de cada vez",
+          "dataSong": "Um de cada vez",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0020-one-by-one-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Beatriz Marmelo",
+          "dataSong": "Passo certo",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0090-better-life-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Nicole Luz e Vitor Conatti",
+          "dataSong": "Ele está aqui",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0060-choose-to-stay-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "James Han",
+          "dataSong": "Ask of God (Peça a Deus)",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0010-ask-of-god-2017-mutual-theme-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Beatriz Marmelo",
+          "dataSong": "Minha família me faz bem",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0030-what-family-means-to-me-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Vitor Conatti",
+          "dataSong": "Ouço Sua voz",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0070-i-hear-his-voice-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Nicholas Shigekiyo",
+          "dataSong": "Cada oração",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0080-blessings-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "André Reis",
+          "dataSong": "Saber",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0040-thy-will-be-done-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Nicholas Shigekiyo",
+          "dataSong": "Respostas",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0100-priceless-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/dc/1a/dc1a1c71f8ad781510858ef170d00e0305cefe4d/2017_mutual_album_audio_cover_art.jpeg",
+          "dataArtist": "Gabriela Andrade",
+          "dataSong": "É só pedir",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/ask-2017-mutual-album/2017-01-0110-healing-water-256k-por.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Press Forward",
+      "albumYear": "2016",
+      "albumLanguage": "Inglês",
+      "albumImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Brynleigh Kinne",
+          "dataSong": "When the Time is Right",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-010-when-the-time-is-right-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Zac Love",
+          "dataSong": "Nothing Can Separate Us",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-005-nothing-can-separate-us-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Noelle Bybee",
+          "dataSong": "Press Forward",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-001-press-forward-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Noelle Bybee",
+          "dataSong": "Lift Your Eyes",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-011-lift-your-eyes-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Kawika Katoa",
+          "dataSong": "New Life",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-003-new-life-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Brandon Casper",
+          "dataSong": "You Already Know It",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-002-you-already-know-it-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Davis Handley",
+          "dataSong": "It's Not About You",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-007-its-not-about-you-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Kylee Shaffer and Malorie Ward",
+          "dataSong": "That's How I'll Be",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-009-thats-how-ill-be-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Tanner Linford",
+          "dataSong": "He Is There",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-006-he-is-there-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Lillian Hepler",
+          "dataSong": "Treat Everyone With Love",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-004-treat-everyone-with-love-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Jonathan Meyers and Cera Pack",
+          "dataSong": "Lay It Down",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-008-lay-it-down-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Kylee Shaffer",
+          "dataSong": "Press Forward (Acoustic Version)",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2016-youth-music-album/2016-01-012-press-forward-acoustic-256k-eng.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Tema dos Jovens 2016",
+      "albumYear": "2016",
+      "albumLanguage": "Português",
+      "albumImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Gerson Santos",
+          "dataSong": "Uma vida melhor",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0003-new-life-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Daniel Dornelles",
+          "dataSong": "Prosseguir com firmeza",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-001-press-forward-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Daniela Dornelles",
+          "dataSong": "Prosseguir com firmeza (versão acústica)",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0012-press-forward-acoustic-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Pedro Silva",
+          "dataSong": "Nada vai nos separar",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0005-nothing-can-separate-us-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Sueli Silva",
+          "dataSong": "No tempo certo",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0010-when-the-time-is-right-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Daniel Dornelles",
+          "dataSong": "Você já sabe",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-006-you-already-know-it-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Júlia Soares",
+          "dataSong": "Seu Fardo Entregar",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-005-lay-it-down-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Raquel Ribeiro",
+          "dataSong": "Eleva-te mais alto",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0011-lift-your-eyes-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "João Barata",
+          "dataSong": "A meu lado está",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-003-he-is-there-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Júlia, Nicholas, Gabriela, Edinho, Natan",
+          "dataSong": "Prosseguir com Firmeza (todos)",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-002-version-sung-by-all-participating-youth-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Sérgio Cavaco",
+          "dataSong": "Não é por você",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0007-its-not-about-you-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Natan e Júlia Soares",
+          "dataSong": "A Meu Lado Está",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-003-he-is-there-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Cátia Almeida y Gerson Santos",
+          "dataSong": "Seu fardo entregar",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-005-lay-it-down-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Edinho Campos",
+          "dataSong": "Prosseguir com Firmeza",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-001-press-forward-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Marta Dionísio",
+          "dataSong": "Eu quero ser",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-004-thats-how-ill-be-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Verónica Silva",
+          "dataSong": "Trata todos com amor",
+          "dataFile": "https://media2.ldscdn.org/assets/youth/2016-europe-area-fsy-music/2016-07-0004-treat-everyone-with-love-64k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Nicholas Shigekiyo",
+          "dataSong": "Você Já Sabe",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-006-you-already-know-it-256k-por.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/bb/6fbbafc062b3ceb6913b59fda944cfafe48a3eb1/2016_mutual_theme_album.jpeg",
+          "dataArtist": "Gabriela Andrade",
+          "dataSong": "Eu Quero Ser",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/press-forward-youth-theme-portuguese-songs/2016-01-004-thats-how-ill-be-256k-por.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Embark",
+      "albumYear": "2015",
+      "albumLanguage": "Inglês",
+      "albumImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Maddie Wilson",
+          "dataSong": "Show Them",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-003-show-them-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Elijah Thomas",
+          "dataSong": "Embark",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-001-embark-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Bailey Lawson",
+          "dataSong": "Someone He Can Count On",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-007-someone-he-can-count-on-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Kyle Thorn",
+          "dataSong": "Closer",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-002-closer-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Anna Richey",
+          "dataSong": "Fragile",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-005-fragile-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Micah Rindlisbacher",
+          "dataSong": "Only You",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-010-only-you-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Regan Rindlisbacher",
+          "dataSong": "Good to Be Alive",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-008-good-to-be-alive-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Tanner Townsend",
+          "dataSong": "I Can Do All Things",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-012-i-can-do-all-things-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Madilyn Paige",
+          "dataSong": "We’re Just People",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-011-were-just-people-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Grayson O’Very",
+          "dataSong": "Silent",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-004-silent-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Aaliyah Rose",
+          "dataSong": "Inside Out",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-009-inside-out-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/6f/2b/6f2bf3927bd31c94271bec9327bc0da07c6d9804/2015_mutual_theme_album_cover.jpeg",
+          "dataArtist": "Nicholas Neel",
+          "dataSong": "This Life",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2015-youth-music-album/2015-01-006-this-life-256k-eng.mp3"
+        }
+      ]
+    },
+    {
+      "albumName": "Come unto Christ",
+      "albumYear": "2014",
+      "albumLanguage": "Inglês",
+      "albumImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+      "songs": [
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+          "dataArtist": "Catelin Lundell",
+          "dataSong": "Wonderful People",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2014-youth-music-album/2014-12-005-wonderful-people-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+          "dataArtist": "Caleb Cox",
+          "dataSong": "Say Yes",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2014-youth-music-album/2014-12-002-say-yes-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+          "dataArtist": "",
+          "dataSong": "Come unto Christ: 2014 Theme Song",
+          "dataFile": "http://media2.ldscdn.org/assets/youth/2014-youth-activity-resources/2014-01-002-come-unto-christ-2014-theme-song-64k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+          "dataArtist": "Nicholas Neel",
+          "dataSong": "Trust Him",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2014-youth-music-album/2014-12-003-trust-him-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+          "dataArtist": "Anna Richey",
+          "dataSong": "You’ll Never Run Out of Love",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2014-youth-music-album/2014-12-006-youll-never-run-out-of-love-256k-eng.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://assets.ldscdn.org/a9/f5/a9f5f628bc8705bd03dd1fce5544b2f54a91bcd6/come_unto_christ_2014_mutual_theme_album.jpeg",
+          "dataArtist": "Nik Day",
+          "dataSong": "We Are One",
+          "dataFile": "http://media2.ldscdn.org/assets/music/2014-youth-music-album/2014-12-004-we-are-one-256k-eng.mp3"
         }
       ]
     }
