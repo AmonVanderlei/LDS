@@ -4,14 +4,21 @@
       "albumName": "Great Work",
       "albumYear": "2021",
       "albumLanguage": "Inglês",
-      "albumImage": "",
+      "albumImage": "https://user-images.githubusercontent.com/65919312/102105441-2ff54700-3e0e-11eb-8ee1-366cac57431d.jpg",
       "songs": [
         {
           "date": "12/12/2020",
-          "dataImage": "https://i.ytimg.com/vi/31vYLVtdGEk/hqdefault.jpg",
-          "dataArtist": "",
+          "dataImage": "https://user-images.githubusercontent.com/65919312/102105441-2ff54700-3e0e-11eb-8ee1-366cac57431d.jpg",
+          "dataArtist": "Ashlyn Peterson",
           "dataSong": "A Great Work (Female Version)",
-          "dataFile": "https://r1---sn-5avvuxaxjvh-hj1l.googlevideo.com/videoplayback?expire=1607817865&ei=KAbVX9b0OszDWd7aosAC&ip=193.239.84.71&id=o-AG6xcTh1HlsAkx490QQOsF5zoduA77wvWnaGxejihXgG&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=VYbIBPS0n1BDzmSrOLB2DfUF&gir=yes&clen=6860216&ratebypass=yes&dur=263.848&lmt=1605132588926352&fvip=1&c=WEB&txp=6210222&n=Svq45zIPNtTN_dtlT&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgDqzHPAcmYPePL8S1ElK97CR2_fFC6QSrlu2iJ46Idy8CICHVxzQ93oc7RyyAco2h7iF5UpslAIxBGsAVaqONmO-a&redirect_counter=1&rm=sn-aigesr7e&req_id=f48f6008d995a3ee&cms_redirect=yes&ipbypass=yes&mh=ea&mip=192.140.118.208&mm=31&mn=sn-5avvuxaxjvh-hj1l&ms=au&mt=1607796025&mv=u&mvi=1&pcm2cms=yes&pl=22&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRQIhAOtItxex55jmgBsI5hOqRjbrQCVaBn9ILGfEG4OdZkUHAiBlH9Rc1pg8DFsuVA23g1LEhouzfh8z_dzeBrtXDZizLw%3D%3D"
+          "dataFileLocal": "../public/assets/audios/great-work-2021-female-version.mp3"
+        },
+        {
+          "date": "12/12/2020",
+          "dataImage": "https://user-images.githubusercontent.com/65919312/102105441-2ff54700-3e0e-11eb-8ee1-366cac57431d.jpg",
+          "dataArtist": "Nik Day",
+          "dataSong": "A Great Work",
+          "dataFileLocal": "../public/assets/videos/great-work-2021.mp4"
         }
       ]
     },

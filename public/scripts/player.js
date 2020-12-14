@@ -164,7 +164,7 @@ threeDots.addEventListener('click', (e) => {
     threeDotsBtns.classList.remove('showThreeDotsBtns');
     threeDots.innerHTML = `<i class="fas fa-ellipsis-v threeDotsIcon"></i>`;
     display = "none";
-  } else{
+  } else {
     threeDotsBtns.classList.add('showThreeDotsBtns');
     threeDots.innerHTML = `<i class="fas fa-ellipsis-v green"></i>`;
     display = "flex";
@@ -179,6 +179,11 @@ document.querySelectorAll('.main__col').forEach(item => {
     let artist = item.getAttribute('dataArtist');
     let song = item.getAttribute('dataSong');
     let file = item.getAttribute('dataFile');
+    if (file.includes('http')) {
+      file = item.getAttribute('dataFile');
+    } else {
+      file = item.getAttribute('dataFileLocal');
+    };
 
     let playerArtistComponent = document.querySelectorAll('.player__artist');
 

@@ -2,7 +2,7 @@
 <h4>Listen to your favorites songs of The Church of Jesus Christ of Latter-Day Saints</h4>
 
 <p align="center">
-<image src="public/assets/logo.png"/></br>
+<image src="public/assets/images/logo.png"/></br>
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 ## Apresentation of Project :sparkles:
 
 <p align="center">
-<image src="public/assets/example.png" />
+<image src="public/assets/images/example.png" />
 </p>
 
 ---
