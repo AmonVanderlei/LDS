@@ -2,7 +2,7 @@
 <h4>Ouça suas músicas favoritas de A Igreja de Jesus Cristo dos Santos dos Últimos Dias</h4>
 
 <p align="center">
-<image src="public/assets/images/logo.png"/></br>
+<image src="public/assets/logo.png"/></br>
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 ## Apresentação do Projeto :sparkles:
 
 <p align="center">
-<image src="public/assets/images/example.png" />
+<image src="public/assets/example.png" />
 </p>
 
 ---
