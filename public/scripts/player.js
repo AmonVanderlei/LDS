@@ -179,11 +179,6 @@ document.querySelectorAll('.main__col').forEach(item => {
     let artist = item.getAttribute('dataArtist');
     let song = item.getAttribute('dataSong');
     let file = item.getAttribute('dataFile');
-    if (file.includes('http')) {
-      file = item.getAttribute('dataFile');
-    } else {
-      file = item.getAttribute('dataFileLocal');
-    };
 
     let playerArtistComponent = document.querySelectorAll('.player__artist');
 

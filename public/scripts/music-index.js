@@ -39,7 +39,6 @@ function showRow(currentNumber) {
                     myDiv.setAttribute("dataArtist", `${songs[i].dataArtist}`);
                     myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
                     myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
-                    myDiv.setAttribute("dataFileLocal", `${songs[i].dataFileLocal}`);
 
                     myDiv.innerHTML = `<img src="${songs[i].dataImage}" /><h3>${songs[i].dataSong}</h3><p>${songs[i].dataArtist}</p>`;
                     main__row__songs.appendChild(myDiv)

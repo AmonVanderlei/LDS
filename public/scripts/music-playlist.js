@@ -46,7 +46,6 @@ fetch("../public/scripts/json/albuns.json")
                 myTr.setAttribute("dataArtist", `${albuns[albunsIndex].songs[songsIndex].dataArtist}`);
                 myTr.setAttribute("dataSong", `${albuns[albunsIndex].songs[songsIndex].dataSong}`);
                 myTr.setAttribute("dataFile", `${albuns[albunsIndex].songs[songsIndex].dataFile}`);
-                myTr.setAttribute("dataFileLocal", `${albuns[albunsIndex].songs[songsIndex].dataFileLocal}`);
                 myTr.setAttribute("dataNumber", songsIndex);
                 myTr.appendChild(myFirstTd);
                 myTr.appendChild(mySecondTd);

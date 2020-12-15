@@ -11,14 +11,14 @@
           "dataImage": "https://user-images.githubusercontent.com/65919312/102105441-2ff54700-3e0e-11eb-8ee1-366cac57431d.jpg",
           "dataArtist": "Ashlyn Peterson",
           "dataSong": "A Great Work (Female Version)",
-          "dataFileLocal": "../public/assets/audios/great-work-2021-female-version.mp3"
+          "dataFile": "https://media.discordapp.net/attachments/788226776974491648/788226912987512843/great-work-2021-female-version.mp4"
         },
         {
           "date": "12/12/2020",
           "dataImage": "https://user-images.githubusercontent.com/65919312/102105441-2ff54700-3e0e-11eb-8ee1-366cac57431d.jpg",
           "dataArtist": "Nik Day",
           "dataSong": "A Great Work",
-          "dataFileLocal": "../public/assets/videos/great-work-2021.mp4"
+          "dataFile": "https://media.discordapp.net/attachments/788226776974491648/788230108175007785/great-work-2021.mp4"
         }
       ]
     },

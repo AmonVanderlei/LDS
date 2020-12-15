@@ -79,7 +79,7 @@ unMuteBtn.addEventListener('click', (e) => {
 
 	return false;
 });//botão que deixa a música tocando novamente
-var albunsIndex = 1;
+var albunsIndex = localStorage.getItem('albunsIndex');;
 var songsIndex = 0;
 function functionLastNumber() {
 	fetch("../public/scripts/json/albuns.json")
@@ -187,12 +187,6 @@ function playAndShowSong() {
 			let artist = item.getAttribute('dataArtist');
 			let song = item.getAttribute('dataSong');
 			let file = item.getAttribute('dataFile');
-			if (file.includes('http')) {
-				file = item.getAttribute('dataFile');
-			} else {
-				file = item.getAttribute('dataFileLocal');
-			};
-
 			let number = item.getAttribute('dataNumber');
 
 			let playerArtistComponent = document.querySelectorAll('.player__artist');
