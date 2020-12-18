@@ -75,14 +75,84 @@
       "albumName": "Nas Nuvens, em Casa",
       "albumYear": "2020",
       "albumLanguage": "Português",
-      "albumImage": "",
+      "albumImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
       "songs": [
         {
-          "date": "../12/2020",
-          "dataImage": "",
-          "dataArtist": "",
-          "dataSong": "",
-          "dataFile": ""
+          "date": "17/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Vinícius Arevallo, Joachim Neander, William S. Bennett, Otto Goldschmidt e Alex Dantas",
+          "dataSong": "Louvai a Deus",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789190092261949480/louvai-a-deus.mp4"
+        },
+        {
+          "date": "17/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Gabrielly Lourenço, Clara W. Mcmaster e Darwin Wolford",
+          "dataSong": "Faz-Me Andar Só Na Luz",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789190184021393408/faz-me-andar-so-na-luz.mp4"
+        },
+        {
+          "date": "17/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "O Bairro Novo, Nik Day e Priscila Mottola",
+          "dataSong": "Paz Em Cristo",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789190265733906432/paz-em-cristo.mp4"
+        },
+        {
+          "date": "17/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Nicholas Shigekiyo, Breitkopf and Härtel, Katharina Von Schlegel, Jane Borthwick e Jean Sibelius",
+          "dataSong": "Calma Minha Alma",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789190338228387865/calma-minha-alma.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Nicole Luz, Laurie Huffman, Ralph Rodgers Jr. e K. Newell Dayley",
+          "dataSong": "O Amor do Salvador",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789581974879731762/o-amor-do-salvador.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "João Daniel, Ruth M. Gardner e Lyall J. Gardner",
+          "dataSong": "Avante, Ao Mundo Proclamai",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789582032602005565/avante-ao-mundo-proclamar.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Alyne Lemos e Grietje Terburg Rowley",
+          "dataSong": "Sê Humilde",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789582065519558758/se-humilde.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Felipe Conatti, George A. Manwaring e Ebenezer Beesley",
+          "dataSong": "Quão Grato É Cantar Louvor",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789582107592753162/quao-grato-e-cantar-louvor.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Everton Nascimento, James Allen e Felice de Giardini",
+          "dataSong": "Glória a Deus Cantai",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789583638991732776/gloria-a-deus-cantai.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "Nicole Luz e Darwin Wolford",
+          "dataSong": "Belo É o Salvador",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4"
+        },
+        {
+          "date": "18/12/2020",
+          "dataImage": "https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4?format=jpeg",
+          "dataArtist": "João Daniel, Emma Lou Thayne e Joleen G. Meredith",
+          "dataSong": "Onde Encontrar a Paz?",
+          "dataFile": "https://media.discordapp.net/attachments/788592011467816981/789583748940300368/onde-encontrar-a-paz.mp4"
         }
       ]
     },
