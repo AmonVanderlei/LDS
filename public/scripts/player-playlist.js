@@ -82,7 +82,7 @@ unMuteBtn.addEventListener('click', (e) => {
 var albunsIndex = localStorage.getItem('albunsIndex');;
 var songsIndex = 0;
 function functionLastNumber() {
-	fetch("../public/scripts/json/albuns.json")
+	fetch("../scripts/json/albuns.json")
 		.then(response => response.json())
 		.then((jsonObj) => {
 
