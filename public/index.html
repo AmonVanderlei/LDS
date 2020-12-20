@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Listen to The Church of Jesus Christ of Latter-Day Saints Songs</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Listen to The Church of Jesus Christ of Latter-Day Saints Songs">
+    <meta name="description"
+        content="Ouça suas músicas favoritas de A Igreja de Jesus Cristo dos Santos dos Últimos Dias">
+    <meta name="keywords"
+        content="Músicas,Música,Musicas,Musica,Canções,Canção,Cancoes,Cancao,A Igreja de Jesus Cristo dos Santos dos Últimos Dias,The Church of Jesus Christ of Latter-Day Saints,SUD,LDS">
+    <meta name="version" content="1.0.0">
+    <meta name="theme-color" content="#03A6FF">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="Amon Vanderlei">
+    <meta name="copyright" content="Amon Vanderlei"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amonvanderlei.github.io/LDS">
+    <meta property="og:title" content="Listen to The Church of Jesus Christ of Latter-Day Saints Songs">
+    <meta property="og:description"
+        content="Ouça suas músicas favoritas de A Igreja de Jesus Cristo dos Santos dos Últimos Dias">
+    <meta property="og:image"
+        content="https://user-images.githubusercontent.com/65919312/102695035-ad9cc680-4203-11eb-8b08-d921bb9eafa3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="public/styles/reset.css">
+    <link rel="stylesheet" href="public/styles/sidebar.css">
+    <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="stylesheet" href="public/styles/player.css">
+    <link rel="stylesheet" href="public/styles/responsive.css">
+    <!--Links para pegar músicas (troca a "lang=" para trocar o idioma)
+        *   https://www.churchofjesuschrist.org/youth/music?lang=eng
+        *   https://www.churchofjesuschrist.org/media/collection/youth-music?lang=eng&collectionId=c97d80a6f8756f956c07639057a7e014784079f8
+        *   https://www.churchofjesuschrist.org/youth/childrenandyouth/youth-theme-2020?lang=eng
+    -->
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check" class="menuBtn">
+        <div class="menu" onclick="this.classList.toggle('clicked')">
+            <div class="lines" id="line1"></div>
+            <div class="lines" id="line2"></div>
+            <div class="lines" id="line3"></div>
+        </div>
+    </label>
+    <nav class="sidebar">
+        <div class="sidebar-wraper">
+            <div class="sidebar__logo">
+                <a href=""><img src="public/assets/logo.png"></a>
+            </div>
+            <div class="sidebar__menu">
+                <a class="sidebar__menu__selecionado" href=""><i class="fas fa-home"></i>Início</a>
+                <a href="./index.html"><i class="fas fa-search"></i>Buscar</a>
+                <a href="pages/library.html"><i class="fas fa-database"></i>Biblioteca</a>
+                <a href="pages/about.html"><i class="fas fa-info-circle"></i>Sobre</a>
+            </div>
+            <div class="sidebar__menu">
+                <p class="sidebar__menu__title">Playlists</p>
+                <div class="sidebar__menu__item">
+                    <img src="public/assets/musicas_curtidas.png">
+                    <span>Músicas Curtidas</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main" id="main">
+        <div class="main-wraper">
+            <section class="main__row" id="main__row">
+                <div class="main__row__title" id="main__row__title_0"></div>
+                <div class="main__row__songs" id="main__row__songs_0"></div>
+            </section>
+            <section class="main__row" id="main__row">
+                <div class="main__row__title" id="main__row__title_1"></div>
+                <div class="main__row__songs" id="main__row__songs_1"></div>
+            </section>
+            <section class="main__row" id="main__row">
+                <div class="main__row__title" id="main__row__title_2"></div>
+                <div class="main__row__songs" id="main__row__songs_2"></div>
+            </section>
+            <section class="main__row" id="main__row">
+                <div class="main__row__title" id="main__row__title_3"></div>
+                <div class="main__row__songs" id="main__row__songs_3"></div>
+            </section>
+        </div>
+    </main>
+
+    <div class="player">
+        <div class="player__artist">
+        </div>
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <a id="beginBtn" href=""><i class="far fa-stop-circle beginBtnIcon"></i></a>
+                <a id="undoBtn" href=""><i class="fas fa-undo"></i></a>
+                <a class="pauseBtn" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <div class="loader" id="loader"></div>
+                <a class="playBtn" id="playBtn" href="#"><i class="fas fa-play"></i></a>
+                <a id="redoBtn" href=""><i class="fas fa-redo"></i></a>
+                <a id="loopBtn" class="firstLoopBtn" href=""><i class="fas fa-sync"></i></a>
+                <div class="threeDots"><i class="fas fa-ellipsis-v threeDotsIcon"></i></div>
+                <div class="threeDotsBtns">
+                    <a class="loopBtn2" id="loopBtn2" href=""><i class="fas fa-sync"></i></a>
+                    <div class="secondDivVol">
+                        <a id="hideVolBtn2" href=""><i class="fas fa-volume-up"></i></a>
+                        <div class="volume2" id="volume2">
+                            <input id="volume-control2" type="range" value="100"></input>
+                            <a class="muteBtn2" id="muteBtn2" href=""><i class="fas fa-volume-mute"></i></a>
+                            <a class="unMuteBtn2" id="unMuteBtn2" href=""><i class="fas fa-volume-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player__control__progress">
+                <div id="player__control__progress_2"></div>
+            </div>
+            <div class="player__timer">
+                <p id="current">00:00 / </p>
+                <p id="duration">00:00</p>
+            </div>
+        </div>
+        <div class="player__control_2">
+            <div class="player__control__buttons_2">
+                <a id="hideVolBtn" href=""><i class="fas fa-volume-up"></i></a>
+                <div class="volume" id="volume">
+                    <input id="volume-control" type="range" value="100"></input>
+                    <a class="muteBtn" id="muteBtn" href=""><i class="fas fa-volume-mute"></i></a>
+                    <a class="unMuteBtn" id="unMuteBtn" href=""><i class="fas fa-volume-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio class="audioPlayer" id="audioplayer" controls=""></audio>
+    <script src="public/scripts/music-index.js"></script>
+    <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
+    <script src="public/scripts/player.js"></script>
+</body>
+
+</html>
