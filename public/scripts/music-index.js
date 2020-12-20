@@ -20,7 +20,7 @@ function showRow(currentNumber) {
     var all_main__row__songs = document.querySelectorAll(".main__row__songs");
     var main__row__songs = all_main__row__songs[currentNumber];
 
-    fetch("public/scripts/json/albuns.json")
+    fetch("scripts/json/albuns.json")
         .then(response => response.json())
         .then((jsonObj) => {
 
