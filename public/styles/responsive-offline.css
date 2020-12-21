@@ -1,0 +1,62 @@
+@media screen and (max-width: 1000px){
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .sidebar{
+        transform: translateX(250px);
+    }
+    .menuBtn{
+        display: inline-block;
+    }
+    .menu{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .lines{
+        width: 35px;
+        height: 5px;
+        background-color: var(--dark-blue);
+        margin: 7px 8px;
+        transition: .7s;
+    }
+    .clicked #line1{
+        transform: rotate(-45deg) translate(-10px, 8px);
+    }
+    .clicked #line2{
+        opacity: 0;
+    }
+    .clicked #line3{
+        transform: rotate(45deg) translate(-9px, -7px);
+    }
+    .sidebar{
+        position: absolute;
+        top: 0;
+        left: -250px;
+        z-index: 1;
+        transition: all .3s;
+    }
+    .main{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 772px){
+    .main__row{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 579px){
+    .main__row__footer{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .main__row__footer > small{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .main{
+        padding: 0;
+    }
+}
