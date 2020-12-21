@@ -59,3 +59,12 @@
     font-size: 13px;
     text-align: center;
 }
+.main__row__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section__title{
+    color: var(--index-color);
+    padding: 25px 0;
+}
