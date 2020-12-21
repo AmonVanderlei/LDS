@@ -72,4 +72,4 @@ this.addEventListener("fetch", event => {
         })
     )
   });    
-}, 2000);
+}, 5000);
