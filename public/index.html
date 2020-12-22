@@ -53,10 +53,10 @@
     <nav class="sidebar">
         <div class="sidebar-wraper">
             <div class="sidebar__logo">
-                <a href=""><img src="assets/logo.png"></a>
+                <a href="./index.html"><img src="assets/logo.png"></a>
             </div>
             <div class="sidebar__menu">
-                <a class="sidebar__menu__selecionado" href=""><i class="fas fa-home"></i>Início</a>
+                <a class="sidebar__menu__selecionado" href="./index.html"><i class="fas fa-home"></i>Início</a>
                 <a href="./index.html"><i class="fas fa-search"></i>Buscar</a>
                 <a href="pages/library.html"><i class="fas fa-database"></i>Biblioteca</a>
                 <a href="pages/about.html"><i class="fas fa-info-circle"></i>Sobre</a>
@@ -102,22 +102,22 @@
         </div>
         <div class="player__control">
             <div class="player__control__buttons">
-                <a id="beginBtn" href=""><i class="far fa-stop-circle beginBtnIcon"></i></a>
-                <a id="undoBtn" href=""><i class="fas fa-undo"></i></a>
-                <a class="pauseBtn" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <button id="beginBtn" class="playerBtns"><i class="far fa-stop-circle btnIcon"></i></button>
+                <button id="undoBtn" class="playerBtns"><i class="fas fa-undo btnIcon"></i></button>
+                <button class="pauseBtn playerBtns" id="pauseBtn" href="#"><i class="far fa-pause-circle btnIcon"></i></button>
                 <div class="loader" id="loader"></div>
-                <a class="playBtn" id="playBtn" href="#"><i class="fas fa-play"></i></a>
-                <a id="redoBtn" href=""><i class="fas fa-redo"></i></a>
-                <a id="loopBtn" class="firstLoopBtn" href=""><i class="fas fa-sync"></i></a>
+                <button class="playBtn playerBtns" id="playBtn" href="#"><i class="fas fa-play btnIcon"></i></button>
+                <button id="redoBtn" class="playerBtns"><i class="fas fa-redo btnIcon"></i></button>
+                <button id="loopBtn" class="firstLoopBtn playerBtns"><i class="fas fa-sync btnIcon"></i></button>
                 <div class="threeDots"><i class="fas fa-ellipsis-v threeDotsIcon"></i></div>
                 <div class="threeDotsBtns">
-                    <a class="loopBtn2" id="loopBtn2" href=""><i class="fas fa-sync"></i></a>
+                    <button class="loopBtn2 playerBtns" id="loopBtn2"><i class="fas fa-sync btnIcon"></i></button>
                     <div class="secondDivVol">
-                        <a id="hideVolBtn2" href=""><i class="fas fa-volume-up"></i></a>
+                        <button id="hideVolBtn2" class="playerBtns"><i class="fas fa-volume-up btnIcon"></i></button>
                         <div class="volume2" id="volume2">
                             <input id="volume-control2" type="range" value="100"></input>
-                            <a class="muteBtn2" id="muteBtn2" href=""><i class="fas fa-volume-mute"></i></a>
-                            <a class="unMuteBtn2" id="unMuteBtn2" href=""><i class="fas fa-volume-up"></i></a>
+                            <button class="muteBtn2 playerBtns" id="muteBtn2"><i class="fas fa-volume-mute btnIcon"></i></button>
+                            <button class="unMuteBtn2 playerBtns" id="unMuteBtn2"><i class="fas fa-volume-up btnIcon"></i></button>
                         </div>
                     </div>
                 </div>
@@ -132,11 +132,11 @@
         </div>
         <div class="player__control_2">
             <div class="player__control__buttons_2">
-                <a id="hideVolBtn" href=""><i class="fas fa-volume-up"></i></a>
+                <button id="hideVolBtn" class="playerBtns"><i class="fas fa-volume-up btnIcon"></i></button>
                 <div class="volume" id="volume">
                     <input id="volume-control" type="range" value="100"></input>
-                    <a class="muteBtn" id="muteBtn" href=""><i class="fas fa-volume-mute"></i></a>
-                    <a class="unMuteBtn" id="unMuteBtn" href=""><i class="fas fa-volume-up"></i></a>
+                    <button class="muteBtn playerBtns" id="muteBtn"><i class="fas fa-volume-mute btnIcon"></i></button>
+                    <button class="unMuteBtn playerBtns" id="unMuteBtn"><i class="fas fa-volume-up btnIcon"></i></button>
                 </div>
             </div>
         </div>

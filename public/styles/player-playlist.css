@@ -53,6 +53,13 @@
 .player__control__buttons{
     display: inline-block;
 }
+.playerBtns{
+    background-color: transparent;
+    border: none;
+    margin: 0 15px;
+    outline: none;
+    color: var(--light-gray);
+}
 .btns{
     color: var(--light-gray);
     margin: 15px;
@@ -88,15 +95,15 @@
 }
 .muteBtn{
     position: absolute;
-    top: 150px;
-    left: 0px;
+    top: 135px;
+    left: -14px;
     color: var(--light-gray);
     z-index: 2;
 }
 .unMuteBtn{
     position: absolute;
-    top: 150px;
-    left: 0px;
+    top: 135px;
+    left: -14px;
     color: var(--light-gray);
     z-index: 2;
     display: none;

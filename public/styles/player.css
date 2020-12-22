@@ -47,12 +47,19 @@
 .player__control__buttons{
     display: inline-block;
 }
-.player__control__buttons a{
+/* .player__control__buttons a{
     color: var(--light-gray);
     margin: 15px;
     font-size: 18px;
+} */
+.playerBtns{
+    background-color: transparent;
+    border: none;
+    margin: 0 15px;
+    outline: none;
+    color: var(--light-gray);
 }
-.beginBtnIcon{
+.btnIcon{
     font-size: 20px;
 }
 .pauseBtn{
@@ -98,6 +105,7 @@
     justify-content: space-between;
     right: 12%;
     bottom: 60%;
+    height: 50px;
 }
 .showThreeDotsBtns{
     display: flex;

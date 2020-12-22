@@ -73,10 +73,10 @@ loopBtn.addEventListener('click', (e) => {
 
     if (audioPlayer.loop == false) {
         audioPlayer.loop = true;
-        loopBtn.innerHTML = `<i class="fas fa-sync green"></i>`;
+        loopBtn.innerHTML = `<i class="fas fa-sync btnIcon green">`;
     } else {
         audioPlayer.loop = false;
-        loopBtn.innerHTML = `<i class="fas fa-sync"></i>`;
+        loopBtn.innerHTML = `<i class="fas fa-sync btnIcon">`;
     }
 
     return false;
@@ -86,10 +86,10 @@ loopBtn2.addEventListener('click', (e) => {
 
     if (audioPlayer.loop == false) {
         audioPlayer.loop = true;
-        loopBtn2.innerHTML = `<i class="fas fa-sync green"></i>`;
+        loopBtn2.innerHTML = `<i class="fas fa-sync btnIcon green">`;
     } else {
         audioPlayer.loop = false;
-        loopBtn2.innerHTML = `<i class="fas fa-sync"></i>`;
+        loopBtn2.innerHTML = `<i class="fas fa-sync btnIcon">`;
     }
 
     return false;
@@ -99,11 +99,11 @@ hideVolBtn.addEventListener('click', (e) => {
 
     if (hide == true) {
         volume.classList.add("showInlineBlock");
-        hideVolBtn.innerHTML = `<i class="fas fa-volume-up green"></i>`;
+        hideVolBtn.innerHTML = `<i class="fas fa-volume-up btnIcon green">`;
         hide = false;
     } else {
         volume.classList.remove("showInlineBlock");
-        hideVolBtn.innerHTML = `<i class="fas fa-volume-up"></i>`;
+        hideVolBtn.innerHTML = `<i class="fas fa-volume-up btnIcon">`;
         hide = true;
     };
 
@@ -114,11 +114,11 @@ hideVolBtn2.addEventListener('click', (e) => {
 
     if (hide == true) {
         volume2.classList.add("showInlineBlock");
-        hideVolBtn2.innerHTML = `<i class="fas fa-volume-up green"></i>`;
+        hideVolBtn2.innerHTML = `<i class="fas fa-volume-up btnIcon green">`;
         hide = false;
     } else {
         volume2.classList.remove("showInlineBlock");
-        hideVolBtn2.innerHTML = `<i class="fas fa-volume-up"></i>`;
+        hideVolBtn2.innerHTML = `<i class="fas fa-volume-up btnIcon">`;
         hide = true;
     };
 
