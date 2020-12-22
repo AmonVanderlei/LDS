@@ -1,13 +1,9 @@
-// sw.js
 var actualDate = new Date();
 setTimeout(() => {
-    var cacheName = `cache-lds-${actualdate}`;
+    var cacheName = `cache-lds-${actualDate}`;
 self.addEventListener('install', e => {
     e.waitUntil(
-        // depois que o Service Worker estiver instalado,,
-        // abra um novo cache
         caches.open(cacheName).then(cache => {
-            // adicione todas as URLs de recursos que queremos armazenar em cache
             return cache.addAll([
                 '/',
                 '/index.html',
@@ -53,23 +49,24 @@ this.addEventListener('activate', event => {
             return Promise.all(
                 cacheNames
                     .filter(cacheName => (cacheName.startsWith('cache-lds-')))
-                    .filter(cacheName => (cacheName !== staticCacheName))
+                    .filter(cacheName => (cacheName !== cacheName))
                     .map(cacheName => caches.delete(cacheName))
             );
         })
     );
 });
-
 // Serve from Cache
 this.addEventListener("fetch", event => {
     event.respondWith(
       caches.match(event.request)
         .then(response => {
+            console.log(response)
           return response || fetch(event.request);
         })
         .catch(() => {
+            console.log('offline: '+response)
           return caches.match('pages/offline.html');
         })
     )
-  });    
+  });
 }, 5000);

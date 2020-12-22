@@ -1,11 +1,8 @@
-function registerServiceWorker() {
-    // registrando o service worker para navegadores com suporte
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js', { scope: '/public/' }).then(() => {
-        console.log('Service Worker registrado com sucesso.');
-      }).catch(error => {
-        console.log('Service Worker falhou:', error);
-      });
-    }
-  }
-registerServiceWorker()
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js', {scope: '/public/'})
+  .then(function(reg) {
+    console.log('Registration succeeded. Scope is ' + reg.scope);
+  }).catch(function(error) {
+    console.log('Registration failed with ' + error);
+  });
+}
