@@ -19,8 +19,14 @@
     ],
     "theme_color": "#03A6FF",
     "background_color": "#03A6FF",
-    "display": "standalone",
-    "start_url": "/",
-    "scope": "/",
-    "orientation": "any"
+    "display": "fullscreen",
+    "start_url": "./index.html",
+    "orientation": "any",
+    "screenshots" : [
+        {
+          "src": "assets/example.png",
+          "sizes": "1366x768",
+          "type": "image/png"
+        }
+      ]
 }
