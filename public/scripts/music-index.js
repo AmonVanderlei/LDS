@@ -40,7 +40,7 @@ function showRow(currentNumber) {
                     myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
                     myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
 
-                    myDiv.innerHTML = `<img src="${songs[i].dataImage}" /><h3>${songs[i].dataSong}</h3><p>${songs[i].dataArtist}</p>`;
+                    myDiv.innerHTML = `<img alt="Imagem do Música" src="${songs[i].dataImage}" /><h3>${songs[i].dataSong}</h3><p>${songs[i].dataArtist}</p>`;
                     main__row__songs.appendChild(myDiv)
                 }
             }

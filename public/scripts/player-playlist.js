@@ -125,7 +125,7 @@ nextBtn.addEventListener('click', (e) => {
 				let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 				playerArtistComponent[0].innerHTML =
-					`<img src="` + image + `" />
+					`<img alt="Imagem do Música" src="` + image + `" />
 			<h3>`+ song + `<br>
 				<span>`+ artist + `</span>
 			</h3>
@@ -162,7 +162,7 @@ prevBtn.addEventListener('click', (e) => {
 				let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 				playerArtistComponent[0].innerHTML =
-					`<img src="` + image + `" />
+					`<img alt="Imagem do Música" src="` + image + `" />
 				<h3>`+ song + `<br>
 					<span>`+ artist + `</span>
 				</h3>
@@ -223,7 +223,7 @@ function firstMusicLine() {
 	let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 	playerArtistComponent[0].innerHTML =
-		`<img src="` + image + `" />
+		`<img alt="Imagem do Música" src="` + image + `" />
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
 		</h3>
@@ -251,7 +251,7 @@ function playAndShowSong() {
 			let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 			playerArtistComponent[0].innerHTML =
-				`<img src="` + image + `" />
+				`<img alt="Imagem do Música" src="` + image + `" />
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
 		</h3>

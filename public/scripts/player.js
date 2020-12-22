@@ -220,7 +220,7 @@ function playAndShowSong() {
             let playerArtistComponent = document.querySelectorAll('.player__artist');
 
             playerArtistComponent[0].innerHTML =
-                `<img src="` + image + `"/>
+                `<img alt="Imagem do Música" src="` + image + `"/>
               <h3>`+ song + `<br><span>` + artist + `</span></h3>`;
 
             playSong(file);
