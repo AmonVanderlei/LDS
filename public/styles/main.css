@@ -66,11 +66,11 @@
     width: 100%;
 }
 .main__col h3{
-    color: var(--light-gray);
+    color: var(--almost-white);
     margin: 8px 0;
 }
 .main__col p{
-    color: var(--gray);
+    color: var(--light-gray);
     margin: 8px 0;
     font-size: 13px;
     text-align: left;

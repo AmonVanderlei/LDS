@@ -58,10 +58,10 @@
     border: none;
     margin: 0 15px;
     outline: none;
-    color: var(--light-gray);
+    color: var(--almost-white);
 }
 .btns{
-    color: var(--light-gray);
+    color: var(--almost-white);
     margin: 15px;
     font-size: 18px;
 }
@@ -78,7 +78,7 @@
     height: 18px;
     margin: 0 15px;
     border: 2px solid transparent;
-    border-color: var(--light-gray);
+    border-color: var(--almost-white);
     border-top-color: var(--index-color);
     border-radius: 50%;
     animation: spin 1s;
@@ -97,14 +97,14 @@
     position: absolute;
     top: 135px;
     left: -14px;
-    color: var(--light-gray);
+    color: var(--almost-white);
     z-index: 2;
 }
 .unMuteBtn{
     position: absolute;
     top: 135px;
     left: -14px;
-    color: var(--light-gray);
+    color: var(--almost-white);
     z-index: 2;
     display: none;
 }
@@ -121,7 +121,7 @@
     color: var(--index-color);
 }
 .white{
-    color: var(--light-gray);
+    color: var(--almost-white);
 }
 /*Não escrevi até a linha comentada*/
 input[type='range'] {
@@ -149,7 +149,7 @@ input[type='range']::-webkit-slider-runnable-track {
     background: var(--index-color);
 }
 .js input[type='range']::-webkit-slider-runnable-track {
-    background: var(--index-color) no-repeat content-box, var(--light-gray) border-box;
+    background: var(--index-color) no-repeat content-box, var(--almost-white) border-box;
     background-size: 50% 100%, 100% 100%;
 }
 input[type='range']::-moz-range-track {
@@ -162,7 +162,7 @@ input[type='range']::-moz-range-track {
     background:var(--index-color);
 }
 .js input[type='range']::-moz-range-track {
-    background: var(--index-color) no-repeat content-box, var(--light-gray) border-box;
+    background: var(--index-color) no-repeat content-box, var(--almost-white) border-box;
     background-size: 50% 100%, 100% 100%;
 }
   input[type='range']::-ms-track {
@@ -178,7 +178,7 @@ input[type='range']::-moz-range-track {
   }
   input[type='range']::-ms-fill-lower {
     border-radius: 0.4375em;
-    background: var(--light-gray);
+    background: var(--almost-white);
   }
   input[type='range']::-ms-fill-upper {
     opacity: 0;
@@ -190,16 +190,16 @@ input[type='range']::-moz-range-track {
     height: 1.625em;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 0 0 0.1875em var(--light-gray), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
-    background: linear-gradient(-60deg, var(--gray), var(--light-gray) 50%);
+    box-shadow: 0 0 0 0.1875em var(--almost-white), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
+    background: linear-gradient(-60deg, var(--gray), var(--almost-white) 50%);
   }
   input[type='range']::-moz-range-thumb {
     width: 1.625em;
     height: 1.625em;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 0 0 0.1875em var(--light-gray), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
-    background: linear-gradient(-60deg, var(--gray), var(--light-gray) 50%);
+    box-shadow: 0 0 0 0.1875em var(--almost-white), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
+    background: linear-gradient(-60deg, var(--gray), var(--almost-white) 50%);
     cursor: ns-resize;
   }
   input[type='range']::-ms-thumb {
@@ -207,8 +207,8 @@ input[type='range']::-moz-range-track {
     height: 1.625em;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 0 0 0.1875em var(--light-gray), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
-    background: linear-gradient(-60deg, var(--gray), var(--light-gray) 50%);
+    box-shadow: 0 0 0 0.1875em var(--almost-white), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
+    background: linear-gradient(-60deg, var(--gray), var(--almost-white) 50%);
   }
   input[type='range']::-ms-tooltip {
     display: none;
@@ -244,7 +244,7 @@ input[type='range']::-moz-range-track {
 }
 .player__timer p{
     display: inline-block;
-    color: var(--light-gray);
+    color: var(--almost-white);
     font-weight: normal;
     font-size: 15px;
     vertical-align: middle;

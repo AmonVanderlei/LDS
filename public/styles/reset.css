@@ -5,7 +5,8 @@
     --dark-gray:        #333;
     --medium-gray:      rgb(60, 60, 60);
     --gray:             rgb(130, 130, 130);
-    --light-gray:       #eee;
+    --light-gray:       rgb(190, 190, 190);
+    --almost-white:     #eee;
     
     --dark-blue:        #0366D6;
     --index-color:      #03A6FF;
@@ -21,7 +22,7 @@ html,body{height: 100%;}
 
 ::selection{
     background-color: var(--index-color);
-    color: var(--light-gray);
+    color: var(--almost-white);
 }
 ::-webkit-scrollbar{
     width: 15px;

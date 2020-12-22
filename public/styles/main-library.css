@@ -51,7 +51,7 @@
     width: 100%;
 }
 .main__col h3{
-    color: var(--light-gray);
+    color: var(--almost-white);
     margin: 8px 0;
 }
 .main__col p{
