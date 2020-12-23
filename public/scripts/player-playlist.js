@@ -1,4 +1,5 @@
 var audioPlayer = document.querySelector('#audioplayer'); //pega o tocador de audio
+var playing = false;
 var loaded = false;
 var hide = true;
 
@@ -26,6 +27,7 @@ pauseBtn.addEventListener('click', (e) => {
 
 	playBtn.classList.remove('hideBtns');
 	pauseBtn.classList.remove('showBtns');
+	playing = false;
 	audioPlayer.pause();
 
 	return false;
@@ -35,6 +37,7 @@ playBtn.addEventListener('click', (e) => {
 
 	playBtn.classList.add('hideBtns');
 	pauseBtn.classList.add('showBtns');
+	playing = true;
 	audioPlayer.play();
 
 	return false;
@@ -122,7 +125,7 @@ nextBtn.addEventListener('click', (e) => {
 				let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 				playerArtistComponent[0].innerHTML =
-					`<img src="` + image + `" />
+					`<img alt="Imagem do Música" src="` + image + `" />
 			<h3>`+ song + `<br>
 				<span>`+ artist + `</span>
 			</h3>
@@ -159,7 +162,7 @@ prevBtn.addEventListener('click', (e) => {
 				let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 				playerArtistComponent[0].innerHTML =
-					`<img src="` + image + `" />
+					`<img alt="Imagem do Música" src="` + image + `" />
 				<h3>`+ song + `<br>
 					<span>`+ artist + `</span>
 				</h3>
@@ -176,10 +179,66 @@ prevBtn.addEventListener('click', (e) => {
 	});
 	return false;
 });
-
+window.addEventListener('keydown', function (e) {
+    let code = e.which || e.keyCode;
+    if (code == 32) {
+        e.preventDefault();
+    } else {
+        return true;
+    }
+    if (playing == true) {
+        pauseBtn.click();
+    } else {
+        playBtn.click();
+    }
+});
+window.addEventListener('keydown', function (e) {
+    let code = e.which || e.keyCode;
+    if (code == 37) {
+        e.preventDefault();
+    } else {
+        return true;
+    }
+    undoBtn.click();
+});
+window.addEventListener('keydown', function (e) {
+    let code = e.which || e.keyCode;
+    if (code == 39) {
+        e.preventDefault();
+    } else {
+        return true;
+    }
+    redoBtn.click();
+});
 // ^^^^^^^^^^Botões^^^^^^^^^^
+function firstMusicLine() {
+	let item = document.querySelectorAll('.musicLine')[0];
+
+	let image = item.getAttribute('dataImage');
+	let artist = item.getAttribute('dataArtist');
+	let song = item.getAttribute('dataSong');
+	let file = item.getAttribute('dataFile');
+	let number = item.getAttribute('dataNumber');
+
+	let playerArtistComponent = document.querySelectorAll('.player__artist');
+
+	playerArtistComponent[0].innerHTML =
+		`<img alt="Imagem do Música" src="` + image + `" />
+        <h3>`+ song + `<br>
+            <span>`+ artist + `</span>
+		</h3>
+		<p class="songNumber" style="display: none;">`+ number + `</p>`;
+
+	playSong(file);
+
+	audioPlayer.addEventListener("ended", function () {
+		audioPlayer.currentTime = 0;
+		nextBtn.click();
+	});
+}
 window.setTimeout(playAndShowSong, 3000);
 function playAndShowSong() {
+	firstMusicLine()
 	document.querySelectorAll('.musicLine').forEach(item => {
 
 		item.addEventListener('click', () => {
@@ -192,7 +251,7 @@ function playAndShowSong() {
 			let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 			playerArtistComponent[0].innerHTML =
-				`<img src="` + image + `" />
+				`<img alt="Imagem do Música" src="` + image + `" />
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
 		</h3>
@@ -229,6 +288,7 @@ const playSong = (file) => {
 		loaded = true;
 	}
 
+	playing = true;
 	audioPlayer.play();
 
 	playBtn.classList.add('hideBtns');

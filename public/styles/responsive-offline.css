@@ -41,9 +41,6 @@
     }
 }
 @media screen and (max-width: 772px){
-    .blockquote{
-        line-height: initial;
-    }
     .main__row{
         width: 100%;
     }
@@ -58,11 +55,8 @@
         padding: 0;
     }
 }
-@media screen and (max-width: 399px){
+@media screen and (max-width: 400px){
     .main{
-        font-size: 12px;
-    }
-    .links{
-        font-size: 9px;
+        padding: 0;
     }
 }

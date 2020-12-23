@@ -47,6 +47,15 @@
 .section__content{
     color: var(--dark-blue);
 }
+.section__content > h3{
+    color: var(--light-blue);
+}
+.section__content > ul{
+    padding: 10px 0 0 50px;
+}
+.section__content > ul > li{
+    padding-bottom: 5px;
+}
 .section__content p{
     margin-top: 15px;
 }

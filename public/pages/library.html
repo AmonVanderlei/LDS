@@ -9,7 +9,7 @@
         content="Ouça suas músicas favoritas de A Igreja de Jesus Cristo dos Santos dos Últimos Dias">
     <meta name="keywords"
         content="Músicas,Música,Musicas,Musica,Canções,Canção,Cancoes,Cancao,A Igreja de Jesus Cristo dos Santos dos Últimos Dias,The Church of Jesus Christ of Latter-Day Saints,SUD,LDS">
-    <meta name="version" content="1.0.0">
+    <meta name="version" content="1.1.0">
     <meta name="theme-color" content="#03A6FF">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
     <link rel="stylesheet" href="../styles/main-library.css">
@@ -47,18 +47,18 @@
     <nav class="sidebar">
         <div class="sidebar-wraper">
             <div class="sidebar__logo">
-                <a href="../index.html"><img src="../assets/logo.png"></a>
+                <a href="../index.html"><img alt="logo" src="../assets/logo.png"></a>
             </div>
             <div class="sidebar__menu">
                 <a href="../index.html"><i class="fas fa-home"></i>Início</a>
                 <a href="#"><i class="fas fa-search"></i>Buscar</a>
-                <a class="sidebar__menu__selecionado" href=""><i class="fas fa-database"></i>Biblioteca</a>
+                <a class="sidebar__menu__selecionado" href="./library.html"><i class="fas fa-database"></i>Biblioteca</a>
                 <a href="./about.html"><i class="fas fa-info-circle"></i>Sobre</a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
                 <div class="sidebar__menu__item">
-                    <img src="../assets/musicas_curtidas.png">
+                    <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
                     <span>Músicas Curtidas</span>
                 </div>
             </div>
@@ -71,6 +71,11 @@
                     <h2>Biblioteca</h2>
                 </div>
                 <div class="main__row__songs" id="main__row__songs"></div>
+                <footer class="main__row__footer">
+                    <small class="section__title">Made by Amon Vanderlei</small>
+                    <small class="section__title">Copyright (c) 2020 Amon Vanderlei</small>
+                    <small class="section__title">Version: 1.1.0</small>
+                </footer>
             </section>
         </div>
     </main>
