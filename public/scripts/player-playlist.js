@@ -82,7 +82,7 @@ unMuteBtn.addEventListener('click', (e) => {
 
 	return false;
 });//botão que deixa a música tocando novamente
-var albunsIndex = localStorage.getItem('albunsIndex');;
+var albunsIndex = localStorage.getItem('albunsIndex') || 0;
 var songsIndex = 0;
 function functionLastNumber() {
 	fetch("../scripts/json/albuns.json")
