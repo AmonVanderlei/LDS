@@ -22,7 +22,7 @@
 }
 .player__artist h3{
     display: inline-block;
-    color: var(--index-color);
+    color: var(--light-blue);
     font-weight: normal;
     font-size: 20px;
     vertical-align: middle;
@@ -33,7 +33,7 @@
     white-space: nowrap;
 }
 .player__artist h3 > span{
-    color: var(--index-color);
+    color: var(--light-blue);
     font-size: 13px;
 }
 .player__control{
