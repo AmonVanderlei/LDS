@@ -33,7 +33,7 @@
     white-space: nowrap;
 }
 .player__artist h3 > span{
-    color: var(--dark-blue);
+    color: var(--index-color);
     font-size: 13px;
 }
 .player__control{

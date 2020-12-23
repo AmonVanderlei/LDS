@@ -35,6 +35,7 @@ fetch("../scripts/json/albuns.json")
                 let mySecondP = document.createElement('p');
 
                 myImg.setAttribute("src", albuns[albunsIndex].songs[songsIndex].dataImage);
+                myImg.setAttribute("alt", "Imagem da Música");
                 myFirstP.innerHTML = albuns[albunsIndex].songs[songsIndex].dataSong;
                 mySecondP.innerHTML = albuns[albunsIndex].songs[songsIndex].dataArtist;
                 myFirstTd.appendChild(myImg);
