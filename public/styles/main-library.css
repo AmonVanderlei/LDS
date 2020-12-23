@@ -25,7 +25,6 @@
     flex-wrap: wrap;
     overflow-x: auto;
     width: 100%;
-    justify-content: center;
 }
 .main__row__songs a{
     width: 10%;
@@ -51,7 +50,7 @@
     width: 100%;
 }
 .main__col h3{
-    color: var(--almost-white);
+    color: var(--light-gray);
     margin: 8px 0;
 }
 .main__col p{
@@ -59,13 +58,4 @@
     margin: 8px 0;
     font-size: 13px;
     text-align: center;
-}
-.main__row__footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.section__title{
-    color: var(--index-color);
-    padding: 25px 0;
 }

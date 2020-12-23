@@ -17,7 +17,7 @@ fetch("../scripts/json/albuns.json")
             var yearAndLanguage = `${albuns[albunsIndex].albumLanguage} - ${albuns[albunsIndex].albumYear}`;
 
             playerArtistComponent[0].innerHTML =
-                `<img alt="Imagem do Música" src="` + image + `" />
+                `<img src="` + image + `" />
                 <h3>`+ song + `<br>
                     <span>`+ yearAndLanguage + `</span>
                 </h3>`;
