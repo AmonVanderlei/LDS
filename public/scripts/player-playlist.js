@@ -218,8 +218,7 @@ window.addEventListener('keydown', function (e) {
 randomBtn.addEventListener('click', () => {
 	if (randomBtn.checked) {
 		randomBtnLabel.innerHTML = `<i class="fas fa-random" style="color:var(--index-color);"></i>`;
-		randomBtnFunction();
-	}else{
+	} else {
 		randomBtnLabel.innerHTML = `<i class="fas fa-random"></i>`;
 	}
 })
@@ -246,7 +245,7 @@ function randomBtnFunction() {
 
 			const albuns = jsonObj['albuns'];
 
-			if(usedNumbers.length == albuns[albunsIndex].songs.length){
+			if (usedNumbers.length == albuns[albunsIndex].songs.length) {
 				usedNumbers = [];
 			}
 			randomNumber(0, albuns[albunsIndex].songs.length)
@@ -270,11 +269,6 @@ function randomBtnFunction() {
 		<p class="songNumber" style="display: none;">`+ number + `</p>`;
 
 			playSong(file);
-
-			audioPlayer.addEventListener("ended", function () {
-				audioPlayer.currentTime = 0;
-				randomBtnFunction();
-			});
 		})
 }
 function firstMusicLine() {
@@ -299,7 +293,11 @@ function firstMusicLine() {
 
 	audioPlayer.addEventListener("ended", function () {
 		audioPlayer.currentTime = 0;
-		nextBtn.click();
+		if (randomBtn.checked) {
+			randomBtnFunction();
+		} else {
+			nextBtn.click();
+		}
 	});
 }
 window.setTimeout(playAndShowSong, 3000);
@@ -327,7 +325,11 @@ function playAndShowSong() {
 
 			audioPlayer.addEventListener("ended", function () {
 				audioPlayer.currentTime = 0;
-				nextBtn.click();
+				if (randomBtn.checked) {
+					randomBtnFunction();
+				} else {
+					nextBtn.click();
+				}
 			});
 		});
 
