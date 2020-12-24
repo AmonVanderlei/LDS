@@ -52,6 +52,7 @@
 }
 .player__control__buttons{
     display: inline-block;
+    width: 100%;
 }
 .playerBtns{
     background-color: transparent;
@@ -62,7 +63,7 @@
 }
 .btns{
     color: var(--almost-white);
-    margin: 15px;
+    margin: 0 15px;
     font-size: 18px;
 }
 .pauseBtn{
@@ -224,7 +225,7 @@ input[type='range']::-moz-range-track {
 /*-------------------------------*/
 .player__control__progress{
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     height: 7px;
     margin-top: 20px;
     position: relative;
