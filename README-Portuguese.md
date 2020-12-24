@@ -14,7 +14,6 @@
 <p align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/AmonVanderlei/LDS" />
 <img alt="Github License" src="https://img.shields.io/github/license/AmonVanderlei/LDS" />
-<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/amonvanderlei/lds" />
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/amonvanderlei/lds" />
 <img alt="GitHub Issues" src="https://img.shields.io/github/issues/amonvanderlei/lds" />
 <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/amonvanderlei/lds" />
