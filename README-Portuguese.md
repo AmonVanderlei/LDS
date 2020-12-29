@@ -32,6 +32,16 @@
 
 Este projeto foi feito para reunir músicas de A Igreja de Jesus Cristo dos Santos dos Últimos Dias
 
+## Releases
+<h3><a href="https://github.com/amonvanderlei/lds/releases/tag/1.1.0.">1.1.0 Release</a></h3>
+<ul>
+	<li>Primeira música da playlist toca automáticamente</li>
+    <li>Pausar músicas, passar e voltar alguns segundos utilizando o teclado</li>
+    <li>Experiência de um aplicativo com o <b>Progressive Web App (PWA)</b></li>
+    <li>Tocar músicas da playlist aleatóriamente</li>
+    <li>Alguns bugs resolvidos</li>
+</ul>
+
 ## Como contribuir 🤔
 
 1. Faça um _fork_ desse repositório;

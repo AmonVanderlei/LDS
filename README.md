@@ -34,6 +34,17 @@ Read portuguese version [HERE](README-Portuguese.md)
 
 This project was made to join The Church of Jesus Christ of Latter-Day Saints songs
 
+## Releases
+<h3><a href="https://github.com/amonvanderlei/lds/releases/tag/1.1.0.">1.1.0 Release</a></h3>
+<ul>
+	<li>First playlist song plays automatically</li>
+	<li>Pause songs, forward and backward some seconds using the keyboard</li>
+	<li>Experience like an app with the <b>Progressive Web App (PWA)</b></li>
+	<li>Play playlist's songs randomically</li>
+	<li>Alguns bugs resolvidos</li>
+	<li>Some bugs fixed</li>
+</ul>
+
 ## How to Contribute 🤔
 
 1. Fork this repository;
