@@ -14,6 +14,7 @@ Read portuguese version [HERE](RELEASES-Portuguese.md)
 - Pause songs, forward and backward some seconds using the keyboard
 - Experience like an app with the **Progressive Web App (PWA)**
 - Play playlist's songs randomically
+- Album "Especial Noite Feliz" added
 
 ### Fixed
 

@@ -41,6 +41,7 @@ This project was made to join The Church of Jesus Christ of Latter-Day Saints so
 	<li>Pause songs, forward and backward some seconds using the keyboard</li>
 	<li>Experience like an app with the <b>Progressive Web App (PWA)</b></li>
 	<li>Play playlist's songs randomically</li>
+	<li>Album "Especial Noite Feliz" added</li>
 	<li>Some bugs fixed</li>
 </ul>
 
