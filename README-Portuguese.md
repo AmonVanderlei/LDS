@@ -42,6 +42,8 @@ Este projeto foi feito para reunir músicas de A Igreja de Jesus Cristo dos Sant
     <li>Alguns bugs resolvidos</li>
 </ul>
 
+Veja todos os *releases* [AQUI](RELEASES-Portuguese.md)
+
 ## Como contribuir 🤔
 
 1. Faça um _fork_ desse repositório;
