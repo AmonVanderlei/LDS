@@ -12,7 +12,7 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Pausar músicas, passar e voltar alguns segundos utilizando o teclado
 - Experiência de um aplicativo com o **Progressive Web App (PWA)**
 - Tocar músicas da playlist aleatóriamente
-- Álbum "Especial Noite Feliz" adicionado
+- Álbuns "Especial Noite Feliz" e "Youth Music Festival 2020" adicionados
 
 ### Corrigido
 

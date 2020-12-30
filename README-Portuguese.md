@@ -14,7 +14,7 @@
 <p align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/AmonVanderlei/LDS" />
 <img alt="Github License" src="https://img.shields.io/github/license/AmonVanderlei/LDS" />
-<img alt="GitHub package.json version (branch)" src="https://img.shields.io/github/package-json/v/amonvanderlei/lds/patch-1">
+<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/amonvanderlei/lds">
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/amonvanderlei/lds" />
 <img alt="GitHub Issues" src="https://img.shields.io/github/issues/amonvanderlei/lds" />
 <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/amonvanderlei/lds" />
@@ -39,7 +39,7 @@ Este projeto foi feito para reunir músicas de A Igreja de Jesus Cristo dos Sant
     <li>Pausar músicas, passar e voltar alguns segundos utilizando o teclado</li>
     <li>Experiência de um aplicativo com o <b>Progressive Web App (PWA)</b></li>
     <li>Tocar músicas da playlist aleatóriamente</li>
-    <li>Álbum "Especial Noite Feliz" adicionado</li>
+    <li>Álbuns "Especial Noite Feliz" e "Youth Music Festival 2020" adicionados</li>
     <li>Alguns bugs resolvidos</li>
 </ul>
 
