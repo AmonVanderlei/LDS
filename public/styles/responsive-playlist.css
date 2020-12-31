@@ -38,6 +38,7 @@
     }
     .main{
         width: 100%;
+        padding: 30px 10px;
     }
 }
 @media screen and (max-width: 768px){
@@ -96,9 +97,19 @@
         -space: nowrap;
     }
 }
-@media screen and (max-width: 404px){
+@media screen and (max-width: 579px){
+    .main__row__footer{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .main__row__footer > small{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 432px){
     .btns{
-        margin: 7px
+        margin: 0 10px;
     }
 }
 @media screen and (max-width: 367px){
@@ -109,7 +120,7 @@
         font-size: 12px;
     }
     .btns{
-        margin: 5px
+        margin: 0 5px
     }
     .player__control__buttons .loader{
         margin: 0 5px;
@@ -133,9 +144,6 @@
     }
 }
 @media screen and (max-width: 338px){
-    .btns{
-        margin: 2px;
-    }
     input[type='range'] {
         bottom: -40px;
         left: 220px;
@@ -153,10 +161,5 @@
     .muteBtn, .unMuteBtn{
         top: 270px;
         left: 195px;
-    }
-}
-@media screen and (max-width: 302px){
-    .btns{
-        margin: 1px;
     }
 }

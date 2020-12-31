@@ -5,7 +5,9 @@ fetch("../scripts/json/albuns.json")
     .then((jsonObj) => {
 
         const albuns = jsonObj['albuns'];
-
+        if(localStorage.getItem('albunsIndex') == undefined){
+            localStorage.setItem('albunsIndex', 0)
+        }
         var albunsIndex = localStorage.getItem('albunsIndex');
         var songsIndex = 0;
 
@@ -17,7 +19,7 @@ fetch("../scripts/json/albuns.json")
             var yearAndLanguage = `${albuns[albunsIndex].albumLanguage} - ${albuns[albunsIndex].albumYear}`;
 
             playerArtistComponent[0].innerHTML =
-                `<img src="` + image + `" />
+                `<img alt="Imagem do Música" src="` + image + `" />
                 <h3>`+ song + `<br>
                     <span>`+ yearAndLanguage + `</span>
                 </h3>`;
@@ -33,6 +35,7 @@ fetch("../scripts/json/albuns.json")
                 let mySecondP = document.createElement('p');
 
                 myImg.setAttribute("src", albuns[albunsIndex].songs[songsIndex].dataImage);
+                myImg.setAttribute("alt", "Imagem da Música");
                 myFirstP.innerHTML = albuns[albunsIndex].songs[songsIndex].dataSong;
                 mySecondP.innerHTML = albuns[albunsIndex].songs[songsIndex].dataArtist;
                 myFirstTd.appendChild(myImg);

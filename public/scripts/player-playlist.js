@@ -1,18 +1,21 @@
-var audioPlayer = document.querySelector('#audioplayer'); //pega o tocador de audio
+var audioPlayer = document.querySelector('#audioplayer');
+var playing = false;
 var loaded = false;
 var hide = true;
 
-var undoBtn = document.querySelector('#undoBtn'); //pega o botão de voltar alguns segundos
-var playBtn = document.querySelector('#playBtn'); //pega botão de play
-var pauseBtn = document.querySelector('#pauseBtn'); //pega botão de pause
-var redoBtn = document.querySelector('#redoBtn'); //pega o botão de avançar alguns segundos
-var hideVolBtn = document.querySelector('#hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
-var volume = document.querySelector('#volume'); //pega a div que fica o controle de volume
-var muteBtn = document.querySelector('#muteBtn'); //pega o botão de silenciar a música
-var unMuteBtn = document.querySelector('#unMuteBtn'); //pega o botão que deixa a música tocando novamente
-var loader = document.querySelector('#loader'); //pega o loader
-var nextBtn = document.querySelector('#nextBtn'); //pega o botão de passar uma música
-var prevBtn = document.querySelector('#prevBtn'); //pega o botão de voltar uma música
+var undoBtn = document.querySelector('#undoBtn');
+var playBtn = document.querySelector('#playBtn');
+var pauseBtn = document.querySelector('#pauseBtn');
+var redoBtn = document.querySelector('#redoBtn');
+var hideVolBtn = document.querySelector('#hideVolBtn');
+var volume = document.querySelector('#volume');
+var muteBtn = document.querySelector('#muteBtn');
+var unMuteBtn = document.querySelector('#unMuteBtn');
+var loader = document.querySelector('#loader');
+var nextBtn = document.querySelector('#nextBtn');
+var prevBtn = document.querySelector('#prevBtn');
+var randomBtn = document.querySelector('#randomBtn');
+var randomBtnLabel = document.querySelector('#randomBtnLabel');
 
 undoBtn.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -26,6 +29,7 @@ pauseBtn.addEventListener('click', (e) => {
 
 	playBtn.classList.remove('hideBtns');
 	pauseBtn.classList.remove('showBtns');
+	playing = false;
 	audioPlayer.pause();
 
 	return false;
@@ -35,6 +39,7 @@ playBtn.addEventListener('click', (e) => {
 
 	playBtn.classList.add('hideBtns');
 	pauseBtn.classList.add('showBtns');
+	playing = true;
 	audioPlayer.play();
 
 	return false;
@@ -79,7 +84,10 @@ unMuteBtn.addEventListener('click', (e) => {
 
 	return false;
 });//botão que deixa a música tocando novamente
-var albunsIndex = localStorage.getItem('albunsIndex');;
+if (localStorage.getItem('albunsIndex') == undefined) {
+	localStorage.setItem('albunsIndex', 0)
+}
+var albunsIndex = localStorage.getItem('albunsIndex');
 var songsIndex = 0;
 function functionLastNumber() {
 	fetch("../scripts/json/albuns.json")
@@ -122,7 +130,7 @@ nextBtn.addEventListener('click', (e) => {
 				let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 				playerArtistComponent[0].innerHTML =
-					`<img src="` + image + `" />
+					`<img alt="Imagem do Música" src="` + image + `" />
 			<h3>`+ song + `<br>
 				<span>`+ artist + `</span>
 			</h3>
@@ -159,7 +167,7 @@ prevBtn.addEventListener('click', (e) => {
 				let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 				playerArtistComponent[0].innerHTML =
-					`<img src="` + image + `" />
+					`<img alt="Imagem do Música" src="` + image + `" />
 				<h3>`+ song + `<br>
 					<span>`+ artist + `</span>
 				</h3>
@@ -176,10 +184,125 @@ prevBtn.addEventListener('click', (e) => {
 	});
 	return false;
 });
-
+window.addEventListener('keydown', function (e) {
+	let code = e.which || e.keyCode;
+	if (code == 32) {
+		e.preventDefault();
+	} else {
+		return true;
+	}
+	if (playing == true) {
+		pauseBtn.click();
+	} else {
+		playBtn.click();
+	}
+});
+window.addEventListener('keydown', function (e) {
+	let code = e.which || e.keyCode;
+	if (code == 37) {
+		e.preventDefault();
+	} else {
+		return true;
+	}
+	undoBtn.click();
+});
+window.addEventListener('keydown', function (e) {
+	let code = e.which || e.keyCode;
+	if (code == 39) {
+		e.preventDefault();
+	} else {
+		return true;
+	}
+	redoBtn.click();
+});
+randomBtn.addEventListener('click', () => {
+	if (randomBtn.checked) {
+		randomBtnLabel.innerHTML = `<i class="fas fa-random" style="color:var(--index-color);"></i>`;
+	} else {
+		randomBtnLabel.innerHTML = `<i class="fas fa-random"></i>`;
+	}
+})
 // ^^^^^^^^^^Botões^^^^^^^^^^
+var numberToUse = 0;
+let usedNumbers = [];
+
+async function randomNumber(minimum, maximum) {
+	const min = Math.ceil(minimum);
+	const max = Math.floor(maximum);
+	const random = Math.floor(Math.random() * (max - min) + min);
+	if (usedNumbers.includes(random)) {
+		randomNumber(min, max);
+	} else {
+		usedNumbers.push(random);
+		numberToUse = random;
+		return random
+	};
+};
+function randomBtnFunction() {
+	fetch("../scripts/json/albuns.json")
+		.then(response => response.json())
+		.then((jsonObj) => {
+
+			const albuns = jsonObj['albuns'];
+
+			if (usedNumbers.length == albuns[albunsIndex].songs.length) {
+				usedNumbers = [];
+			}
+			randomNumber(0, albuns[albunsIndex].songs.length)
+			let songIndex = numberToUse;
+
+			let item = document.querySelectorAll('.musicLine')[songIndex];
+
+			let image = item.getAttribute('dataImage');
+			let artist = item.getAttribute('dataArtist');
+			let song = item.getAttribute('dataSong');
+			let file = item.getAttribute('dataFile');
+			let number = item.getAttribute('dataNumber');
+
+			let playerArtistComponent = document.querySelectorAll('.player__artist');
+
+			playerArtistComponent[0].innerHTML =
+				`<img alt="Imagem do Música" src="` + image + `" />
+        <h3>`+ song + `<br>
+            <span>`+ artist + `</span>
+		</h3>
+		<p class="songNumber" style="display: none;">`+ number + `</p>`;
+
+			playSong(file);
+		})
+}
+function firstMusicLine() {
+	let item = document.querySelectorAll('.musicLine')[0];
+
+	let image = item.getAttribute('dataImage');
+	let artist = item.getAttribute('dataArtist');
+	let song = item.getAttribute('dataSong');
+	let file = item.getAttribute('dataFile');
+	let number = item.getAttribute('dataNumber');
+
+	let playerArtistComponent = document.querySelectorAll('.player__artist');
+
+	playerArtistComponent[0].innerHTML =
+		`<img alt="Imagem do Música" src="` + image + `" />
+        <h3>`+ song + `<br>
+            <span>`+ artist + `</span>
+		</h3>
+		<p class="songNumber" style="display: none;">`+ number + `</p>`;
+
+	playSong(file);
+
+	audioPlayer.addEventListener("ended", function () {
+		audioPlayer.currentTime = 0;
+		if (randomBtn.checked) {
+			randomBtnFunction();
+		} else {
+			nextBtn.click();
+		}
+	});
+}
 window.setTimeout(playAndShowSong, 3000);
 function playAndShowSong() {
+	firstMusicLine()
 	document.querySelectorAll('.musicLine').forEach(item => {
 
 		item.addEventListener('click', () => {
@@ -192,7 +315,7 @@ function playAndShowSong() {
 			let playerArtistComponent = document.querySelectorAll('.player__artist');
 
 			playerArtistComponent[0].innerHTML =
-				`<img src="` + image + `" />
+				`<img alt="Imagem do Música" src="` + image + `" />
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
 		</h3>
@@ -202,7 +325,11 @@ function playAndShowSong() {
 
 			audioPlayer.addEventListener("ended", function () {
 				audioPlayer.currentTime = 0;
-				nextBtn.click();
+				if (randomBtn.checked) {
+					randomBtnFunction();
+				} else {
+					nextBtn.click();
+				}
 			});
 		});
 
@@ -229,6 +356,7 @@ const playSong = (file) => {
 		loaded = true;
 	}
 
+	playing = true;
 	audioPlayer.play();
 
 	playBtn.classList.add('hideBtns');

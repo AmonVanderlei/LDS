@@ -9,7 +9,7 @@ fetch("../scripts/json/albuns.json")
             let myDiv = document.createElement('div');
             myDiv.setAttribute("class", "main__col");
             myDiv.setAttribute("dataNumber", i)
-            myDiv.innerHTML = `<img src="${albuns[i].albumImage}" />
+            myDiv.innerHTML = `<img alt="Imagem do Álbum" src="${albuns[i].albumImage}" />
                                <h3>${albuns[i].albumName}</h3>
                                <p>${albuns[i].albumYear} - ${albuns[i].albumLanguage}</p>`;
 
