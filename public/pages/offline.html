@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GVEN99VT6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3GVEN99VT6');
+    </script>
     <title>Listen to The Church of Jesus Christ of Latter-Day Saints Songs</title>
     <meta charset="UTF-8">
     <meta name="title" content="Listen to The Church of Jesus Christ of Latter-Day Saints Songs">
@@ -51,16 +60,19 @@
             </div>
             <div class="sidebar__menu">
                 <a href="../index.html"><i class="fas fa-home"></i>Início</a>
-                <a href="#"><i class="fas fa-search"></i>Buscar</a>
-                <a class="sidebar__menu__selecionado" href="./library.html"><i class="fas fa-database"></i>Biblioteca</a>
+                <a href="../pages/offline.html"><i class="fas fa-search"></i>Buscar</a>
+                <a class="sidebar__menu__selecionado" href="./library.html"><i
+                        class="fas fa-database"></i>Biblioteca</a>
                 <a href="./about.html"><i class="fas fa-info-circle"></i>Sobre</a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
-                <div class="sidebar__menu__item">
-                    <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
-                    <span>Músicas Curtidas</span>
-                </div>
+                <a href="../pages/offline.html">
+                    <div class="sidebar__menu__item">
+                        <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
+                        <span>Músicas Curtidas</span>
+                    </div>
+                </a>
             </div>
         </div>
     </nav>

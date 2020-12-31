@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GVEN99VT6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3GVEN99VT6');
+    </script>
     <title>Listen to The Church of Jesus Christ of Latter-Day Saints Songs</title>
     <meta charset="UTF-8">
     <meta name="title" content="Listen to The Church of Jesus Christ of Latter-Day Saints Songs">
@@ -15,7 +24,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Portuguese">
     <meta name="author" content="Amon Vanderlei">
-    <meta name="copyright" content="Amon Vanderlei"/>
+    <meta name="copyright" content="Amon Vanderlei" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amonvanderlei.github.io/LDS">
@@ -57,16 +66,18 @@
             </div>
             <div class="sidebar__menu">
                 <a class="sidebar__menu__selecionado" href="./index.html"><i class="fas fa-home"></i>Início</a>
-                <a href="./index.html"><i class="fas fa-search"></i>Buscar</a>
+                <a href="pages/offline.html"><i class="fas fa-search"></i>Buscar</a>
                 <a href="pages/library.html"><i class="fas fa-database"></i>Biblioteca</a>
                 <a href="pages/about.html"><i class="fas fa-info-circle"></i>Sobre</a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
-                <div class="sidebar__menu__item">
-                    <img alt="Ícone de Músicas Curtidas" src="assets/musicas_curtidas.png">
-                    <span>Músicas Curtidas</span>
-                </div>
+                <a href="pages/offline.html">
+                    <div class="sidebar__menu__item">
+                        <img alt="Ícone de Músicas Curtidas" src="assets/musicas_curtidas.png">
+                        <span>Músicas Curtidas</span>
+                    </div>
+                </a>
             </div>
         </div>
     </nav>
@@ -104,7 +115,8 @@
             <div class="player__control__buttons">
                 <button id="beginBtn" class="playerBtns"><i class="far fa-stop-circle btnIcon"></i></button>
                 <button id="undoBtn" class="playerBtns"><i class="fas fa-undo btnIcon"></i></button>
-                <button class="pauseBtn playerBtns" id="pauseBtn" href="#"><i class="far fa-pause-circle btnIcon"></i></button>
+                <button class="pauseBtn playerBtns" id="pauseBtn" href="#"><i
+                        class="far fa-pause-circle btnIcon"></i></button>
                 <div class="loader" id="loader"></div>
                 <button class="playBtn playerBtns" id="playBtn" href="#"><i class="fas fa-play btnIcon"></i></button>
                 <button id="redoBtn" class="playerBtns"><i class="fas fa-redo btnIcon"></i></button>
@@ -116,8 +128,10 @@
                         <button id="hideVolBtn2" class="playerBtns"><i class="fas fa-volume-up btnIcon"></i></button>
                         <div class="volume2" id="volume2">
                             <input id="volume-control2" type="range" value="100"></input>
-                            <button class="muteBtn2 playerBtns" id="muteBtn2"><i class="fas fa-volume-mute btnIcon"></i></button>
-                            <button class="unMuteBtn2 playerBtns" id="unMuteBtn2"><i class="fas fa-volume-up btnIcon"></i></button>
+                            <button class="muteBtn2 playerBtns" id="muteBtn2"><i
+                                    class="fas fa-volume-mute btnIcon"></i></button>
+                            <button class="unMuteBtn2 playerBtns" id="unMuteBtn2"><i
+                                    class="fas fa-volume-up btnIcon"></i></button>
                         </div>
                     </div>
                 </div>
@@ -136,14 +150,17 @@
                 <div class="volume" id="volume">
                     <input id="volume-control" type="range" value="100"></input>
                     <button class="muteBtn playerBtns" id="muteBtn"><i class="fas fa-volume-mute btnIcon"></i></button>
-                    <button class="unMuteBtn playerBtns" id="unMuteBtn"><i class="fas fa-volume-up btnIcon"></i></button>
+                    <button class="unMuteBtn playerBtns" id="unMuteBtn"><i
+                            class="fas fa-volume-up btnIcon"></i></button>
                 </div>
             </div>
         </div>
     </div>
 
     <audio class="audioPlayer" id="audioplayer" controls=""></audio>
-    <video src="https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4" controls="" autoplay loop muted style="position: absolute;top: 0;left: 0;width: 300px;z-index: -999999;opacity: 0;"></video>
+    <video src="https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4"
+        controls="" autoplay loop muted
+        style="position: absolute;top: 0;left: 0;width: 300px;z-index: -999999;opacity: 0;"></video>
     <script src="scripts/index.js"></script>
     <script src="scripts/music-index.js"></script>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>

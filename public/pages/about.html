@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GVEN99VT6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3GVEN99VT6');
+    </script>
     <title>Listen to The Church of Jesus Christ of Latter-Day Saints Songs</title>
     <meta charset="UTF-8">
     <meta name="title" content="Listen to The Church of Jesus Christ of Latter-Day Saints Songs">
@@ -51,7 +60,7 @@
             </div>
             <div class="sidebar__menu">
                 <a href="../index.html"><i class="fas fa-home"></i>Início</a>
-                <a href="#"><i class="fas fa-search"></i>Buscar</a>
+                <a href="../pages/offline.html"><i class="fas fa-search"></i>Buscar</a>
                 <a href="./library.html">
                     <i class="fas fa-database"></i>
                     Biblioteca
@@ -60,10 +69,12 @@
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
-                <div class="sidebar__menu__item">
-                    <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
-                    <span>Músicas Curtidas</span>
-                </div>
+                <a href="../pages/offline.html">
+                    <div class="sidebar__menu__item">
+                        <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
+                        <span>Músicas Curtidas</span>
+                    </div>
+                </a>
             </div>
         </div>
     </nav>
@@ -132,7 +143,9 @@
                         <li>Álbuns "Especial Noite Feliz" e "Youth Music Festival 2020" adicionados</li>
                         <li>Alguns bugs resolvidos</li>
                     </ul>
-                    <p>Veja todas as versões no <a href="https://github.com/AmonVanderlei/LDS/blob/patch-1/RELEASES-Portuguese.md" target="_blank" rel="noopener noreferrer">histórico de versões</a>
+                    <p>Veja todas as versões no <a
+                            href="https://github.com/AmonVanderlei/LDS/blob/patch-1/RELEASES-Portuguese.md"
+                            target="_blank" rel="noopener noreferrer">histórico de versões</a>
                     </p>
                 </div>
 
