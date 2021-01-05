@@ -223,6 +223,8 @@ function playAndShowSong() {
                 `<img alt="Imagem do Música" src="` + image + `"/>
               <h3>`+ song + `<br><span>` + artist + `</span></h3>`;
 
+            document.querySelector('title').innerHTML = song + ' - ' + artist;
+
             playSong(file);
         });
 

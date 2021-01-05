@@ -136,6 +136,8 @@ nextBtn.addEventListener('click', (e) => {
 			</h3>
 			<p class="songNumber" style="display: none">`+ number + `</p>`;
 
+				document.querySelector('title').innerHTML = song + ' - ' + artist;
+
 				playSong(file);
 				i++
 			} else {
@@ -172,6 +174,8 @@ prevBtn.addEventListener('click', (e) => {
 					<span>`+ artist + `</span>
 				</h3>
 				<p class="songNumber" style="display: none">`+ number + `</p>`;
+
+				document.querySelector('title').innerHTML = song + ' - ' + artist;
 
 				playSong(file);
 				i++
@@ -268,6 +272,8 @@ function randomBtnFunction() {
 		</h3>
 		<p class="songNumber" style="display: none;">`+ number + `</p>`;
 
+			document.querySelector('title').innerHTML = song + ' - ' + artist;
+
 			playSong(file);
 		})
 }
@@ -288,6 +294,8 @@ function firstMusicLine() {
             <span>`+ artist + `</span>
 		</h3>
 		<p class="songNumber" style="display: none;">`+ number + `</p>`;
+
+	document.querySelector('title').innerHTML = song + ' - ' + artist;
 
 	playSong(file);
 
