@@ -137,6 +137,8 @@ nextBtn.addEventListener('click', (e) => {
 			<p class="songNumber" style="display: none">`+ number + `</p>`;
 
 				document.querySelector('title').innerHTML = song + ' - ' + artist;
+				document.querySelectorAll('link')[2].href = image;
+				document.querySelectorAll('link')[3].href = image;
 
 				playSong(file);
 				i++
@@ -176,6 +178,8 @@ prevBtn.addEventListener('click', (e) => {
 				<p class="songNumber" style="display: none">`+ number + `</p>`;
 
 				document.querySelector('title').innerHTML = song + ' - ' + artist;
+				document.querySelectorAll('link')[2].href = image;
+				document.querySelectorAll('link')[3].href = image;
 
 				playSong(file);
 				i++
@@ -273,6 +277,8 @@ function randomBtnFunction() {
 		<p class="songNumber" style="display: none;">`+ number + `</p>`;
 
 			document.querySelector('title').innerHTML = song + ' - ' + artist;
+			document.querySelectorAll('link')[2].href = image;
+			document.querySelectorAll('link')[3].href = image;
 
 			playSong(file);
 		})
@@ -296,6 +302,8 @@ function firstMusicLine() {
 		<p class="songNumber" style="display: none;">`+ number + `</p>`;
 
 	document.querySelector('title').innerHTML = song + ' - ' + artist;
+	document.querySelectorAll('link')[2].href = image;
+	document.querySelectorAll('link')[3].href = image;
 
 	playSong(file);
 

@@ -1,0 +1,248 @@
+.player{
+    width: calc(100% - 250px - 15px);
+    padding: 20px;
+    height: 100px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--medium-gray);
+}
+.player__artist{
+    width: 30%;
+}
+.player__artist img{
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.player__artist h3{
+    display: inline-block;
+    color: var(--index-color);
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    max-width: 67%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.player__artist h3 > span{
+    color: var(--dark-blue);
+    font-size: 13px;
+}
+.player__control{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player__control__buttons{
+    display: inline-block;
+}
+.playerBtns{
+    background-color: transparent;
+    border: none;
+    margin: 0 15px;
+    outline: none;
+    color: var(--almost-white);
+    cursor: pointer;
+}
+.btns{
+    color: var(--almost-white);
+    margin: 0 15px;
+    font-size: 18px;
+}
+.pauseBtn{
+    display: none;
+}
+.playBtn{
+    display: inline;
+}
+.loader {
+    display: none;
+    pointer-events: none;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    border-color: var(--almost-white);
+    border-top-color: var(--index-color);
+    border-radius: 50%;
+    animation: spin 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes spin {
+    0%   { transform: rotateZ(0); }
+    100% { transform: rotateZ(360deg); }
+}
+.volume{
+    display: none;
+    position: relative;
+}
+.muteBtn{
+    position: absolute;
+    bottom: 15px;
+    left:-13px;
+    color: var(--almost-white);
+}
+.unMuteBtn{
+    position: absolute;
+    bottom: 15px;
+    left:-13px;
+    color: var(--almost-white);
+    display: none;
+}
+.showBtns{
+    display: inline;
+}
+.showInlineBlock{
+    display: inline-block;
+}
+.hideBtns{
+    display: none;
+}
+.green{
+    color: var(--index-color);
+}
+.white{
+    color: var(--almost-white);
+}
+/*Não escrevi até a linha comentada*/
+input[type='range'] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: -115px;
+    left: 10px;
+    padding: 0 1em 0 4em;
+    width: 17em;
+    min-height: 3em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    cursor: pointer;
+    /* slider components */
+}
+input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border: solid 1px var(--index-color);
+    padding: 0.25em 0.5em;
+    height: 0.875em;
+    border-radius: 0.4375em;
+    box-shadow: inset 1px 1px 0.125em var(--dark-gray);
+    background: var(--index-color);
+}
+.js input[type='range']::-webkit-slider-runnable-track {
+    background: var(--index-color) no-repeat content-box, var(--almost-white) border-box;
+    background-size: 50% 100%, 100% 100%;
+}
+input[type='range']::-moz-range-track {
+    box-sizing: border-box;
+    border: solid 1px var(--index-color);
+    padding: 0.25em 0.5em;
+    height: 0.875em;
+    border-radius: 0.4375em;
+    box-shadow: inset 1px 1px 0.125em var(--dark-gray);
+    background:var(--index-color);
+}
+.js input[type='range']::-moz-range-track {
+    background: var(--index-color) no-repeat content-box, var(--almost-white) border-box;
+    background-size: 50% 100%, 100% 100%;
+}
+  input[type='range']::-ms-track {
+    box-sizing: border-box;
+    border: solid 1px var(--index-color);
+    padding: 0.25em 0.5em;
+    height: 0.875em;
+    border-radius: 0.4375em;
+    box-shadow: inset 1px 1px 0.125em var(--dark-gray);
+    background: var(--index-color);
+    /* get rid of ticks on track */
+    color: transparent;
+  }
+  input[type='range']::-ms-fill-lower {
+    border-radius: 0.4375em;
+    background: var(--almost-white);
+  }
+  input[type='range']::-ms-fill-upper {
+    opacity: 0;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -0.6875em;
+    width: 1.625em;
+    height: 1.625em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.1875em var(--almost-white), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
+    background: linear-gradient(-60deg, var(--gray), var(--almost-white) 50%);
+  }
+  input[type='range']::-moz-range-thumb {
+    width: 1.625em;
+    height: 1.625em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.1875em var(--almost-white), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
+    background: linear-gradient(-60deg, var(--gray), var(--almost-white) 50%);
+    cursor: ns-resize;
+  }
+  input[type='range']::-ms-thumb {
+    width: 1.625em;
+    height: 1.625em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.1875em var(--almost-white), 0 0 0.125em 0.1875em var(--gray), -0.125em 0 0.25em 0.125em var(--medium-gray);
+    background: linear-gradient(-60deg, var(--gray), var(--almost-white) 50%);
+  }
+  input[type='range']::-ms-tooltip {
+    display: none;
+    /* slider states */
+  }
+  input[type='range']{
+      background: var(--dark-gray);
+      border: 1px solid var(--index-color);
+  }
+  input[type='range']:focus {
+    outline: none;
+  }
+/*-------------------------------*/
+.player__control__progress{
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    background: var(--gray);
+}
+#player__control__progress_2{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 7px;
+    border-radius: 8px;
+    background-color: var(--index-color);
+    transition: width .1s linear;
+}
+.player__timer p{
+    display: inline-block;
+    color: var(--almost-white);
+    font-weight: normal;
+    font-size: 15px;
+    vertical-align: middle;
+    position: relative;
+}
+.audioPlayer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+    opacity: 0
+}

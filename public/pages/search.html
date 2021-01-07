@@ -40,9 +40,9 @@
     <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
-    <link rel="stylesheet" href="../styles/main-playlist.css">
-    <link rel="stylesheet" href="../styles/player-playlist.css">
-    <link rel="stylesheet" href="../styles/responsive-playlist.css">
+    <link rel="stylesheet" href="../styles/main-search.css">
+    <link rel="stylesheet" href="../styles/player-search.css">
+    <link rel="stylesheet" href="../styles/responsive-search.css">
 </head>
 
 <body>
@@ -61,9 +61,9 @@
             </div>
             <div class="sidebar__menu">
                 <a href="../index.html"><i class="fas fa-home"></i>Início</a>
-                <a href="../pages/search.html"><i class="fas fa-search"></i>Buscar</a>
-                <a class="sidebar__menu__selecionado" href="./library.html"><i
-                        class="fas fa-database"></i>Biblioteca</a>
+                <a class="sidebar__menu__selecionado" href="../pages/search.html"><i
+                        class="fas fa-search"></i>Buscar</a>
+                <a href="./library.html"><i class="fas fa-database"></i>Biblioteca</a>
                 <a href="./about.html"><i class="fas fa-info-circle"></i>Sobre</a>
             </div>
             <div class="sidebar__menu">
@@ -80,48 +80,10 @@
     <main class="main" id="main">
         <div class="main-wraper">
             <section class="main__row" id="main__row">
-                <div class="player">
-                    <div class="player__artist"></div>
-                    <div class="player__control">
-                        <div class="player__control__buttons">
-                            <input type="checkbox" id="randomBtn">
-                            <label for="randomBtn" id="randomBtnLabel" class="btns playerBtns"><i
-                                    class="fas fa-random"></i></label>
-                            <button id="prevBtn" class="btns playerBtns"><i
-                                    class="fas fa-angle-double-left"></i></button>
-                            <button class="btns playerBtns" id="undoBtn"><i class="fas fa-undo"></i></button>
-                            <button class="pauseBtn btns playerBtns" id="pauseBtn" href="#"><i
-                                    class="far fa-pause-circle"></i></button>
-                            <div class="loader btns" id="loader"></div>
-                            <button class="playBtn btns playerBtns" id="playBtn" href="#"><i
-                                    class="fas fa-play"></i></button>
-                            <button id="redoBtn" class="btns playerBtns"><i class="fas fa-redo"></i></button>
-                            <button id="nextBtn" class="btns playerBtns"><i
-                                    class="fas fa-angle-double-right"></i></button>
-                            <button id="hideVolBtn" class="firstHideVolBtn btns playerBtns"><i
-                                    class="fas fa-volume-up"></i></button>
-                            <div class="volume" id="volume">
-                                <input id="volume-control" type="range" value="100"></input>
-                                <button class="muteBtn playerBtns btns" id="muteBtn"><i
-                                        class="fas fa-volume-mute"></i></button>
-                                <button class="unMuteBtn playerBtns btns" id="unMuteBtn"><i
-                                        class="fas fa-volume-up"></i></button>
-                            </div>
-                        </div>
-                        <div class="player__control__progress">
-                            <div id="player__control__progress_2"></div>
-                        </div>
-                        <div class="player__timer">
-                            <p id="current">00:00 / </p>
-                            <p id="duration">00:00</p>
-                        </div>
-                    </div>
+                <div class="main__row__search">
+                    <input type="text" id="filter" class="filter" placeholder="Pesquise sua música">
                 </div>
-                <div class="main__row__songs" id="main__row__songs">
-                    <table>
-                        <tbody class="table__body"></tbody>
-                    </table>
-                </div>
+                <div class="main__row__songs" id="main__row__songs"></div>
                 <footer class="main__row__footer">
                     <small class="section__title">Made by Amon Vanderlei</small>
                     <small class="section__title">Copyright (c) 2020 Amon Vanderlei</small>
@@ -130,15 +92,44 @@
             </section>
         </div>
     </main>
+    <div class="player">
+        <div class="player__artist">
+        </div>
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <input type="checkbox" id="randomBtn">
+                <label for="randomBtn" id="randomBtnLabel" class="btns playerBtns"><i class="fas fa-random"></i></label>
+                <button id="prevBtn" class="btns playerBtns"><i class="fas fa-angle-double-left"></i></button>
+                <button id="undoBtn" class="playerBtns btns"><i class="fas fa-undo"></i></button>
+                <button class="pauseBtn playerBtns btns" id="pauseBtn" href="#"><i
+                        class="far fa-pause-circle"></i></button>
+                <div class="loader btns" id="loader"></div>
+                <button class="playBtn playerBtns btns" id="playBtn" href="#"><i class="fas fa-play"></i></button>
+                <button id="redoBtn" class="playerBtns btns"><i class="fas fa-redo"></i></button>
+                <button id="nextBtn" class="btns playerBtns"><i class="fas fa-angle-double-right"></i></button>
+                <button id="hideVolBtn" class="playerBtns btns"><i class="fas fa-volume-up"></i></button>
+                <div class="volume" id="volume">
+                    <input id="volume-control" type="range" value="100"></input>
+                    <button class="muteBtn playerBtns" id="muteBtn"><i class="fas fa-volume-mute"></i></button>
+                    <button class="unMuteBtn playerBtns" id="unMuteBtn"><i
+                            class="fas fa-volume-up"></i></button>
+                </div>
+            </div>
+            <div class="player__control__progress">
+                <div id="player__control__progress_2"></div>
+            </div>
+            <div class="player__timer">
+                <p id="current">00:00 / </p>
+                <p id="duration">00:00</p>
+            </div>
+        </div>
+    </div>
 
     <audio class="audioPlayer" id="audioplayer" controls=""></audio>
-    <video src="https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4"
-        controls="" autoplay loop muted
-        style="position: absolute;top: 0;left: 0;width: 300px;z-index: -999999;opacity: 0;"></video>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
     <script src="../scripts/resgister-sw.js"></script>
-    <script src="../scripts/music-playlist.js"></script>
-    <script src="../scripts/player-playlist.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/player-search.js"></script>
 </body>
 
 </html>
