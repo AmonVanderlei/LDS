@@ -17,17 +17,57 @@
 .main__row__search{
     width: 100%;
     margin-bottom: 15px;
+    display: flex;
 }
 .filter{
-    width: 100%;
+    width: calc(100% - 50px);
     height: 35px;
     border-radius: 8px;
     padding: 0 10px;
     background-color: var(--medium-gray);
     color: var(--light-gray);
     border: none;
-    outline-width: 1px;
-    outline-color: var(--gray);
+    outline: none;
+}
+.filter:focus{
+    border: 2px solid var(--dark-blue);
+}
+.filterBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+input[type=checkbox]:checked ~ .filters{
+    display: flex;
+}
+.filters{
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 75px;
+    width: 200px;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--index-color);
+    border-radius: 5px;
+    background-color: var(--dark-gray-rgb);
+}
+.filters label{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--index-color);
+    cursor: pointer;
+}
+.filters label:hover{
+    background-color: var(--medium-gray);
 }
 .main__row__songs{
     display: flex;

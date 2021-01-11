@@ -1,17 +1,5 @@
-.menuBtn{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    z-index: 2;
-}
 input[type="checkbox"]{
     display: none;
-}
-input[type="checkbox"]:checked ~ .sidebar{
-    transform: translateX(250px);
 }
 .sidebar{
     float: left;
@@ -32,9 +20,6 @@ input[type="checkbox"]:checked ~ .sidebar{
 .sidebar::-webkit-scrollbar-thumb{
     background: var(--light-blue);
     border-radius: 3px;
-}
-.sidebar-wraper{
-    padding-bottom: 100px;
 }
 .sidebar__menu{
     margin: 20px 0;
@@ -87,4 +72,37 @@ input[type="checkbox"]:checked ~ .sidebar{
 }
 .sidebar__menu a.sidebar__menu__selecionado i{
     color: var(--light-blue);
+}
+@media screen and (max-width: 1000px){
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: auto;
+        z-index: 2;
+    }
+    .menu ~ .sidebar{
+        left: -250px;
+    }
+    .menu:hover ~ .sidebar{
+        transform: translateX(250px);
+    }
+    .lines{
+        width: 35px;
+        height: 5px;
+        background-color: var(--dark-blue);
+        margin: 7px 8px;
+        transition: .3s;
+    }
+    .menu:hover #line1, .menu:hover #line2, .menu:hover #line3{
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    .sidebar{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        transition: all .3s;
+    }
 }

@@ -46,14 +46,11 @@
 </head>
 
 <body>
-    <input type="checkbox" id="check">
-    <label for="check" class="menuBtn">
-        <div class="menu" onclick="this.classList.toggle('clicked')">
-            <div class="lines" id="line1"></div>
-            <div class="lines" id="line2"></div>
-            <div class="lines" id="line3"></div>
-        </div>
-    </label>
+    <div class="menu">
+        <div class="lines" id="line1"></div>
+        <div class="lines" id="line2"></div>
+        <div class="lines" id="line3"></div>
+    </div>
     <nav class="sidebar">
         <div class="sidebar-wraper">
             <div class="sidebar__logo">
@@ -81,7 +78,17 @@
         <div class="main-wraper">
             <section class="main__row" id="main__row">
                 <div class="main__row__search">
-                    <input type="text" id="filter" class="filter" placeholder="Pesquise sua música">
+                    <input type="text" class="filter" placeholder="Pesquise sua música">
+                    <input type="checkbox" name="filterBtnInput" id="filterBtnInput">
+                    <label class="filterBtn" for="filterBtnInput" onclick="document.querySelector('.fa-filter').classList.toggle('green')">
+                        <i class="fas fa-filter btns"></i>
+                    </label>
+                    <div class="filters">
+                        <input type="checkbox" name="filter1" id="filter1">
+                        <label for="filter1"><i class="fas fa-sort-alpha-down"></i>
+                            <p>Ordem Alfabética</p>
+                        </label>
+                    </div>
                 </div>
                 <div class="main__row__songs" id="main__row__songs"></div>
                 <footer class="main__row__footer">
@@ -111,8 +118,7 @@
                 <div class="volume" id="volume">
                     <input id="volume-control" type="range" value="100"></input>
                     <button class="muteBtn playerBtns" id="muteBtn"><i class="fas fa-volume-mute"></i></button>
-                    <button class="unMuteBtn playerBtns" id="unMuteBtn"><i
-                            class="fas fa-volume-up"></i></button>
+                    <button class="unMuteBtn playerBtns" id="unMuteBtn"><i class="fas fa-volume-up"></i></button>
                 </div>
             </div>
             <div class="player__control__progress">
