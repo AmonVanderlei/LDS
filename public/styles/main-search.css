@@ -63,7 +63,7 @@ input[type=checkbox]:checked ~ .filters{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: var(--index-color);
+    color: var(--light-gray);
     cursor: pointer;
 }
 .filters label:hover{
@@ -111,4 +111,7 @@ input[type=checkbox]:checked ~ .filters{
 .section__title{
     color: var(--index-color);
     padding: 25px 0;
+}
+.index-color{
+    color: var(--index-color);
 }
