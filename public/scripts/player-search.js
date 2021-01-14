@@ -330,7 +330,11 @@ function playAndShowSong() {
         <h3>`+ song + `<br>
             <span>`+ artist + `</span>
 		</h3>
-		<p class="songNumber" style="display: none">`+ number + `</p>`;
+        <p class="songNumber" style="display: none">`+ number + `</p>`;
+
+            document.querySelector('title').innerHTML = song + ' - ' + artist;
+            document.querySelectorAll('link')[2].href = image;
+            document.querySelectorAll('link')[3].href = image;
 
             playSong(file);
 

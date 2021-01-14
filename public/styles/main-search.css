@@ -32,13 +32,31 @@
 .filter:focus{
     border: 2px solid var(--dark-blue);
 }
+.matchCaseLabel{
+    position: sticky;
+    width: 1px;
+    height: 35px;
+    top: 35px;
+    right: 70px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchCaseLabel:hover ~ .message{
+    display: initial;
+}
+#matchCase:checked ~ .matchCaseLabel > i{
+    color: var(--index-color);
+}
 .filterBtn{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-input[type=checkbox]:checked ~ .filters{
+#filterBtnInput:checked ~ .filters{
     display: flex;
 }
 .filters{
@@ -54,6 +72,18 @@ input[type=checkbox]:checked ~ .filters{
     border: 1px solid var(--index-color);
     border-radius: 5px;
     background-color: var(--dark-gray-rgb);
+}
+.message{
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 75px;
+    padding: 5px;
+    border: 1px solid var(--index-color);
+    border-radius: 5px;
+    background-color: var(--dark-gray-rgb);
+    color: var(--almost-white);
+    font-size: 12px;
 }
 .filters label{
     width: 100%;

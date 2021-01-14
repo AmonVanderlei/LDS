@@ -79,6 +79,8 @@
             <section class="main__row" id="main__row">
                 <div class="main__row__search">
                     <input type="text" class="filter" placeholder="Pesquise sua música">
+                    <input type="checkbox" id="matchCase">
+                    <label for="matchCase" class="matchCaseLabel"><p class="btns">Aa</p></label>
                     <input type="checkbox" name="filterBtnInput" id="filterBtnInput">
                     <label class="filterBtn" for="filterBtnInput"
                         onclick="document.querySelector('.fa-filter').classList.toggle('green')">
@@ -96,6 +98,7 @@
                             <p class="filter2-children">Z - A</p>
                         </label>
                     </div>
+                    <p class="message">Comparar letras maiúsculas e minúsculas</p>
                 </div>
                 <div class="main__row__songs" id="main__row__songs"></div>
                 <footer class="main__row__footer">

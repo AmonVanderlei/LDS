@@ -55,10 +55,17 @@ filter1label.addEventListener('click', (e) => {
         sortAZElements()
     } else {
         if (document.querySelector(".filter").value != "") {
-            let wrote = document.querySelector(".filter").value.toLowerCase();
+            let wrote = document.querySelector(".filter").value;
+            if (matchCase == false) {
+                wrote = wrote.toLowerCase();
+            }
             let = filtered = [];
             elements.forEach(element => {
-                if (element.attributes.datasong.value.toLowerCase().indexOf(wrote) != -1) {
+                let name = element.attributes.datasong.value;
+                if (matchCase == false) {
+                    name = name.toLowerCase();
+                }
+                if (name.indexOf(wrote) != -1) {
                     filtered.push(element)
                 }
             });
@@ -92,10 +99,19 @@ filter2label.addEventListener('click', (e) => {
         sortZAElements()
     } else {
         if (document.querySelector(".filter").value != "") {
-            let wrote = document.querySelector(".filter").value.toLowerCase();
+            let wrote = document.querySelector(".filter").value;
+            if (matchCase == false) {
+                wrote = wrote.toLowerCase();
+            }
+
             let = filtered = [];
             elements.forEach(element => {
-                if (element.attributes.datasong.value.toLowerCase().indexOf(wrote) != -1) {
+                let name = element.attributes.datasong.value;
+                if (matchCase == false) {
+                    name = name.toLowerCase();
+                }
+
+                if (name.indexOf(wrote) != -1) {
                     filtered.push(element)
                 }
             });
@@ -107,15 +123,90 @@ filter2label.addEventListener('click', (e) => {
     return false;
 });
 
+let matchCaseInput = document.querySelector('#matchCase');
+let matchCase = false;
+
+document.querySelector('.matchCaseLabel').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (matchCaseInput.checked == true) {
+        matchCaseInput.checked = false;
+    } else {
+        matchCaseInput.checked = true;
+    }
+    if (matchCaseInput.checked) {
+        matchCase = true;
+        if (document.querySelector(".filter").value != "") {
+            let wrote = document.querySelector(".filter").value;
+            if (matchCase == false) {
+                wrote = wrote.toLowerCase();
+            }
+
+            let = filtered = [];
+            elements.forEach(element => {
+                let name = element.attributes.datasong.value;
+                if (matchCase == false) {
+                    name = name.toLowerCase();
+                }
+
+                if (name.indexOf(wrote) != -1) {
+                    filtered.push(element)
+                }
+            });
+            createMainCol(filtered)
+            if (filter1.checked == true) {
+                sortAZElements()
+            }
+            if (filter2.checked == true) {
+                sortZAElements()
+            }
+        }
+    } else {
+        matchCase = false;
+        if (document.querySelector(".filter").value != "") {
+            let wrote = document.querySelector(".filter").value;
+            if (matchCase == false) {
+                wrote = wrote.toLowerCase();
+            }
+
+            let = filtered = [];
+            elements.forEach(element => {
+                let name = element.attributes.datasong.value;
+                if (matchCase == false) {
+                    name = name.toLowerCase();
+                }
+
+                if (name.indexOf(wrote) != -1) {
+                    filtered.push(element)
+                }
+            });
+            createMainCol(filtered)
+            if (filter1.checked == true) {
+                sortAZElements()
+            }
+            if (filter2.checked == true) {
+                sortZAElements()
+            }
+        }
+    }
+    return false;
+})
+
 const debounceEvent = (fn, wait = 1000, time) => (...args) => {
     clearTimeout(time, time = setTimeout(() => fn(...args), wait))
 }
 
 function handleKeyUp(event) {
-    let wrote = event.target.value.toLowerCase();
+    let wrote = event.target.value;
+    if (matchCase == false) {
+        wrote = wrote.toLowerCase();
+    }
     let = filtered = [];
     elements.forEach(element => {
-        if (element.attributes.datasong.value.toLowerCase().indexOf(wrote) != -1) {
+        let name = element.attributes.datasong.value;
+        if (matchCase == false) {
+            name = name.toLowerCase();
+        }
+        if (name.indexOf(wrote) != -1) {
             filtered.push(element)
         }
     });
