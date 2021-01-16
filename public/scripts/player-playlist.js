@@ -121,6 +121,7 @@ nextBtn.addEventListener('click', (e) => {
 			return
 		} else {
 			if (i === songNumber + 1) {
+				updateSongs()
 				let image = item.getAttribute('dataImage');
 				let artist = item.getAttribute('dataArtist');
 				let song = item.getAttribute('dataSong');
@@ -162,6 +163,7 @@ prevBtn.addEventListener('click', (e) => {
 	document.querySelectorAll('.musicLine').forEach(item => {
 		if (i < songNumber) {
 			if (i === songNumber - 1) {
+				updateSongs()
 				let image = item.getAttribute('dataImage');
 				let artist = item.getAttribute('dataArtist');
 				let song = item.getAttribute('dataSong');
@@ -261,6 +263,7 @@ function randomBtnFunction() {
 
 			let item = document.querySelectorAll('.musicLine')[songIndex];
 
+			updateSongs()
 			let image = item.getAttribute('dataImage');
 			let artist = item.getAttribute('dataArtist');
 			let song = item.getAttribute('dataSong');
@@ -284,6 +287,8 @@ function randomBtnFunction() {
 		})
 }
 function firstMusicLine() {
+	updateSongs()
+
 	let item = document.querySelectorAll('.musicLine')[0];
 
 	let image = item.getAttribute('dataImage');
@@ -322,6 +327,7 @@ function playAndShowSong() {
 	document.querySelectorAll('.musicLine').forEach(item => {
 
 		item.addEventListener('click', () => {
+			updateSongs()
 			let image = item.getAttribute('dataImage');
 			let artist = item.getAttribute('dataArtist');
 			let song = item.getAttribute('dataSong');
@@ -453,3 +459,19 @@ var setVolume = function () {
 
 volumeControl.addEventListener('change', setVolume);
 volumeControl.addEventListener('input', setVolume);//ajusta o volume
+
+function updateSongs() {
+    setTimeout(() => {updateClasses()}, 1000)
+}
+
+function updateClasses() {
+	let star = document.querySelector('.star');
+	let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+	const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
+	const index = favorites.indexOf(musicName)
+    const existsInLocalStorage = index != -1
+    star.classList.remove('fav')
+    if (existsInLocalStorage) {
+        star.classList.add('fav')
+    }
+}

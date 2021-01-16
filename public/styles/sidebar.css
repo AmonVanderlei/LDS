@@ -35,6 +35,10 @@ input[type="checkbox"]{
     display: block;
     padding: 10px 0;
 }
+.sidebar__menu:last-child a{
+    margin-top: 5px;
+    padding: 5px 0;
+}
 .sidebar__menu a i{
     margin: 0 10px;
 }
@@ -47,7 +51,7 @@ input[type="checkbox"]{
     border-radius: 5px;
 }
 .sidebar__menu__item{
-    margin-top: 12px;
+    padding: 0 5px;
     cursor: pointer;
     vertical-align: middle;
 }

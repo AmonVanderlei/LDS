@@ -59,13 +59,12 @@
             <div class="sidebar__menu">
                 <a href="../index.html"><i class="fas fa-home"></i>Início</a>
                 <a href="../pages/search.html"><i class="fas fa-search"></i>Buscar</a>
-                <a class="sidebar__menu__selecionado" href="./library.html"><i
-                        class="fas fa-database"></i>Biblioteca</a>
+                <a href="./library.html"><i class="fas fa-database"></i>Biblioteca</a>
                 <a href="./about.html"><i class="fas fa-info-circle"></i>Sobre</a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
-                <a href="../pages/favorites.html">
+                <a class="sidebar__menu__selecionado" href="../pages/favorites.html">
                     <div class="sidebar__menu__item">
                         <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
                         <span>Músicas Curtidas</span>
@@ -116,6 +115,9 @@
                     </div>
                 </div>
                 <div class="main__row__songs" id="main__row__songs">
+                    <div class="without-songs">
+                        <p>As músicas que você curtir vão aparecer aqui</p>
+                    </div>
                     <table>
                         <tbody class="table__body"></tbody>
                     </table>
@@ -135,8 +137,8 @@
         style="position: absolute;top: 0;left: 0;width: 300px;z-index: -999999;opacity: 0;"></video>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
     <script src="../scripts/resgister-sw.js"></script>
-    <script src="../scripts/music-playlist.js"></script>
-    <script src="../scripts/player-playlist.js"></script>
+    <script src="../scripts/favorite-music.js"></script>
+    
     <script src="../scripts/favorites.js"></script>
 </body>
 

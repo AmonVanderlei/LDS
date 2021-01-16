@@ -212,6 +212,7 @@ function playAndShowSong() {
     document.querySelectorAll('.main__col').forEach(item => {
 
         item.addEventListener('click', () => {
+            updateSongs()
             let image = item.getAttribute('dataImage');
             let artist = item.getAttribute('dataArtist');
             let song = item.getAttribute('dataSong');
@@ -342,3 +343,19 @@ var setVolume2 = function () {
 
 volumeControl2.addEventListener('change', setVolume);
 volumeControl2.addEventListener('input', setVolume);//ajusta o volume
+
+function updateSongs() {
+    setTimeout(() => {updateClasses()}, 1000)
+}
+
+function updateClasses() {
+	let star = document.querySelector('.star');
+	let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+	const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
+	const index = favorites.indexOf(musicName)
+    const existsInLocalStorage = index != -1
+    star.classList.remove('fav')
+    if (existsInLocalStorage) {
+        star.classList.add('fav')
+    }
+}

@@ -36,6 +36,19 @@
     color: var(--light-blue);
     font-size: 13px;
 }
+.star::after{
+    content: ' \2606';
+    color: var(--light-gray);
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 32px;
+    cursor: pointer;
+}
+.star.fav::after{
+    content: ' \2605';
+    color: var(--index-color);
+}
 .player__control{
     width: 100%;
     text-align: center;

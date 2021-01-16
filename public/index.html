@@ -51,11 +51,11 @@
 </head>
 
 <body>
-        <div class="menu">
-            <div class="lines" id="line1"></div>
-            <div class="lines" id="line2"></div>
-            <div class="lines" id="line3"></div>
-        </div>
+    <div class="menu">
+        <div class="lines" id="line1"></div>
+        <div class="lines" id="line2"></div>
+        <div class="lines" id="line3"></div>
+    </div>
     <nav class="sidebar">
         <div class="sidebar-wraper">
             <div class="sidebar__logo">
@@ -69,7 +69,7 @@
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
-                <a href="pages/offline.html">
+                <a href="pages/favorites.html">
                     <div class="sidebar__menu__item">
                         <img alt="Ícone de Músicas Curtidas" src="assets/musicas_curtidas.png">
                         <span>Músicas Curtidas</span>
@@ -108,6 +108,7 @@
     <div class="player">
         <div class="player__artist">
         </div>
+        <div class="star"></div>
         <div class="player__control">
             <div class="player__control__buttons">
                 <button id="beginBtn" class="playerBtns"><i class="far fa-stop-circle btnIcon"></i></button>
@@ -162,6 +163,7 @@
     <script src="scripts/music-index.js"></script>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
     <script src="scripts/player.js"></script>
+    <script src="scripts/favorites.js"></script>
 </body>
 
 </html>

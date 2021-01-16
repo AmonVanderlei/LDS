@@ -7,9 +7,6 @@
     padding: 15px 50px;
     overflow-y: auto;
 }
-.main-wraper{
-    padding-bottom: 100px;
-}
 .main__row{
     display: flex;
     flex-wrap: wrap;
@@ -23,8 +20,27 @@
     overflow-x: auto;
     width: 100%;
 }
-table{
+.without-songs{
     width: 100%;
+    height: 35vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--light-blue);
+    font-size: 30px;
+}
+.without-songs p::before{
+    content: ' \2605';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 150px;
+}
+table{
+    width: 0px;
     display: flex;
     justify-content: space-around;
 }
