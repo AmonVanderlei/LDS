@@ -1,5 +1,6 @@
+document.querySelector('table').style.width = "0%";
 var table__body = document.querySelector(".table__body");
-// ajeitar o aviso caso não tenha favoritos
+
 fetch("../scripts/json/albuns.json")
     .then(response => response.json())
     .then((jsonObj) => {

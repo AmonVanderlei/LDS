@@ -60,11 +60,6 @@
 .player__control__buttons{
     display: inline-block;
 }
-/* .player__control__buttons a{
-    color: var(--almost-white);
-    margin: 15px;
-    font-size: 18px;
-} */
 .playerBtns{
     background-color: transparent;
     border: none;
