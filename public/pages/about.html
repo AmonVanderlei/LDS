@@ -45,32 +45,43 @@
 </head>
 
 <body>
-        <div class="menu">
-            <div class="lines" id="line1"></div>
-            <div class="lines" id="line2"></div>
-            <div class="lines" id="line3"></div>
-        </div>
+    <div class="menu">
+        <div class="lines" id="line1"></div>
+        <div class="lines" id="line2"></div>
+        <div class="lines" id="line3"></div>
+    </div>
     <nav class="sidebar">
         <div class="sidebar-wraper">
             <div class="sidebar__logo">
                 <a href="../index.html"><img alt="logo" src="../assets/logo.png"></a>
             </div>
             <div class="sidebar__menu">
-                <a href="../index.html"><i class="fas fa-home"></i>Início</a>
-                <a href="../pages/search.html"><i class="fas fa-search"></i>Buscar</a>
+                <a href="../index.html">
+                    <i class="fas fa-home"></i>
+                    <p>Início</p>
+                </a>
+                <a href="../pages/search.html">
+                    <i class="fas fa-search"></i>
+                    <p>Buscar</p>
+                </a>
                 <a href="./library.html">
                     <i class="fas fa-database"></i>
-                    Biblioteca
+                    <p>Biblioteca</p>
                 </a>
-                <a class="sidebar__menu__selecionado" href="./about.html"><i class="fas fa-info-circle"></i>Sobre</a>
+                <a class="sidebar__menu__selecionado" href="./about.html">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Sobre</p>
+                </a>
+                <a id="favorite" href="../pages/favorites.html">
+                    <i class="fas fa-heart"></i>
+                    <p>Favoritos</p>
+                </a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
                 <a href="../pages/favorites.html">
-                    <div class="sidebar__menu__item">
-                        <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
-                        <span>Músicas Curtidas</span>
-                    </div>
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
                 </a>
             </div>
         </div>

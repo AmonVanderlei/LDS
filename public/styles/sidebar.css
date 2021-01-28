@@ -32,8 +32,11 @@ input[type="checkbox"]{
 .sidebar__menu a{
     color: var(--almost-white);
     text-decoration: none;
-    display: block;
+    display: flex;
     padding: 10px 0;
+}
+#favorite{
+    display: none;
 }
 .sidebar__menu:last-child a{
     margin-top: 5px;
@@ -42,34 +45,15 @@ input[type="checkbox"]{
 .sidebar__menu a i{
     margin: 0 10px;
 }
-.sidebar__menu svg{
-    margin: 0 20px;
-}
 .sidebar__menu a.sidebar__menu__selecionado{
     color: var(--almost-white);
     background-color: var(--dark-gray);
     border-radius: 5px;
 }
-.sidebar__menu__item{
-    padding: 0 5px;
-    cursor: pointer;
-    vertical-align: middle;
-}
 .sidebar__menu p.sidebar__menu__title{
     color: var(--almost-white);
     text-transform: uppercase;
     font-size: 14px;
-}
-.sidebar__menu__item span{
-    font-weight: bold;
-    font-size: 14px;
-    padding: 0 10px;
-}
-.sidebar__menu__item img{
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    display: inline-block;
 }
 .sidebar__menu a i{
     color: var(--dark-blue);
@@ -86,9 +70,6 @@ input[type="checkbox"]{
         width: auto;
         z-index: 2;
     }
-    .menu ~ .sidebar{
-        left: -250px;
-    }
     .menu:hover ~ .sidebar{
         transform: translateX(250px);
     }
@@ -104,9 +85,59 @@ input[type="checkbox"]{
         opacity: 0;
     }
     .sidebar{
+        left: -250px;
         position: absolute;
         top: 0;
         z-index: 1;
         transition: all .3s;
+    }
+}
+@media screen and (max-width: 550px){
+    .menu{
+        display: none;
+    }
+    .sidebar{
+        left: 0!important;
+        position: fixed;
+        top: initial;
+        bottom: 0;
+        padding: 5px 10px;
+        width: calc(100% - 15px);
+        height: 50px;
+        overflow: hidden;
+    }
+    .sidebar-wraper{
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar__logo{
+        display: none;
+    }
+    .sidebar__menu:last-child{
+        display: none;
+    }
+    .sidebar__menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    #favorite{
+        display: flex;
+    }
+    .sidebar__menu a{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 40px;
+    }
+    .sidebar__menu a p{
+        font-size: 13px;
+    }
+    .player{
+        margin-bottom: 50px;
     }
 }

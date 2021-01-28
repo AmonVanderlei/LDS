@@ -62,33 +62,55 @@
         padding: 0;
     }
 }
-@media screen and (max-width: 550px){
-    .main__row__songs div{
-        width: 45%;
-    }
-}
-@media screen and (max-width: 635px){
+@media screen and (max-width: 560px){
     .btns{
         margin: 0 7px;
     }
 }
-@media screen and (max-width: 459px){
-    .player{
-        height: 175px;
-        padding-right: 10px;
+@media screen and (max-width: 550px){
+    .main__row__songs div{
+        width: 45%;
+    }
+    .menu{
+        display: none;
+    }
+    .sidebar{
+        left: 0!important;
+        position: fixed;
+        top: initial;
+        bottom: 0;
+        padding: 5px 10px;
+        width: calc(100% - 15px);
+        height: 50px;
+        overflow: hidden;
+    }
+    .sidebar-wraper{
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar__logo{
+        display: none;
+    }
+    .sidebar__menu:last-child{
+        display: none;
+    }
+    .sidebar__menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .sidebar__menu a{
+        padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        width: 80px;
+        height: 40px;
     }
-    .player__artist{
-        width: 100%;
-    }
-    .player__artist img{
-        max-width: 50px;
-    }
-    .player__control{
-        width: 100%;
+    .player{
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width: 402px){

@@ -57,19 +57,32 @@
                 <a href="../index.html"><img alt="logo" src="../assets/logo.png"></a>
             </div>
             <div class="sidebar__menu">
-                <a href="../index.html"><i class="fas fa-home"></i>Início</a>
-                <a class="sidebar__menu__selecionado" href="../pages/search.html"><i
-                        class="fas fa-search"></i>Buscar</a>
-                <a href="./library.html"><i class="fas fa-database"></i>Biblioteca</a>
-                <a href="./about.html"><i class="fas fa-info-circle"></i>Sobre</a>
+                <a href="../index.html">
+                    <i class="fas fa-home"></i>
+                    <p>Início</p>
+                </a>
+                <a class="sidebar__menu__selecionado" href="../pages/search.html">
+                    <i class="fas fa-search"></i>
+                    <p>Buscar</p>
+                </a>
+                <a href="./library.html">
+                    <i class="fas fa-database"></i>
+                    <p>Biblioteca</p>
+                </a>
+                <a href="./about.html">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Sobre</p>
+                </a>
+                <a id="favorite" href="../pages/favorites.html">
+                    <i class="fas fa-heart"></i>
+                    <p>Favoritos</p>
+                </a>
             </div>
             <div class="sidebar__menu">
                 <p class="sidebar__menu__title">Playlists</p>
                 <a href="../pages/favorites.html">
-                    <div class="sidebar__menu__item">
-                        <img alt="Ícone de Músicas Curtidas" src="../assets/musicas_curtidas.png">
-                        <span>Músicas Curtidas</span>
-                    </div>
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
                 </a>
             </div>
         </div>
@@ -80,7 +93,9 @@
                 <div class="main__row__search">
                     <input type="text" class="filter" placeholder="Pesquise sua música">
                     <input type="checkbox" id="matchCase">
-                    <label for="matchCase" class="matchCaseLabel"><p class="btns">Aa</p></label>
+                    <label for="matchCase" class="matchCaseLabel">
+                        <p class="btns">Aa</p>
+                    </label>
                     <input type="checkbox" name="filterBtnInput" id="filterBtnInput">
                     <label class="filterBtn" for="filterBtnInput"
                         onclick="document.querySelector('.fa-filter').classList.toggle('green')">

@@ -28,6 +28,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    text-align: center;
     color: var(--light-blue);
     font-size: 30px;
 }
