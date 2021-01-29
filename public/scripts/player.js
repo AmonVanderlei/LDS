@@ -9,18 +9,11 @@ var pauseBtn = document.querySelector('#pauseBtn'); //pega botão de pause
 var redoBtn = document.querySelector('#redoBtn'); //pega o botão de avançar alguns segundos
 var beginBtn = document.querySelector('#beginBtn'); //pega o botão de reiniciar a música
 var loopBtn = document.querySelector('#loopBtn'); //deixa a música em loop
-var loopBtn2 = document.querySelector('#loopBtn2'); //segundo botão que deixa a música em loop
 var hideVolBtn = document.querySelector('#hideVolBtn'); //pega o botão que esconde/mostra o controle de volume
-var hideVolBtn2 = document.querySelector('#hideVolBtn2'); //pega o segundo botão que esconde/mostra o controle de volume
 var volume = document.querySelector('#volume'); //pega a div que fica o controle de volume
-var volume2 = document.querySelector('#volume2'); //pega a segunda div que fica o controle de volume
 var muteBtn = document.querySelector('#muteBtn'); //pega o botão de silenciar a música
 var unMuteBtn = document.querySelector('#unMuteBtn'); //pega o botão que deixa a música tocando novamente
-var muteBtn2 = document.querySelector('#muteBtn2'); //pega o segundo botão de silenciar a música
-var unMuteBtn2 = document.querySelector('#unMuteBtn2'); //pega o segundo botão que deixa a música tocando novamente
 var loader = document.querySelector('#loader'); //pega o loader
-var threeDots = document.querySelector('.threeDots') //pega o botão dos 3 pontinhos
-var threeDotsBtns = document.querySelector('.threeDotsBtns') //pega a div com os botões dentro do "threeDots"
 
 undoBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -81,19 +74,6 @@ loopBtn.addEventListener('click', (e) => {
 
     return false;
 });//botão de loop
-loopBtn2.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if (audioPlayer.loop == false) {
-        audioPlayer.loop = true;
-        loopBtn2.innerHTML = `<i class="fas fa-sync btnIcon green">`;
-    } else {
-        audioPlayer.loop = false;
-        loopBtn2.innerHTML = `<i class="fas fa-sync btnIcon">`;
-    }
-
-    return false;
-});//segundo botão de loop
 hideVolBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -109,21 +89,6 @@ hideVolBtn.addEventListener('click', (e) => {
 
     return false;
 });//botão que esconde/mostra o controle de volume
-hideVolBtn2.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if (hide == true) {
-        volume2.classList.add("showInlineBlock");
-        hideVolBtn2.innerHTML = `<i class="fas fa-volume-up btnIcon green">`;
-        hide = false;
-    } else {
-        volume2.classList.remove("showInlineBlock");
-        hideVolBtn2.innerHTML = `<i class="fas fa-volume-up btnIcon">`;
-        hide = true;
-    };
-
-    return false;
-});//segundo botão que esconde/mostra o controle de volume
 muteBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -142,40 +107,6 @@ unMuteBtn.addEventListener('click', (e) => {
 
     return false;
 });//botão que deixa a música tocando novamente
-muteBtn2.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    audioPlayer.volume = 0;
-    muteBtn2.classList.add('hideBtns');
-    unMuteBtn2.classList.add('showBtns');
-
-    return false;
-});//seguno botão que silencia a música
-unMuteBtn2.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    audioPlayer.volume = 1;
-    muteBtn2.classList.remove('hideBtns');
-    unMuteBtn2.classList.remove('showBtns');
-
-    return false;
-});//segundo botão que deixa a música tocando novamente
-var display = "none";
-threeDots.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if (display == "flex") {
-        threeDotsBtns.classList.remove('showThreeDotsBtns');
-        threeDots.innerHTML = `<i class="fas fa-ellipsis-v threeDotsIcon"></i>`;
-        display = "none";
-    } else {
-        threeDotsBtns.classList.add('showThreeDotsBtns');
-        threeDots.innerHTML = `<i class="fas fa-ellipsis-v green"></i>`;
-        display = "flex";
-    }
-
-    return false;
-});//botão dos três pontos
 window.addEventListener('keydown', function (e) {
     let code = e.which || e.keyCode;
     if (code == 32) {
@@ -334,15 +265,6 @@ var setVolume = function () {
 
 volumeControl.addEventListener('change', setVolume);
 volumeControl.addEventListener('input', setVolume);//ajusta o volume
-
-var volumeControl2 = document.querySelector('#volume-control2');
-
-var setVolume2 = function () {
-    audioPlayer.volume = this.value / 100;
-};
-
-volumeControl2.addEventListener('change', setVolume);
-volumeControl2.addEventListener('input', setVolume);//ajusta o volume
 
 function updateSongs() {
     setTimeout(() => {updateClasses()}, 1000)

@@ -36,7 +36,7 @@
         width: 100%;
     }
     .player{
-        width: 100%;
+        width: calc(100% - 15px);
     }
 }
 @media screen and (max-width: 768px){
@@ -54,30 +54,6 @@
     .main__col{
         width: 25vw;
     }
-    .player{
-        height: 150px;
-        flex-direction: column;
-    }
-    .player__artist {
-        width: 80%;
-        height: 50%;
-        position: relative;
-        bottom: 10px;
-    }
-    .player__control{
-        width: 100%;
-    }
-    .player__control_2 {
-        top: -55%;
-        left: 500px;
-        transform: translateY(-50%);
-    }
-}
-@media screen and (max-width: 610px){
-    .player__control_2 {
-        left: 420px;
-        width: 15%;
-    }
 }
 @media screen and (max-width: 579px){
     .main__row__footer{
@@ -93,14 +69,133 @@
     .main__col{
         width: 30vw;
     }
-    .player__control_2 {
+}
+.toSmallPlayer{
+    display: none;
+    position: absolute;
+    color: var(--light-gray);
+    top: 0;
+    left: 10px;
+    font-size: 32px;
+}
+@media screen and (max-width: 550px){
+    .main__row__songs div{
+        width: 45%;
+    }
+    .player{
+        width: calc(100% - 15px);
+        padding: 0;
+        height: 70px;
+    }
+    .player__artist{
+        width: 60%;
+    }
+    .player__artist img{
+        max-width: 70px;
+    }
+    .player__artist h3{
+        font-size: 12px;
+    }
+    .player__control{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btns{
+        margin: 0 6px;
+    }
+    #randomBtnLabel, #undoBtn, #redoBtn, #hideVolBtn, #beginBtn, #loopBtn{
         display: none;
     }
-    .threeDots{
-        display: inline-block;
+    .player__control__progress{
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        height: 4px;
+        border-radius: 0;
     }
-    .firstLoopBtn{
+    #player__control__progress_2{
+        border-radius: 0;
+    }
+    .player__timer{
         display: none;
+    }
+    .fullscreen-player{
+        height: calc(100% - 50px);
+        padding: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fullscreen-player .toSmallPlayer{
+        display: initial;
+    }
+    .fullscreen-player .player__artist{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .fullscreen-player .player__artist img{
+        max-width: 80%;
+        border-radius: 10px;
+    }
+    .fullscreen-player .player__artist h3{
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .fullscreen-player .player__control{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;   
+    }
+    .fullscreen-player #randomBtnLabel,
+    .fullscreen-player #undoBtn,
+    .fullscreen-player #redoBtn,
+    .fullscreen-player #hideVolBtn,
+    .fullscreen-player #beginBtn,
+    .fullscreen-player #loopBtn{
+        display: initial;
+    }
+    .fullscreen-player .player__control__progress{
+        position: relative;
+        height: 7px;
+        border-radius: 8px;
+    }
+    .fullscreen-player #player__control__progress_2{
+        border-radius: 8px;
+    }
+    .fullscreen-player .btns{
+        margin: 0 15px;
+        font-size: 25px;
+    }
+    .fullscreen-player .player__timer{
+        display: initial;
+    }
+    .fullscreen-player .player__timer p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 440px){
+    .fullscreen-player .btns{
+        margin: 0 10px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 336px){
+    .fullscreen-player .btns{
+        margin: 0 7px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 323px){
+    .player__artist h3{
+        font-size: 11px;
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 450px){
@@ -115,26 +210,8 @@
     .main__col{
         width: 40vw;
     }
-    .player__artist img{
-        max-width: 30px;
-    }
-    .player__artist h3{
-        font-size: 15px;
-    }
-    .player__artist h3 > span{
-        font-size: 12px;
-    }
-    .player__control__buttons a{
-        margin: 10px
-    }
-    .player__control__buttons .loader{
+    .playerBtns{
         margin: 0 10px;
-    }
-    .threeDotsBtns{
-        bottom: 65%;
-    }
-    .muteBtn2, .unMuteBtn2{
-        left: -9px;
     }
 }
 @media screen and (max-width: 300px){

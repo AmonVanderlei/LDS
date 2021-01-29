@@ -40,6 +40,7 @@
     <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/mobile-player.css">
     <link rel="stylesheet" href="../styles/main-search.css">
     <link rel="stylesheet" href="../styles/player-search.css">
     <link rel="stylesheet" href="../styles/responsive-search.css">
@@ -124,7 +125,10 @@
             </section>
         </div>
     </main>
+
+    <input type="checkbox" id="inputPlayer">
     <div class="player">
+        <button class="playerBtns toSmallPlayer"><i class="fas fa-chevron-down"></i></button>
         <div class="player__artist">
         </div>
         <div class="star"></div>
@@ -159,10 +163,14 @@
 
     <audio class="audioPlayer" id="audioplayer" controls=""></audio>
     <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
+    <video src="https://media.discordapp.net/attachments/788592011467816981/789583680053968896/belo-e-o-salvador.mp4"
+        controls="" autoplay loop muted
+        style="position: absolute;top: 0;left: 0;width: 300px;z-index: -999999;opacity: 0;"></video>
     <script src="../scripts/resgister-sw.js"></script>
     <script src="../scripts/search.js"></script>
     <script src="../scripts/player-search.js"></script>
     <script src="../scripts/favorites.js"></script>
+    <script src="../scripts/mobile-player.js"></script>
 </body>
 
 </html>

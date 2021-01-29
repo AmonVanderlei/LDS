@@ -189,17 +189,30 @@ prevBtn.addEventListener('click', (e) => {
     });
     return false;
 });
+let areFocus = false;
+let filterInput = document.querySelector('.filter');
+filterInput.addEventListener('focus', () => {
+    areFocus = true;
+});
+
+filterInput.addEventListener('blur', () => {
+    areFocus = false;
+});
 window.addEventListener('keydown', function (e) {
     let code = e.which || e.keyCode;
     if (code == 32) {
-        e.preventDefault();
+        if (areFocus) {
+            return
+        } else {
+            e.preventDefault();
+            if (playing == true) {
+                pauseBtn.click();
+            } else {
+                playBtn.click();
+            }
+        }
     } else {
         return true;
-    }
-    if (playing == true) {
-        pauseBtn.click();
-    } else {
-        playBtn.click();
     }
 });
 window.addEventListener('keydown', function (e) {
@@ -459,14 +472,14 @@ volumeControl.addEventListener('change', setVolume);
 volumeControl.addEventListener('input', setVolume);//ajusta o volume
 
 function updateSongs() {
-    setTimeout(() => {updateClasses()}, 1000)
+    setTimeout(() => { updateClasses() }, 1000)
 }
 
 function updateClasses() {
-	let star = document.querySelector('.star');
-	let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-	const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
-	const index = favorites.indexOf(musicName)
+    let star = document.querySelector('.star');
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
+    const index = favorites.indexOf(musicName)
     const existsInLocalStorage = index != -1
     star.classList.remove('fav')
     if (existsInLocalStorage) {

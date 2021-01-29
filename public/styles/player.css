@@ -11,6 +11,10 @@
 }
 .player__artist{
     width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .player__artist img{
     max-width: 70px;
@@ -50,16 +54,10 @@
     width: 60%;
     text-align: center;
 }
-.player__control_2{
-    width: 10%;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-25%);
-}
 .player__control__buttons{
     display: inline-block;
 }
+
 .playerBtns{
     background-color: transparent;
     border: none;
@@ -94,30 +92,6 @@
     0%   { transform: rotateZ(0); }
     100% { transform: rotateZ(360deg); }
 }
-.threeDots{
-    display: none;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    cursor: pointer;
-}
-.threeDotsIcon{
-    color: var(--almost-white);
-}
-.threeDotsBtns{
-    position: absolute;
-    background-color: var(--dark-gray);
-    border: 1px solid var(--index-color);
-    border-radius: 5px;
-    display: none;
-    justify-content: space-between;
-    right: 12%;
-    bottom: 60%;
-    height: 50px;
-}
-.showThreeDotsBtns{
-    display: flex;
-}
 .loopBtn2{
     display: inline-block;
 }
@@ -133,10 +107,6 @@
     margin: 8px 15px;
     font-size: 18px;
 }
-.volume2{
-    display: none;
-    position: relative;
-}
 .muteBtn2{
     position: absolute;
     bottom: 15px;
@@ -149,14 +119,6 @@
     left:-13px;
     color: var(--almost-white);
     display: none;
-}
-.player__control__buttons_2{
-    display: inline-block;
-}
-.player__control__buttons_2 a{
-    color: var(--almost-white);
-    margin: 8px 15px;
-    font-size: 18px;
 }
 .volume{
     display: none;
