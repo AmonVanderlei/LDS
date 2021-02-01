@@ -6,6 +6,7 @@
     float: left;
     padding: 15px 50px;
     overflow-y: auto;
+    transition: all .5s;
 }
 .main-wraper{
     display: flex;

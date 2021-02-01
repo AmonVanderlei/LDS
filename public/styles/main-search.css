@@ -6,6 +6,7 @@
     float: left;
     padding: 15px 50px;
     overflow-y: auto;
+    transition: all .5s;
 }
 .main__row{
     display: flex;
@@ -16,7 +17,10 @@
 }
 .main__row__search{
     width: 100%;
-    margin-bottom: 15px;
+    display: none;
+    position: relative;
+}
+.showSearchInput{
     display: flex;
 }
 .filter{
@@ -33,10 +37,9 @@
     border: 2px solid var(--dark-blue);
 }
 .matchCaseLabel{
-    position: sticky;
+    position: absolute;
     width: 1px;
     height: 35px;
-    top: 35px;
     right: 70px;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
@@ -47,7 +50,7 @@
 .matchCaseLabel:hover ~ .message{
     display: initial;
 }
-#matchCase:checked ~ .matchCaseLabel > i{
+#matchCase:checked ~ .matchCaseLabel > p{
     color: var(--index-color);
 }
 .filterBtn{
@@ -56,14 +59,11 @@
     align-items: center;
     cursor: pointer;
 }
-#filterBtnInput:checked ~ .filters{
-    display: flex;
-}
 .filters{
     display: none;
-    position: absolute;
+    position: fixed;
     right: 25px;
-    top: 75px;
+    top: 50px;
     width: 200px;
     padding: 5px;
     flex-direction: column;
@@ -72,6 +72,9 @@
     border: 1px solid var(--index-color);
     border-radius: 5px;
     background-color: var(--dark-gray-rgb);
+}
+#filterBtnInput:checked ~ .filters{
+    display: flex;
 }
 .message{
     display: none;

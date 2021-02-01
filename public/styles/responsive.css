@@ -48,9 +48,6 @@
     }
 }
 @media screen and (max-width: 687px){
-    .main-wraper{
-        padding-bottom: 150px;
-    }
     .main__col{
         width: 25vw;
     }
@@ -79,6 +76,9 @@
     font-size: 32px;
 }
 @media screen and (max-width: 550px){
+    .main{
+        padding: 50px 30px 125px 30px;
+    }
     .main__row__songs div{
         width: 45%;
     }
@@ -199,9 +199,6 @@
     }
 }
 @media screen and (max-width: 450px){
-    .main{
-        padding: 15px 30px;
-    }
     .main__col{
         width: 35vw;
     }

@@ -1,6 +1,40 @@
 input[type="checkbox"]{
     display: none;
 }
+.superior-bar{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 15px);
+    height: 60px;
+    background-color: var(--black);
+    overflow: hidden;
+    z-index: 2;
+}
+.superior-bar-wraper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.superior-bar__logo a img{
+    height: 60px;
+}
+.superior-bar__menu{
+    display: flex;
+}
+.superior-bar__menu a, .superior-bar__menu div{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
 .sidebar{
     float: left;
     width: 250px;
@@ -55,7 +89,7 @@ input[type="checkbox"]{
     text-transform: uppercase;
     font-size: 14px;
 }
-.sidebar__menu a i{
+.sidebar__menu a i, .superior-bar__menu a i, .superior-bar__menu div i{
     color: var(--dark-blue);
 }
 .sidebar__menu a.sidebar__menu__selecionado i{
@@ -96,9 +130,12 @@ input[type="checkbox"]{
     .menu{
         display: none;
     }
+    .superior-bar{
+        display: initial;
+    }
     .sidebar{
         left: 0!important;
-        position: fixed;
+        position: absolute;
         top: initial;
         bottom: 0;
         padding: 5px 10px;
@@ -124,6 +161,9 @@ input[type="checkbox"]{
     }
     #favorite{
         display: flex;
+    }
+    #sidebar__menu__about{
+        display: none;
     }
     .sidebar__menu a{
         padding: 0;

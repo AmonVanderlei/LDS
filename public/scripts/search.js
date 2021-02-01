@@ -124,7 +124,6 @@ filter2label.addEventListener('click', (e) => {
 });
 
 let matchCaseInput = document.querySelector('#matchCase');
-let matchCase = false;
 
 document.querySelector('.matchCaseLabel').addEventListener('click', (e) => {
     e.preventDefault();

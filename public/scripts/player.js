@@ -144,6 +144,7 @@ function playAndShowSong() {
 
         item.addEventListener('click', () => {
             updateSongs()
+            document.querySelector('.player').style.display = "flex";
             let image = item.getAttribute('dataImage');
             let artist = item.getAttribute('dataArtist');
             let song = item.getAttribute('dataSong');

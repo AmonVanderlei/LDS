@@ -18,6 +18,11 @@
         padding: 0;
     }
 }
+@media screen and (max-width: 550px){
+    .main{
+        padding: 50px 30px 50px 30px;
+    }
+}
 @media screen and (max-width: 400px){
     .main{
         padding: 0;

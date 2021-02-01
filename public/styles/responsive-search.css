@@ -76,6 +76,9 @@
     font-size: 32px;
 }
 @media screen and (max-width: 550px){
+    .main{
+        padding: 50px 30px 120px 30px;
+    }
     .main__row__songs div{
         width: 45%;
     }
@@ -185,11 +188,6 @@
     .player__artist h3{
         font-size: 11px;
         margin-left: 0;
-    }
-}
-@media screen and (max-width: 402px){
-    .main{
-        padding: 15px 30px;
     }
 }
 @media screen and (max-width: 367px){

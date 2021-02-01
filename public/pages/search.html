@@ -40,7 +40,6 @@
     <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/sidebar.css">
-    <link rel="stylesheet" href="../styles/mobile-player.css">
     <link rel="stylesheet" href="../styles/main-search.css">
     <link rel="stylesheet" href="../styles/player-search.css">
     <link rel="stylesheet" href="../styles/responsive-search.css">
@@ -52,6 +51,42 @@
         <div class="lines" id="line2"></div>
         <div class="lines" id="line3"></div>
     </div>
+    <nav class="superior-bar">
+        <div class="superior-bar-wraper">
+            <div class="superior-bar__logo">
+                <a href="../index.html"><img alt="logo" src="../assets/logo.png"></a>
+            </div>
+            <div class="main__row__search">
+                <input type="text" class="filter" placeholder="Pesquise sua música">
+                <input type="checkbox" id="matchCase">
+                <label for="matchCase" class="matchCaseLabel">
+                    <p class="btns">Aa</p>
+                </label>
+                <input type="checkbox" name="filterBtnInput" id="filterBtnInput">
+                <label class="filterBtn" for="filterBtnInput"
+                    onclick="document.querySelector('.fa-filter').classList.toggle('green');console.log(document.querySelector('#filterBtnInput').checked)">
+                    <i class="fas fa-filter btns"></i>
+                </label>
+                <div class="filters">
+                    <input type="checkbox" name="filter1" id="filter1">
+                    <label for="filter1" class="filter1label">
+                        <i class="fas fa-sort-alpha-down filter1-children"></i>
+                        <p class="filter1-children">A - Z</p>
+                    </label>
+                    <input type="checkbox" name="filter2" id="filter2">
+                    <label for="filter2" class="filter2label">
+                        <i class="fas fa-sort-alpha-up-alt filter2-children"></i>
+                        <p class="filter2-children">Z - A</p>
+                    </label>
+                </div>
+                <p class="message">Comparar letras maiúsculas e minúsculas</p>
+            </div>
+            <div class="superior-bar__menu">
+                <div onclick="document.querySelector('.main__row__search').classList.toggle('showSearchInput') "><i class="fas fa-search"></i></div>
+                <a href="./about.html"><i class="far fa-question-circle"></i></a>
+            </div>
+        </div>
+    </nav>
     <nav class="sidebar">
         <div class="sidebar-wraper">
             <div class="sidebar__logo">
@@ -70,7 +105,7 @@
                     <i class="fas fa-database"></i>
                     <p>Biblioteca</p>
                 </a>
-                <a href="./about.html">
+                <a id="sidebar__menu__about" href="./about.html">
                     <i class="fas fa-info-circle"></i>
                     <p>Sobre</p>
                 </a>
@@ -91,31 +126,6 @@
     <main class="main" id="main">
         <div class="main-wraper">
             <section class="main__row" id="main__row">
-                <div class="main__row__search">
-                    <input type="text" class="filter" placeholder="Pesquise sua música">
-                    <input type="checkbox" id="matchCase">
-                    <label for="matchCase" class="matchCaseLabel">
-                        <p class="btns">Aa</p>
-                    </label>
-                    <input type="checkbox" name="filterBtnInput" id="filterBtnInput">
-                    <label class="filterBtn" for="filterBtnInput"
-                        onclick="document.querySelector('.fa-filter').classList.toggle('green')">
-                        <i class="fas fa-filter btns"></i>
-                    </label>
-                    <div class="filters">
-                        <input type="checkbox" name="filter1" id="filter1">
-                        <label for="filter1" class="filter1label">
-                            <i class="fas fa-sort-alpha-down filter1-children"></i>
-                            <p class="filter1-children">A - Z</p>
-                        </label>
-                        <input type="checkbox" name="filter2" id="filter2">
-                        <label for="filter2" class="filter2label">
-                            <i class="fas fa-sort-alpha-up-alt filter2-children"></i>
-                            <p class="filter2-children">Z - A</p>
-                        </label>
-                    </div>
-                    <p class="message">Comparar letras maiúsculas e minúsculas</p>
-                </div>
                 <div class="main__row__songs" id="main__row__songs"></div>
                 <footer class="main__row__footer">
                     <small class="section__title">Made by Amon Vanderlei</small>

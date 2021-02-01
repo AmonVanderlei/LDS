@@ -6,6 +6,7 @@
     float: left;
     padding: 15px 50px;
     overflow-y: auto;
+    transition: all .5s;
 }
 .main__row{
     display: flex;
@@ -13,9 +14,6 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
-}
-.main-wraper{
-    padding-bottom: 100px;
 }
 .main__row__title{
     width: 100%;
