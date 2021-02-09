@@ -14,6 +14,8 @@ async function randomNumber(minimum, maximum) {
     };
 };
 
+let songsNumber = 0;
+
 function showRow(currentNumber) {
     var all_main__row__title = document.querySelectorAll(".main__row__title");
     var main__row__title = all_main__row__title[currentNumber];
@@ -39,9 +41,11 @@ function showRow(currentNumber) {
                     myDiv.setAttribute("dataArtist", `${songs[i].dataArtist}`);
                     myDiv.setAttribute("dataSong", `${songs[i].dataSong}`);
                     myDiv.setAttribute("dataFile", `${songs[i].dataFile}`);
+                    myDiv.setAttribute("dataNumber", songsNumber);
 
                     myDiv.innerHTML = `<img alt="Imagem do Música" src="${songs[i].dataImage}" /><h3>${songs[i].dataSong}</h3><p>${songs[i].dataArtist}</p>`;
                     main__row__songs.appendChild(myDiv)
+                    songsNumber++
                 }
             }
             showAlbum()

@@ -85,7 +85,6 @@ unMuteBtn.addEventListener('click', (e) => {
     return false;
 });
 
-var albunsIndex = localStorage.getItem('albunsIndex');
 var songsIndex = 0;
 function functionLastNumber() {
     fetch("../scripts/json/albuns.json")
@@ -168,11 +167,7 @@ prevBtn.addEventListener('click', (e) => {
                 let playerArtistComponent = document.querySelectorAll('.player__artist');
 
                 playerArtistComponent[0].innerHTML =
-                    `<img alt="Imagem do Música" src="` + image + `" />
-				<h3>`+ song + `<br>
-					<span>`+ artist + `</span>
-				</h3>
-				<p class="songNumber" style="display: none">`+ number + `</p>`;
+                    Art;
 
                 document.querySelector('title').innerHTML = song + ' - ' + artist;
                 document.querySelectorAll('link')[2].href = image;
