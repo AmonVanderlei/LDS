@@ -11,23 +11,19 @@ fetch("../scripts/json/albuns.json")
             myDiv.setAttribute("dataNumber", i)
             myDiv.innerHTML = `<img alt="Imagem do Álbum" src="${albuns[i].albumImage}" />
                                <h3>${albuns[i].albumName}</h3>
-                               <p>${albuns[i].albumYear} - ${albuns[i].albumLanguage}</p>`;
+                               <p>${albuns[i].albumYear} - ${albuns[i].albumLanguage}</p><p>${i}</p>`;
 
-            let myA = document.createElement('a');
-            myA.setAttribute("href", "playlist.html");
-            myA.appendChild(myDiv)
-
-            main__row__songs.appendChild(myA);
+            main__row__songs.appendChild(myDiv);
         }
     })
 
-window.setTimeout(playAndShowSong, 500);
+window.setTimeout(playAndShowSong, 1000);
 function playAndShowSong() {
     document.querySelectorAll('.main__col').forEach(item => {
-
         item.addEventListener('click', () => {
             let number = item.getAttribute('dataNumber');
             localStorage.setItem('albunsIndex', number)
+            window.location.assign("./playlist.html");
         });
 
     });

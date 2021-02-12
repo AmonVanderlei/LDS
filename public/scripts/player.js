@@ -1,3 +1,4 @@
+let listenedRecently = JSON.parse(localStorage.getItem('listenedRecently')) || [];
 var audioPlayer = document.querySelector('#audioplayer'); //pega o tocador de audio
 var playing = false;
 var loaded = false;
@@ -112,6 +113,8 @@ nextBtn.addEventListener('click', (e) => {
                 let file = item.getAttribute('dataFile');
                 let number = item.getAttribute('dataNumber');
 
+                updateListenedRecently();
+
                 let playerArtistComponent = document.querySelectorAll('.player__artist');
 
                 playerArtistComponent[0].innerHTML =
@@ -153,6 +156,8 @@ prevBtn.addEventListener('click', (e) => {
                 let song = item.getAttribute('dataSong');
                 let file = item.getAttribute('dataFile');
                 let number = item.getAttribute('dataNumber');
+
+                updateListenedRecently();
 
                 let playerArtistComponent = document.querySelectorAll('.player__artist');
 
@@ -253,6 +258,8 @@ function randomBtnFunction() {
             let file = item.getAttribute('dataFile');
             let number = item.getAttribute('dataNumber');
 
+            updateListenedRecently();
+
             let playerArtistComponent = document.querySelectorAll('.player__artist');
 
             playerArtistComponent[0].innerHTML =
@@ -282,10 +289,12 @@ function playAndShowSong() {
             let file = item.getAttribute('dataFile');
             let number = item.getAttribute('dataNumber');
 
+            updateListenedRecently();
+
             let playerArtistComponent = document.querySelectorAll('.player__artist');
 
             playerArtistComponent[0].innerHTML =
-            `<img alt="Imagem do Música" src="` + image + `" />
+                `<img alt="Imagem do Música" src="` + image + `" />
             <h3>`+ song + `<br>
                 <span>`+ artist + `</span>
             </h3>
@@ -412,17 +421,34 @@ volumeControl.addEventListener('change', setVolume);
 volumeControl.addEventListener('input', setVolume);//ajusta o volume
 
 function updateSongs() {
-    setTimeout(() => {updateClasses()}, 1000)
+    setTimeout(() => { updateClasses() }, 1000)
 }
 
 function updateClasses() {
-	let star = document.querySelector('.star');
-	let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-	const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
-	const index = favorites.indexOf(musicName)
+    let star = document.querySelector('.star');
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
+    const index = favorites.indexOf(musicName)
     const existsInLocalStorage = index != -1
     star.classList.remove('fav')
     if (existsInLocalStorage) {
         star.classList.add('fav')
     }
+}
+
+function updateListenedRecently() {
+    setTimeout(() => {
+        const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
+        const index = listenedRecently.indexOf(musicName)
+        const existsInLocalStorage = index != -1
+
+        if (existsInLocalStorage) {
+            listenedRecently.splice(index, 1);
+        }
+        listenedRecently.push(musicName)
+        if (listenedRecently.length >= 14) {
+            listenedRecently.splice(0, 1);
+        }
+        localStorage.setItem('listenedRecently', JSON.stringify(listenedRecently));
+    }, 1000)
 }

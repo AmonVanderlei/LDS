@@ -1,3 +1,4 @@
+let listenedRecently = JSON.parse(localStorage.getItem('listenedRecently')) || [];
 var audioPlayer = document.querySelector('#audioplayer');
 var playing = false;
 var loaded = false;
@@ -122,6 +123,8 @@ nextBtn.addEventListener('click', (e) => {
                 let file = item.getAttribute('dataFile');
                 let number = item.getAttribute('dataNumber');
 
+                updateListenedRecently();
+
                 let playerArtistComponent = document.querySelectorAll('.player__artist');
 
                 playerArtistComponent[0].innerHTML =
@@ -163,6 +166,8 @@ prevBtn.addEventListener('click', (e) => {
                 let song = item.getAttribute('dataSong');
                 let file = item.getAttribute('dataFile');
                 let number = item.getAttribute('dataNumber');
+
+                updateListenedRecently();
 
                 let playerArtistComponent = document.querySelectorAll('.player__artist');
 
@@ -273,6 +278,8 @@ function randomBtnFunction() {
             let file = item.getAttribute('dataFile');
             let number = item.getAttribute('dataNumber');
 
+            updateListenedRecently();
+
             let playerArtistComponent = document.querySelectorAll('.player__artist');
 
             playerArtistComponent[0].innerHTML =
@@ -298,6 +305,8 @@ function firstMusicLine() {
     let song = item.getAttribute('dataSong');
     let file = item.getAttribute('dataFile');
     let number = item.getAttribute('dataNumber');
+
+    updateListenedRecently();
 
     let playerArtistComponent = document.querySelectorAll('.player__artist');
 
@@ -335,6 +344,8 @@ function playAndShowSong() {
             let song = item.getAttribute('dataSong');
             let file = item.getAttribute('dataFile');
             let number = item.getAttribute('dataNumber');
+
+            updateListenedRecently();
 
             let playerArtistComponent = document.querySelectorAll('.player__artist');
 
@@ -480,4 +491,20 @@ function updateClasses() {
     if (existsInLocalStorage) {
         star.classList.add('fav')
     }
+}
+function updateListenedRecently() {
+    setTimeout(() => {
+        const musicName = document.querySelector('.player__artist h3').innerHTML.split('<br>')[0];
+        const index = listenedRecently.indexOf(musicName)
+        const existsInLocalStorage = index != -1
+
+        if (existsInLocalStorage) {
+            listenedRecently.splice(index, 1);
+        }
+        listenedRecently.push(musicName)
+        if (listenedRecently.length >= 14) {
+            listenedRecently.splice(0, 1);
+        }
+        localStorage.setItem('listenedRecently', JSON.stringify(listenedRecently));
+    }, 1000)
 }

@@ -1,15 +1,15 @@
 @media screen and (max-width: 1715px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 15%;
     }
 }
 @media screen and (max-width: 1500px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 17%;
     }
 }
 @media screen and (max-width: 1300px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 19%;
     }
 }
@@ -17,22 +17,22 @@
     .main{
         width: 100%;
     }
-    .main__row__songs a{
+    .main__row__songs div{
         width: 20%;
     }
 }
 @media screen and (max-width: 768px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 25%;
     }
 }
 @media screen and (max-width: 687px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 30%;
     }
 }
 @media screen and (max-width: 610px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 30%;
     }
 }
@@ -47,25 +47,25 @@
     }
 }
 @media screen and (max-width: 550px){
-    .main__row__songs a{
-        width: 35%;
+    .main__row__songs div{
+        width: 32%;
     }
 }
 @media screen and (max-width: 450px){
     .main{
         padding: 15px 30px;
     }
-    .main__row__songs a{
+    .main__row__songs div{
         width: 45%;
     }
 }
 @media screen and (max-width: 367px){
-    .main__row__songs a{
+    .main__row__songs div{
         width: 49%;
     }
 }
 @media screen and (max-width: 300px){
-    .main__row__songs a{
-        width: 65%;
+    .main__row__songs div{
+        width: 95%;
     }
 }
