@@ -16,6 +16,69 @@ async function randomNumber(minimum, maximum) {
 
 let songsNumber = 0;
 
+var main__row__title = document.querySelectorAll(".main__row__title")[1].innerHTML = "<h2>Últimos Lançamentos</h2>";
+var main__row__songs = document.querySelectorAll(".main__row__songs")[1];
+
+fetch("scripts/json/albuns.json")
+    .then(response => response.json())
+    .then((jsonObj) => {
+
+        const albuns = jsonObj['albuns'];
+        let dates = [];
+        let uniqueDates = [];
+        let reverseDates = [];
+        let reverseSortedDates = [];
+        let sortedDates = [];
+        let sortedSongs = [];
+
+        for (let i = 0; i < albuns.length; i++) {
+            const songs = albuns[i].songs;
+            for (let j = 0; j < songs.length; j++) {
+                dates.push(albuns[i].songs[j].date)
+            }
+        }
+        function unique(value, index, self) {
+            return self.indexOf(value) === index;
+        }
+        uniqueDates = dates.filter(unique);
+        uniqueDates.forEach(date => {
+            let splited = date.split("/");
+            let ordered = `${splited[2]}/${splited[1]}/${splited[0]}`;
+            reverseDates.push(ordered);
+        });
+        reverseSortedDates = reverseDates.sort().reverse();
+        for (let i = 0; i < 2; i++) {
+            let splited = reverseSortedDates[i].split("/");
+            let ordered = `${splited[2]}/${splited[1]}/${splited[0]}`;
+            sortedDates.push(ordered);
+        };
+        sortedDates.forEach(date => {
+            for (let i = 0; i < albuns.length; i++) {
+                const songs = albuns[i].songs;
+                for (let j = 0; j < songs.length; j++) {
+                    if (albuns[i].songs[j].date == date) {
+                        if (sortedSongs.length < 15) {
+                            sortedSongs.push(albuns[i].songs[j]);
+                        } else { return }
+                    }
+                }
+            }
+        });
+        sortedSongs.forEach(song => {
+            let myDiv = document.createElement('div');
+            myDiv.setAttribute("class", "main__col");
+            myDiv.setAttribute("dataImage", `${song.dataImage}`)
+            myDiv.setAttribute("dataArtist", `${song.dataArtist}`);
+            myDiv.setAttribute("dataSong", `${song.dataSong}`);
+            myDiv.setAttribute("dataFile", `${song.dataFile}`);
+            myDiv.setAttribute("dataNumber", songsNumber);
+
+            myDiv.innerHTML = `<img alt="Imagem do Música" src="${song.dataImage}" /><h3>${song.dataSong}</h3><p>${song.dataArtist}</p>`;
+            main__row__songs.appendChild(myDiv)
+            songsNumber++
+        })
+    })
+
 function showRow(currentNumber) {
     var all_main__row__title = document.querySelectorAll(".main__row__title");
     var main__row__title = all_main__row__title[currentNumber];
@@ -52,6 +115,6 @@ function showRow(currentNumber) {
         })
 }
 
-for (let i = 0; i < 4; i++) {
+for (let i = 2; i < 4; i++) {
     showRow(i)
 }
