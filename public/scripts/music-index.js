@@ -16,51 +16,53 @@ async function randomNumber(minimum, maximum) {
 
 let songsNumber = 0;
 
-document.querySelectorAll(".main__row__title")[0].innerHTML = "<h2>Últimas Ouvidas</h2>";
-var main__row__songs_0 = document.querySelectorAll(".main__row__songs")[0];
+if (localStorage.getItem('listenedRecently') !== null || undefined) {
+    document.querySelectorAll(".main__row__title")[0].innerHTML = "<h2>Últimas Ouvidas</h2>";
+    var main__row__songs_0 = document.querySelectorAll(".main__row__songs")[0];
 
-fetch("scripts/json/albuns.json")
-    .then(response => response.json())
-    .then((jsonObj) => {
+    fetch("scripts/json/albuns.json")
+        .then(response => response.json())
+        .then((jsonObj) => {
 
-        const albuns = jsonObj['albuns'];
-        const listenedRecently = JSON.parse(localStorage.getItem('listenedRecently'));
-        const songsName = listenedRecently.reverse();
-        const songs = [];
+            const albuns = jsonObj['albuns'];
+            const listenedRecently = JSON.parse(localStorage.getItem('listenedRecently'));
+            const songsName = listenedRecently.reverse();
+            const songs = [];
 
-        if (songsName == null || songsName == []) {
-            return
-        } else {
-            for (let i = 0; i < songsName.length; i++) {
-                albuns.forEach(album => {
-                    album.songs.forEach(song => {
-                        if (song.dataSong == songsName[i]) {
-                            songs.push(song)
-                        }
+            if (songsName == null || songsName == []) {
+                return
+            } else {
+                for (let i = 0; i < songsName.length; i++) {
+                    albuns.forEach(album => {
+                        album.songs.forEach(song => {
+                            if (song.dataSong == songsName[i]) {
+                                songs.push(song)
+                            }
+                        })
                     })
-                })
-                if (i == (songsName.length - 1)) {
-                    createMusicLine(songs)
+                    if (i == (songsName.length - 1)) {
+                        createMusicLine(songs)
+                    }
                 }
             }
-        }
 
-        function createMusicLine(songs) {
-            songs.forEach(song => {
-                let myDiv = document.createElement('div');
-                myDiv.setAttribute("class", "main__col");
-                myDiv.setAttribute("dataImage", `${song.dataImage}`)
-                myDiv.setAttribute("dataArtist", `${song.dataArtist}`);
-                myDiv.setAttribute("dataSong", `${song.dataSong}`);
-                myDiv.setAttribute("dataFile", `${song.dataFile}`);
-                myDiv.setAttribute("dataNumber", songsNumber);
+            function createMusicLine(songs) {
+                songs.forEach(song => {
+                    let myDiv = document.createElement('div');
+                    myDiv.setAttribute("class", "main__col");
+                    myDiv.setAttribute("dataImage", `${song.dataImage}`)
+                    myDiv.setAttribute("dataArtist", `${song.dataArtist}`);
+                    myDiv.setAttribute("dataSong", `${song.dataSong}`);
+                    myDiv.setAttribute("dataFile", `${song.dataFile}`);
+                    myDiv.setAttribute("dataNumber", songsNumber);
 
-                myDiv.innerHTML = `<img alt="Imagem do Música" src="${song.dataImage}" /><h3>${song.dataSong}</h3><p>${song.dataArtist}</p>`;
-                main__row__songs_0.appendChild(myDiv)
-                songsNumber++
-            });
-        }
-    })
+                    myDiv.innerHTML = `<img alt="Imagem do Música" src="${song.dataImage}" /><h3>${song.dataSong}</h3><p>${song.dataArtist}</p>`;
+                    main__row__songs_0.appendChild(myDiv)
+                    songsNumber++
+                });
+            }
+        })
+}
 
 document.querySelectorAll(".main__row__title")[1].innerHTML = "<h2>Últimos Lançamentos</h2>";
 var main__row__songs = document.querySelectorAll(".main__row__songs")[1];

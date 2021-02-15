@@ -29,6 +29,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    width: 100%;
 }
 .main__row__songs::-webkit-scrollbar{
     height: 10px;
