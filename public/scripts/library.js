@@ -11,7 +11,7 @@ fetch("../scripts/json/albuns.json")
             myDiv.setAttribute("dataNumber", i)
             myDiv.innerHTML = `<img alt="Imagem do Álbum" src="${albuns[i].albumImage}" />
                                <h3>${albuns[i].albumName}</h3>
-                               <p>${albuns[i].albumYear} - ${albuns[i].albumLanguage}</p><p>${i}</p>`;
+                               <p>${albuns[i].albumYear} - ${albuns[i].albumLanguage}</p>`;
 
             main__row__songs.appendChild(myDiv);
         }

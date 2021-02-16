@@ -56,7 +56,11 @@
 .player__control__buttons{
     display: inline-block;
 }
-
+.btns{
+    color: var(--almost-white);
+    margin: 0 15px;
+    font-size: 18px;
+}
 .playerBtns{
     background-color: transparent;
     border: none;

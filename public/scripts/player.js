@@ -327,6 +327,11 @@ audioPlayer.onplaying = () => {
     loader.classList.remove('showInlineBlock');
     pauseBtn.classList.add('showBtns');
 };
+audioPlayer.onwaiting = () => {
+    loader.classList.add('showInlineBlock');
+    playBtn.classList.add('hideBtns');
+    pauseBtn.classList.remove('showBtns');    
+};
 const playSong = (file) => {
 
     if (loaded == true) {

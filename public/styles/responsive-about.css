@@ -11,6 +11,21 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 615px){
+    .main__row__name, .main__row__description{
+        text-align: center;
+    }
+    .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .links a{
+        padding-top: 10px;
+    }
+    .links-lines{
+        display: none;
+    }
+}
 @media screen and (max-width: 579px){
     .main__row__footer{
         flex-direction: column;
@@ -24,8 +39,5 @@
 @media screen and (max-width: 399px){
     .main{
         font-size: 12px;
-    }
-    .links{
-        font-size: 9px;
     }
 }
